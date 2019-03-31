@@ -13,70 +13,75 @@ function startGame(){
     if(!gC.demonBulletFrame) var demonFire = true;
 
     gC.demonBulletFrame++;
-    if(gC.demonsCountdown && gC.lifes){
-        for(let a = 0;a<a_l;a++){
-            if(!assets[a].end){
-                if(assets[a] instanceof enemy && demonFire){
-                     assets.push(assets[a].fire('bd_a','d'))
-                     //demonFire = false;
-                }
-                assets[a].start()
-                .then(
-                    (succ)=>{
-                    if(assets[a].animation)
-                        assets[a].animation(assets[a].getPosX(),assets[a].getPosY())
-                        .then(
-                            (succ)=>{
-                            //console.log(succ);
-                            }
-                        )
-                        .catch(
-                            (err)=>{
-                            console.log(err);
-                            }
-                        )
-                    //else
-                    //    console.log('asset senza animazione')
+    if(!gC.pause){
+        if(gC.demonsCountdown && gC.lifes){
+            for(let a = 0;a<a_l;a++){
+                if(!assets[a].end){
+                    if(assets[a] instanceof enemy && demonFire){
+                         assets.push(assets[a].fire('bd_a','d'))
+                         //demonFire = false;
                     }
-                )
-                .catch(
-                    (err)=>{
-                    console.log(err);
-                    }
-                )
-            }
-            if(a==(a_l-1)){
-                
-                /*
-                for(let e = 0;e<a_l;e++){
-                    if(assets[e].end)
-                        assets.splice(e,1);
-                }
-                */    
-                //Utils.c2osc();
-                function fn(){
-                    Utils.c2c();
-                    requestAnimationFrame(this.gAF);
-                }
-                if(gC.debug){
-                    Utils.debug().then(
-                        fn()
+                    assets[a].start()
+                    .then(
+                        (succ)=>{
+                        if(assets[a].animation)
+                            assets[a].animation(assets[a].getPosX(),assets[a].getPosY())
+                            .then(
+                                (succ)=>{
+                                //console.log(succ);
+                                }
+                            )
+                            .catch(
+                                (err)=>{
+                                console.log(err);
+                                }
+                            )
+                        //else
+                        //    console.log('asset senza animazione')
+                        }
                     )
-                }else{
-                    fn()
+                    .catch(
+                        (err)=>{
+                        console.log(err);
+                        }
+                    )
                 }
-                
+                if(a==(a_l-1)){
+                    
+                    /*
+                    for(let e = 0;e<a_l;e++){
+                        if(assets[e].end)
+                            assets.splice(e,1);
+                    }
+                    */    
+                    //Utils.c2osc();
+                    function fn(){
+                        Utils.c2c();
+                        requestAnimationFrame(this.gAF);
+                    }
+                    if(gC.debug){
+                        Utils.debug().then(
+                            fn()
+                        )
+                    }else{
+                        fn()
+                    }
+                    
+                }
             }
+        }else{
+            gC.gameLevel++;
+            gC.numbOfDemons--;
+            showSplashLevel().then(
+                (succ)=>{
+                    l()
+                }
+            )
         }
     }else{
-        gC.gameLevel++;
-        gC.numbOfDemons--;
-        showSplashLevel().then(
-            (succ)=>{
-                l()
-            }
-        )
+        this.startGame()
     }
+    
 	
 }
 
@@ -376,6 +381,9 @@ function addCanvas3D(){
                     break;
                     case 68:
 					if(!gC.debug) gC.debug=true; else gC.debug=false;
+                    break;
+                    case 80:
+					if(!gC.pause) gC.pause=true; else gC.pause=false;
 					break;
 				}
 			    })

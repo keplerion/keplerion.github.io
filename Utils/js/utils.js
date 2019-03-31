@@ -248,9 +248,9 @@ setCanvas3D(e){
         this.ctx2.fillText(str, x, y);
     }
     async writeOnCanvas(str,x,y){
-        this.ctxo.font = "30px Arial";
+        this.ctxo.font = "18px Arial";
         this.ctxo.strokeStyle = "white";
-        this.ctxo.lineWidth = 8;
+        this.ctxo.lineWidth = 4;
         this.ctxo.strokeText(str, x, y);
         this.ctxo.fillStyle = "black";
         this.ctxo.fillText(str, x, y);
