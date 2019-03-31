@@ -234,12 +234,27 @@ setCanvas3D(e){
 		gC.texture = THREE.ImageUtils.loadTexture( this.co.getImageData(0, 0, gC.width, gC.height) );
 
 	}
-    
+    async debug(){
+        this.writeOnCanvas('stringa di prova',50,50).then(
+            ()=>{
+                return;
+            }
+        )
+    }
 	writeOnSecondCanvas(str,x,y){
         this.ctx2.font = "30px Arial";
         this.ctx2.fillStyle = "red";
         this.ctx2.clearRect(0,0,gC.width,gC.height)
         this.ctx2.fillText(str, x, y);
+    }
+    async writeOnCanvas(str,x,y){
+        this.ctxo.font = "30px Arial";
+        this.ctxo.strokeStyle = "white";
+        this.ctxo.lineWidth = 8;
+        this.ctxo.strokeText(str, x, y);
+        this.ctxo.fillStyle = "black";
+        this.ctxo.fillText(str, x, y);
+        return;
     }
     drawImages(images,x,y){
 	    

@@ -54,8 +54,18 @@ function startGame(){
                 }
                 */    
                 //Utils.c2osc();
-                Utils.c2c();
-                requestAnimationFrame(this.gAF)
+                function fn(){
+                    Utils.c2c();
+                    requestAnimationFrame(this.gAF);
+                }
+                if(gC.debug){
+                    Utils.debug().then(
+                        fn()
+                    )
+                }else{
+                    fn()
+                }
+                
             }
         }
     }else{
@@ -363,6 +373,9 @@ function addCanvas3D(){
 				    case 32:
 					assets.push(gC.player.fire('b_a','u'));
 
+                    break;
+                    case 68:
+					if(!gC.debug) gC.debug=true; else gC.debug=false;
 					break;
 				}
 			    })
@@ -375,9 +388,7 @@ function addCanvas3D(){
 				    case 39:
 					gC.player.rightUp();
 					break;
-				    case 32:
-					//assets.push(gC.player.fire('b_a'));
-					break;
+				    
 				}
 			    })
 			
