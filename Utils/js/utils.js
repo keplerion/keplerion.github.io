@@ -233,14 +233,18 @@ setCanvas3D(e){
 	c23d(){
 		gC.texture = THREE.ImageUtils.loadTexture( this.co.getImageData(0, 0, gC.width, gC.height) );
 
-	}
+    }
+    cicle(a){
+        
+    }
     async debug(){
-	    var split = gC.debugStr.split('§');
-        this.writeOnCanvas(gC.debugStr,50,50).then(
-            ()=>{
-                return;
-            }
-        )
+        var split = gC.debugStr.split('<br>');
+        var y = 40;
+        for(let i = 0,length = split.length;i<length;i++){
+            this.writeOnCanvas(split[i],50,y);
+            y += 35;
+        }
+        
     }
 	writeOnSecondCanvas(str,x,y){
         this.ctx2.font = "30px Arial";
@@ -249,9 +253,9 @@ setCanvas3D(e){
         this.ctx2.fillText(str, x, y);
     }
     async writeOnCanvas(str,x,y){
-        this.ctxo.font = "18px Arial";
+        this.ctxo.font = "30px Arial";
         this.ctxo.strokeStyle = "white";
-        this.ctxo.lineWidth = 4;
+        this.ctxo.lineWidth = 1;
         this.ctxo.strokeText(str, x, y);
         this.ctxo.fillStyle = "black";
         this.ctxo.fillText(str, x, y);
