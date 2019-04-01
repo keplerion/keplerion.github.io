@@ -235,7 +235,7 @@ setCanvas3D(e){
 
 	}
     async debug(){
-        this.writeOnCanvas(gC.debug,50,50).then(
+        this.writeOnCanvas(gC.debugStr,50,50).then(
             ()=>{
                 return;
             }
