@@ -78,8 +78,6 @@ function startGame(){
                 }
             )
         }
-    }else{
-        this.startGame()
     }
     
 	
@@ -383,7 +381,12 @@ function addCanvas3D(){
 					if(!gC.debug) gC.debug=true; else gC.debug=false;
                     break;
                     case 80:
-					if(!gC.pause) gC.pause=true; else gC.pause=false;
+					if(!gC.pause){
+						gC.pause=true; 
+					}else{
+						gC.pause=false;
+						requestAnimationFrame(gAF);
+					}
 					break;
 				}
 			    })
