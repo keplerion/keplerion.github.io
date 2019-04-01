@@ -424,7 +424,7 @@ function reset(){
     gC.demonBulletInterval = 50;
     gC.demonBulletFrame = 1;
     gC.lifes = 3;
-	gC.debug = '';
+	gC.debugStr = '';
 }
 
 function s(){
