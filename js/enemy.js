@@ -27,7 +27,7 @@ class enemy extends entity{
             this.indexes.HE= Utils.random(1, Object.keys(gC.demonData.HE).length ).toString().padStart(2,'0');
         if(!this.indexes.BO)
             this.indexes.BO= Utils.random(1, Object.keys(gC.demonData.BO).length ).toString().padStart(2,'0');
-		gC.debugStr += 'Demon LW: '+this.indexes.LW+', RW:'+this.indexes.RW+', LB:'+this.indexes.LB+', HE:'+this.indexes.HE+', BO:'+this.indexes.BO+'; \n';
+		gC.debugStr += 'Demon LW: '+this.indexes.LW+', RW:'+this.indexes.RW+', LB:'+this.indexes.LB+', HE:'+this.indexes.HE+', BO:'+this.indexes.BO+'; §';
 		var lI = Utils.loadImage;
 		preloaded.push(lI(me.__proto__.images[me.level],'assets/games/demons/'+gC.demonData['LW'][this.indexes.LW].img, 'LW',gC.demonData['LW'][this.indexes.LW]));
 		preloaded.push(lI(me.__proto__.images[me.level],'assets/games/demons/'+gC.demonData['RW'][this.indexes.RW].img, 'RW',gC.demonData['RW'][this.indexes.RW]));
