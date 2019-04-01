@@ -20,7 +20,7 @@ class back extends entity{
             this.indexes.HE= Utils.random(1,Object.keys(gC.demonBack.HE).length).toString().padStart(2,'0');
         if(!this.indexes.BO)
             this.indexes.BO= Utils.random(1,Object.keys(gC.demonBack.BO).length).toString().padStart(2,'0');
-	gC.debugStr += 'Back LW: '+this.indexes.LW+', RW:'+this.indexes.RW+', LB:'+this.indexes.LB+', HE:'+this.indexes.HE+', BO:'+this.indexes.BO+'; §';
+	gC.debugStr += 'Back LW: '+this.indexes.LW+', RW:'+this.indexes.RW+', LB:'+this.indexes.LB+', HE:'+this.indexes.HE+', BO:'+this.indexes.BO+'; <br>';
 
 		var lI = Utils.loadImage;
 		preloaded.push(lI(me.__proto__.images[me.level],'assets/games/demonback/'+gC.demonBack['LW'][this.indexes.LW].img, 'LW',gC.demonData['LW'][this.indexes.HE]));
