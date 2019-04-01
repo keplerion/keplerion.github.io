@@ -62,7 +62,7 @@ class hero extends entity{
             this.indexes.HE= Utils.random(1,Object.keys(gC.shipData.HE).length).toString().padStart(2,'0');
         if(!this.indexes.BO)
             this.indexes.BO= Utils.random(1,Object.keys(gC.shipData.BO).length).toString().padStart(2,'0');
-				gC.debugStr += 'Hero LW: '+this.indexes.LW+', RW:'+this.indexes.RW+', LB:'+this.indexes.LB+', HE:'+this.indexes.HE+', BO:'+this.indexes.BO+'; §';
+				gC.debugStr += 'Hero LW: '+this.indexes.LW+', RW:'+this.indexes.RW+', LB:'+this.indexes.LB+', HE:'+this.indexes.HE+', BO:'+this.indexes.BO+'; <br>';
 
 		var lI = Utils.loadImage;
 		preloaded.push(lI(me.__proto__.images[me.level],'assets/games/demonship/demonship/'+gC.shipData['LW'][this.indexes.LW].img, 'LW'));
