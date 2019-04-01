@@ -235,6 +235,7 @@ setCanvas3D(e){
 
 	}
     async debug(){
+	    var split = gC.debugStr.split('§');
         this.writeOnCanvas(gC.debugStr,50,50).then(
             ()=>{
                 return;
