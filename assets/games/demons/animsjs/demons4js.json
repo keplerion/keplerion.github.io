@@ -1,5 +1,11 @@
 {
     "LW": {
+        "46": {
+            "type": "leftwing",
+            "img": "dem_A_LW_1_46.png",
+            "partname": "",
+            "effect": "var:A"
+        },
         "47": {
             "type": "leftwing",
             "img": "dem_A_LW_1_47.png",
@@ -391,12 +397,6 @@
         "45": {
             "type": "leftwing",
             "img": "dem_A_LW_1_45.png",
-            "partname": "",
-            "effect": "var:A"
-        },
-        "46": {
-            "type": "leftwing",
-            "img": "dem_A_LW_1_46.png",
             "partname": "",
             "effect": "var:A"
         }
@@ -804,6 +804,12 @@
         }
     },
     "HE": {
+        "58": {
+            "type": "head",
+            "img": "dem_A_HE_4_58.png",
+            "partname": "ahn",
+            "effect": "pattern:M"
+        },
         "59": {
             "type": "head",
             "img": "dem_A_HE_4_59.png",
@@ -1297,12 +1303,6 @@
             "effect": "pattern:M",
             "frames": "16",
             "time": "2"
-        },
-        "58": {
-            "type": "head",
-            "img": "dem_A_HE_4_58.png",
-            "partname": "ahn",
-            "effect": "pattern:M"
         }
     },
     "LB": {
@@ -1694,7 +1694,9 @@
             "type": "body",
             "img": "dem_A_BO_3_09.png",
             "partname": "ske",
-            "effect": "energy:K"
+            "effect": "energy:K",
+            "frames": "8",
+            "time": "1"
         },
         "10": {
             "type": "body",
@@ -1826,7 +1828,9 @@
             "type": "body",
             "img": "dem_A_BO_3_31.png",
             "partname": "miv",
-            "effect": "energy:K"
+            "effect": "energy:K",
+            "frames": "8",
+            "time": "1"
         },
         "32": {
             "type": "body",
@@ -1850,7 +1854,9 @@
             "type": "body",
             "img": "dem_A_BO_3_35.png",
             "partname": "pav",
-            "effect": "energy:K"
+            "effect": "energy:K",
+            "frames": "8",
+            "time": "2"
         },
         "36": {
             "type": "body",
@@ -1934,12 +1940,20 @@
             "type": "body",
             "img": "dem_A_BO_3_48.png",
             "partname": "da",
-            "effect": "energy:K"
+            "effect": "energy:K",
+            "frames": "8",
+            "time": "1"
         },
         "49": {
             "type": "body",
             "img": "dem_A_BO_3_49.png",
             "partname": "ske",
+            "effect": "energy:K"
+        },
+        "50": {
+            "type": "body",
+            "img": "dem_A_BO_3_50.png",
+            "partname": "ste",
             "effect": "energy:K"
         }
     }

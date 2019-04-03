@@ -767,241 +767,241 @@
         "40": {
             "type": "body",
             "img": "back_A_BO_5_40.png",
-            "partname": "2bdef",
+            "partname": "ba",
             "effect": "energy:K"
         },
         "41": {
             "type": "body",
             "img": "back_A_BO_5_41.png",
-            "partname": "2bdef",
+            "partname": "bal",
             "effect": "energy:K"
         },
         "42": {
             "type": "body",
             "img": "back_A_BO_5_42.png",
-            "partname": "2bdef",
+            "partname": "bav",
             "effect": "energy:K"
         },
         "43": {
             "type": "body",
             "img": "back_A_BO_5_43.png",
-            "partname": "2bdef",
+            "partname": "ol",
             "effect": "energy:K"
         },
         "44": {
             "type": "body",
             "img": "back_A_BO_5_44.png",
-            "partname": "2bdef",
+            "partname": "bam",
             "effect": "energy:K"
         },
         "45": {
             "type": "body",
             "img": "back_A_BO_5_45.png",
-            "partname": "2bdef",
+            "partname": "ci",
             "effect": "energy:K"
         },
         "46": {
             "type": "body",
             "img": "back_A_BO_5_46.png",
-            "partname": "2bdef",
+            "partname": "bat",
             "effect": "energy:K"
         },
         "47": {
             "type": "body",
             "img": "back_A_BO_5_47.png",
-            "partname": "2bdef",
+            "partname": "cih",
             "effect": "energy:K"
         },
         "48": {
             "type": "body",
             "img": "back_A_BO_5_48.png",
-            "partname": "2bdef",
+            "partname": "da",
             "effect": "energy:K"
         },
         "49": {
             "type": "body",
             "img": "back_A_BO_5_49.png",
-            "partname": "2bdef",
+            "partname": "ske",
             "effect": "energy:K"
         },
         "50": {
             "type": "body",
             "img": "back_A_BO_5_50.png",
-            "partname": "2bdef",
+            "partname": "ste",
             "effect": "energy:K"
         },
         "51": {
             "type": "body",
             "img": "back_A_BO_5_51.png",
-            "partname": "2bdef",
+            "partname": "cil",
             "effect": "energy:K"
         },
         "52": {
             "type": "body",
             "img": "back_A_BO_5_52.png",
-            "partname": "2bdef",
+            "partname": "om",
             "effect": "energy:K"
         },
         "53": {
             "type": "body",
             "img": "back_A_BO_5_53.png",
-            "partname": "2bdef",
+            "partname": "de",
             "effect": "energy:K"
         },
         "54": {
             "type": "body",
             "img": "back_A_BO_5_54.png",
-            "partname": "2bdef",
+            "partname": "civ",
             "effect": "energy:K"
         },
         "55": {
             "type": "body",
             "img": "back_A_BO_5_55.png",
-            "partname": "2bdef",
+            "partname": "do",
             "effect": "energy:K"
         },
         "56": {
             "type": "body",
             "img": "back_A_BO_5_56.png",
-            "partname": "2bdef",
+            "partname": "dov",
             "effect": "energy:K"
         },
         "57": {
             "type": "body",
             "img": "back_A_BO_5_57.png",
-            "partname": "2bdef",
+            "partname": "dok",
             "effect": "energy:K"
         },
         "58": {
             "type": "body",
             "img": "back_A_BO_5_58.png",
-            "partname": "2bdef",
+            "partname": "mah",
             "effect": "energy:K"
         },
         "59": {
             "type": "body",
             "img": "back_A_BO_5_59.png",
-            "partname": "2bdef",
+            "partname": "mal",
             "effect": "energy:K"
         },
         "60": {
             "type": "body",
             "img": "back_A_BO_5_60.png",
-            "partname": "2bdef",
+            "partname": "mo",
             "effect": "energy:K"
         },
         "61": {
             "type": "body",
             "img": "back_A_BO_5_61.png",
-            "partname": "2bdef",
+            "partname": "moh",
             "effect": "energy:K"
         },
         "62": {
             "type": "body",
             "img": "back_A_BO_5_62.png",
-            "partname": "2bdef",
+            "partname": "mol",
             "effect": "energy:K"
         },
         "63": {
             "type": "body",
             "img": "back_A_BO_5_63.png",
-            "partname": "2bdef",
+            "partname": "mov",
             "effect": "energy:K"
         },
         "64": {
             "type": "body",
             "img": "back_A_BO_5_64.png",
-            "partname": "2bdef",
+            "partname": "mok",
             "effect": "energy:K"
         },
         "65": {
             "type": "body",
             "img": "back_A_BO_5_65.png",
-            "partname": "2bdef",
+            "partname": "mog",
             "effect": "energy:K"
         },
         "66": {
             "type": "body",
             "img": "back_A_BO_5_66.png",
-            "partname": "2bdef",
+            "partname": "mogg",
             "effect": "energy:K"
         },
         "67": {
             "type": "body",
             "img": "back_A_BO_5_67.png",
-            "partname": "2bdef",
+            "partname": "me",
             "effect": "energy:K"
         },
         "68": {
             "type": "body",
             "img": "back_A_BO_5_68.png",
-            "partname": "2bdef",
+            "partname": "mu",
             "effect": "energy:K"
         },
         "69": {
             "type": "body",
             "img": "back_A_BO_5_69.png",
-            "partname": "2bdef",
+            "partname": "mi",
             "effect": "energy:K"
         },
         "70": {
             "type": "body",
             "img": "back_A_BO_5_70.png",
-            "partname": "2bdef",
+            "partname": "mih",
             "effect": "energy:K"
         },
         "71": {
             "type": "body",
             "img": "back_A_BO_5_71.png",
-            "partname": "2bdef",
+            "partname": "miv",
             "effect": "energy:K"
         },
         "72": {
             "type": "body",
             "img": "back_A_BO_5_72.png",
-            "partname": "2bdef",
+            "partname": "nol",
             "effect": "energy:K"
         },
         "73": {
             "type": "body",
             "img": "back_A_BO_5_73.png",
-            "partname": "2bdef",
+            "partname": "nov",
             "effect": "energy:K"
         },
         "74": {
             "type": "body",
             "img": "back_A_BO_5_74.png",
-            "partname": "2bdef",
+            "partname": "pa",
             "effect": "energy:K"
         },
         "75": {
             "type": "body",
             "img": "back_A_BO_5_75.png",
-            "partname": "2bdef",
+            "partname": "pav",
             "effect": "energy:K"
         },
         "76": {
             "type": "body",
             "img": "back_A_BO_5_76.png",
-            "partname": "2bdef",
+            "partname": "nog",
             "effect": "energy:K"
         },
         "77": {
             "type": "body",
             "img": "back_A_BO_5_77.png",
-            "partname": "2bdef",
+            "partname": "og",
             "effect": "energy:K"
         },
         "78": {
             "type": "body",
             "img": "back_A_BO_5_78.png",
-            "partname": "2bdef",
+            "partname": "qo",
             "effect": "energy:K"
         },
         "79": {
             "type": "body",
             "img": "back_A_BO_5_79.png",
-            "partname": "2bdef",
+            "partname": "pav",
             "effect": "energy:K"
         },
         "80": {
