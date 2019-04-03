@@ -5,3 +5,7 @@ https://keplerion.github.io
 __todo__:
 
 on trello
+
+__animation__:
+
+http://dynamicsjs.com/
