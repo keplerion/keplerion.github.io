@@ -1,0 +1,14 @@
+{
+  "level": {
+    "numtotdem": 5,   
+    "numinidem": 2, 
+    "nummaxdem": 3,
+    "enterdelaydem": 5
+  },
+  "sources": [
+"https://docs.google.com/document/d/13lujEZZFolvYa1ejxTTZSZ7ih5EjLmfRpDuCIFHQcSQ/edit?ts=5bdc1ed1",
+"https://archive.org/details/atari_2600_demon_attack_1983_cce_c-823"
+  ]
+
+
+}
