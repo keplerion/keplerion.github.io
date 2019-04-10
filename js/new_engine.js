@@ -419,7 +419,7 @@ function gAF(c){
 
 function reset(){
     gC.demoClock = 0;
-    gC.numbOfDemons = 5;
+    gC.numbOfDemons = 1;
     gC.gameLevel = 1;
     gC.demonBulletInterval = 50;
     gC.demonBulletFrame = 1;
