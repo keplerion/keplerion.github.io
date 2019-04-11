@@ -1,5 +1,5 @@
 class explosion extends entity{
-    constructor(level,x,y){
+    constructor(level,x,y,type){
 		super(level)
 		//this.id = this.__proto__.explosionId++;
 		this.BBoxColor = 'green';
@@ -7,6 +7,7 @@ class explosion extends entity{
 		this.frame = 0;
 		this.randomX = x;
 		this.randomY = y;
+	    	this.type = type;
     }
 	
     create(){
@@ -16,7 +17,8 @@ class explosion extends entity{
 			if(!me.frames) me.frames = me.__proto__.images[me.level]['EX'].width/gC.spriteW;
 			if(me.frame===me.frames){
 				assets[me.id].end = true;
-				gC.demonsCountdown--;
+				if(me.type == 'demon') gC.Lifes--;
+				else gC.demonsCountdown--;
 				res();
 			}else{
 				Utils.drawAnimation(me.__proto__.images[me.level]['EX'], gC.spriteW*me.frame, 0,gC.spriteW,gC.spriteH, me.randomX, me.randomY,gC.spriteW,gC.spriteH);
