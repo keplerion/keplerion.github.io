@@ -46,7 +46,7 @@ class bulletD extends entity{
 				}
 				for(let a = 0,a_l = assets.length;a<a_l;a++){
 					if((assets[a] instanceof hero) && assets[a].hit(me.BBoxX,me.BBoxY,gC.bulletW,me.bulletW)){
-						assets.push(new explosion('x_a',assets[a].getPosX(),assets[a].getPosY()))
+						assets.push(new explosion('x_a',assets[a].getPosX(),assets[a].getPosY(),'hero'))
 						
 						console.log('remove hero')
 						//assets[a].end = true;
