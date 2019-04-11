@@ -18,7 +18,7 @@ class explosion extends entity{
 			if(me.frame===me.frames){
 				assets[me.id].end = true;
 				if(me.type == 'demon') gC.demonsCountdown--;
-				else gC.Lifes--;
+				else gC.lifes--;
 				res();
 			}else{
 				Utils.drawAnimation(me.__proto__.images[me.level]['EX'], gC.spriteW*me.frame, 0,gC.spriteW,gC.spriteH, me.randomX, me.randomY,gC.spriteW,gC.spriteH);
