@@ -50,7 +50,7 @@ class bulletD extends entity{
 						
 						console.log('remove hero')
 						//assets[a].end = true;
-						gC.lifes--;
+						//gC.lifes--;
 						gC.explosionAudio1.play();
 						
 						this.removeBullet().then(
