@@ -22,10 +22,12 @@ function startGame(){
          *      totDemonsInLevel++
          *      demonsCountdown++
          */
+        if(!gC.controller.timestamp) gC.controller.timestamp = new Date().getTime();
         let now = new Date().getTime();
         if((now - gC.controller.timestamp)>(gC.controller.level.enterdelaydem*100)){
+            gC.controller.timestamp = now;
             if(gC.demonsCountdown < gC.controller.level.nummaxdem){
-                if((gC.totDemonsInLevel+1)<gC.controller.level.numtotdem){
+                if((gC.totDemonsInLevel+1)<=gC.controller.level.numtotdem){
                     var e = new enemy(gC.gameLevelChar[gC.gameLevel-1]);
                     e.preload().then(
                         (succ) => {
@@ -37,7 +39,7 @@ function startGame(){
                 }
             }
         }
-        if(gC.demonsCountdown){
+        if(gC.demonsCountdown && gC.lifes>0){
             for(let a = 0;a<a_l;a++){
                 if(!assets[a].end){
                     if(assets[a] instanceof enemy && demonFire){
@@ -344,7 +346,6 @@ function readControllerData(){
             xmlhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     gC.controller = JSON.parse(this.responseText);
-                    gC.controller.timestamp = new Date().getTime();
                     return res();
                 }
             };
