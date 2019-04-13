@@ -33,12 +33,14 @@ class enemy extends entity{
         if(!this.indexes.BO)
             this.indexes.BO= Utils.random(1, Object.keys(gC.demonData.BO).length ).toString().padStart(2,'0');
 		gC.debugStr += 'Demon LW: '+this.indexes.LW+', RW:'+this.indexes.RW+', LB:'+this.indexes.LB+', HE:'+this.indexes.HE+', BO:'+this.indexes.BO+'; <br>';
-		var lI = Utils.loadImage;
-		preloaded.push(lI(me.__proto__.images[me.level],'assets/games/demons/'+gC.demonData['LW'][this.indexes.LW].img, 'LW',gC.demonData['LW'][this.indexes.LW]));
-		preloaded.push(lI(me.__proto__.images[me.level],'assets/games/demons/'+gC.demonData['RW'][this.indexes.RW].img, 'RW',gC.demonData['RW'][this.indexes.RW]));
-		preloaded.push(lI(me.__proto__.images[me.level],'assets/games/demons/'+gC.demonData['LB'][this.indexes.LB].img, 'LB',gC.demonData['LB'][this.indexes.LB]));
-		preloaded.push(lI(me.__proto__.images[me.level],'assets/games/demons/'+gC.demonData['BO'][this.indexes.BO].img, 'BO',gC.demonData['BO'][this.indexes.BO]));
-		preloaded.push(lI(me.__proto__.images[me.level],'assets/games/demons/'+gC.demonData['HE'][this.indexes.HE].img, 'HE',gC.demonData['HE'][this.indexes.HE]));
+        var lI = Utils.loadImage;
+        
+
+		preloaded.push(lI(me.__proto__.images[me.level],Utils.demonImagePath(gC.demonData['LW'][this.indexes.LW]), 'LW',gC.demonData['LW'][this.indexes.LW]));
+		preloaded.push(lI(me.__proto__.images[me.level],Utils.demonImagePath(gC.demonData['RW'][this.indexes.RW]), 'RW',gC.demonData['RW'][this.indexes.RW]));
+		preloaded.push(lI(me.__proto__.images[me.level],Utils.demonImagePath(gC.demonData['LB'][this.indexes.LB]), 'LB',gC.demonData['LB'][this.indexes.LB]));
+		preloaded.push(lI(me.__proto__.images[me.level],Utils.demonImagePath(gC.demonData['BO'][this.indexes.BO]), 'BO',gC.demonData['BO'][this.indexes.BO]));
+		preloaded.push(lI(me.__proto__.images[me.level],Utils.demonImagePath(gC.demonData['HE'][this.indexes.HE]), 'HE',gC.demonData['HE'][this.indexes.HE]));
 
 		Promise.all(preloaded)
             .then(

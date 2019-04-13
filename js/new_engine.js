@@ -14,7 +14,30 @@ function startGame(){
 
     gC.demonBulletFrame++;
     if(!gC.pause){
-        if(gC.demonsCountdown && gC.lifes){
+        /**
+         * if enterdelaydem
+         *  if demonsCountdowm < nummaxdem
+         *   if totDemonsInLevel + 1 < numtotdem
+         *      push dem
+         *      totDemonsInLevel++
+         *      demonsCountdown++
+         */
+        let now = new Date().getTime();
+        if((now - gC.controller.timestamp)>(gC.controller.level.enterdelaydem*100)){
+            if(gC.demonsCountdown < gC.controller.level.nummaxdem){
+                if((gC.totDemonsInLevel+1)<gC.controller.level.numtotdem){
+                    var e = new enemy(gC.gameLevelChar[gC.gameLevel-1]);
+                    e.preload().then(
+                        (succ) => {
+                            assets.push(e);
+                        }
+                    )
+                    gC.totDemonsInLevel++;
+                    gC.demonsCountdown++;
+                }
+            }
+        }
+        if(gC.demonsCountdown){
             for(let a = 0;a<a_l;a++){
                 if(!assets[a].end){
                     if(assets[a] instanceof enemy && demonFire){
@@ -71,7 +94,7 @@ function startGame(){
             }
         }else{
             gC.gameLevel++;
-            gC.numbOfDemons--;
+            //gC.numbOfDemons--;
             showSplashLevel().then(
                 (succ)=>{
                     l()
@@ -89,6 +112,7 @@ function addDemoAssets(c,n){
 	    var totFreeSpaceFromEnemies, freeSpaceBetweenEnemies;
 	    if(n){
             gC.demonsCountdown = n;
+            gC.totDemonsInLevel = n;
             let spritesTotWidth = gC.spriteW * n;
             if(spritesTotWidth<gC.width){
                 totFreeSpaceFromEnemies = gC.width - spritesTotWidth;
@@ -311,6 +335,29 @@ function readBackData(){
     
 }
 
+function readControllerData(){
+    var me = this;
+    return new Promise(function(res,rej){
+        if(!gC.shipData){
+            var xmlhttp = new XMLHttpRequest();
+            var url = 'assets/games/controller.json';
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    gC.controller = JSON.parse(this.responseText);
+                    gC.controller.timestamp = new Date().getTime();
+                    return res();
+                }
+            };
+            xmlhttp.open("GET", url, true);
+            xmlhttp.send();
+        }else{
+            return res();
+        }
+    })
+    
+    
+}
+
 function addCanvas(){
     var me = this;
     return new Promise(function(res,rej){
@@ -424,7 +471,8 @@ function reset(){
     gC.demonBulletInterval = 50;
     gC.demonBulletFrame = 1;
     gC.lifes = 3;
-	gC.debugStr = '';
+    gC.debugStr = '';
+    gC.score = 0;
 }
 
 function s(){
@@ -446,8 +494,13 @@ function s(){
         (succ)=>{
             showSplash().then(
                 (succ)=>{
-                    gC.coin.play();
-                    l();
+                    readControllerData().then(
+                        (succ)=>{    
+                            gC.coin.play();
+                            l();
+                        }
+                    )
+                
                 }
             )
         }
@@ -482,7 +535,7 @@ function l(){
     
     var levelChar = gC.gameLevelChar[gC.gameLevel-1];
     assets.length = 0;
-    if(gC.numbOfDemons){
+    if(gC.lifes){
         readBackData().then(
             (succ)=>{
                 readDemonData().then(
@@ -493,7 +546,7 @@ function l(){
                                     (succ) => {
                                         addHero('h_'+levelChar).then(
                                             (succ) => {
-                                                addDemoAssets('e_'+levelChar,gC.numbOfDemons).then(
+                                                addDemoAssets('e_'+levelChar,1).then(
                                                     
                                                     (succ) => {
                                                         loadMp3().then(
