@@ -66,13 +66,22 @@ setCanvas3D(e){
 		})
 		
 		
-	}
+    }
+    
+    cameraShake(y){
+        gC.camera.position.set(this.cameraX, this.cameraY+y, this.cameraZ );        
+
+    }
+
 	init3D(){
 		var me = this;
 		return new Promise((res,rej)=>{
 			gC.camera = new THREE.PerspectiveCamera( 45, gC.width / gC.height, 1, 10000 );
             //gC.camera.position.set(0, 1000, 0 );
-            gC.camera.position.set(0, 1200, 0 );
+            me.cameraX = 0;
+            me.cameraY = 1200;
+            me.cameraZ = 0;
+            gC.camera.position.set(me.cameraX, me.cameraY, me.cameraZ );
 			gC.camera.lookAt( new THREE.Vector3() );
 			gC.scene = new THREE.Scene();
 			// roll-over helpers

@@ -24,7 +24,7 @@ function startGame(){
          */
         if(!gC.controller.timestamp) gC.controller.timestamp = new Date().getTime();
         let now = new Date().getTime();
-        if((now - gC.controller.timestamp)>(gC.controller.level.enterdelaydem*100)){
+        if((now - gC.controller.timestamp)>(gC.controller.level.enterdelaydem*100*2)){
             gC.controller.timestamp = now;
             if(gC.demonsCountdown < gC.controller.level.nummaxdem){
                 if((gC.totDemonsInLevel+1)<=gC.controller.level.numtotdem){

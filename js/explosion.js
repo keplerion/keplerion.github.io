@@ -7,7 +7,8 @@ class explosion extends entity{
 		this.frame = 0;
 		this.randomX = x;
 		this.randomY = y;
-	    	this.type = type;
+				this.type = type;
+				this.cameraShake = [-50,100,-100,100,-100,100,-100,100,-100,50];
     }
 	
     create(){
@@ -22,6 +23,9 @@ class explosion extends entity{
 				res();
 			}else{
 				Utils.drawAnimation(me.__proto__.images[me.level]['EX'], gC.spriteW*me.frame, 0,gC.spriteW,gC.spriteH, me.randomX, me.randomY,gC.spriteW,gC.spriteH);
+				if(me.type != 'demon'){
+					Utils.cameraShake(me.cameraShake[me.frame]);
+				}
 			//add the echo feature
 			//Utils.drawBBox(me.BBoxX, me.BBoxY,gC.bulletW,gC.bulletH,me.BBoxColor);
 			//gC.fireAudio.play();
