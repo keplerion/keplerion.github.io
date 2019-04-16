@@ -8,9 +8,11 @@ class enemy extends entity{
                 return this.gaussian();
             else
                 return this.rightBorder2LeftBorder(); 
-         */
+            return this.superformula(9,6,4,2,2,2,1,400,1,100);
+
+        */
+       return this.circle(gC.width/2,100,100)
         
-        return this.superformula(9,6,4,2,2,2,1,400,1,100);
 		
 		
 	}

@@ -121,7 +121,15 @@ class entity{
 		})
 		
 	}
-	
+	anim(){
+		if(!this.sf_index || this.sf_index==this.sf_points.length)
+			this.sf_index=0;
+		this.randomX = this.sf_points[this.sf_index].x;
+		this.BBoxX=this.randomX;
+		this.randomY = this.sf_points[this.sf_index].y;
+		this.BBoxY=this.randomY;
+		this.sf_index++;
+	}
 	superformula(m,n1,n2,n3,a,b,i,x,y,np){
 		var me = this;
         return new Promise((res,rej)=>{
@@ -139,16 +147,37 @@ class entity{
 				sf.create().then(
 					(vec)=>{
 						me.sf_points = vec;
-						anim();
+						me.anim();
 					}
 				)
 			}else{
-				anim();
+				me.anim();
 			}
 			
         })
 	}
 
+	circle(cx,cy,r){
+		var me = this;
+		return new Promise((res,rej)=>{
+
+			var centerX=cx;
+			var centerY=cy;
+			var radius=r;
+
+			// an array to save your points
+			var points=[];
+
+			for(var degree=0;degree<360;degree++){
+				var radians = degree * Math.PI/180;
+				var x = centerX + radius * Math.cos(radians);
+				var y = centerY + radius * Math.sin(radians);
+				points.push({x:x,y:y});
+			}
+			me.sf_points = points;
+			me.anim();
+		})
+	}
     start(){
         var me = this;
         return new Promise((res,rej)=>{
