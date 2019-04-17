@@ -1,0 +1,21 @@
+{
+  "ambient": {
+    "01.mp3": "Jupiter",
+    "02.mp3": "Miranda",
+    "03.mp3": "Neptune",
+    "04.mp3": "Uranus' Rings",
+    "05.mp3": "Saturn",
+    "06.mp3": "Saturn's Rings",
+    "07.mp3": "Earth",
+    "08.mp3": "Io",
+    "09.mp3": "Uranus",
+    "10.mp3": "Earth 2"
+  },
+  "info": {
+    "credit": "NASA",
+    "URL": "https://www.youtube.com/watch?v=-MmWeZHsQzs",
+    "title": "NASA Space Sounds"
+  }
+
+
+}
