@@ -542,7 +542,7 @@ function l(){
                 	addBullet('b_'+levelChar).then(
                         	addExplosion('x_'+levelChar).then(
                                 	addBulletD('bd_'+levelChar).then(
-                                        	requestAnimationFrame(gAF);
+                                        	requestAnimationFrame(gAF)
 					)
 				)
 			)
