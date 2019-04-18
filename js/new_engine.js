@@ -538,15 +538,21 @@ function l(){
     assets.length = 0;
     if(gC.lifes){
 	    gC.loadJsons().then(
-	    	loadMp3().then(
-                	addBullet('b_'+levelChar).then(
-                        	addExplosion('x_'+levelChar).then(
-                                	addBulletD('bd_'+levelChar).then(
-                                        	requestAnimationFrame(gAF)
+		    addBack('k_'+levelChar).then(
+                                        addHero('h_'+levelChar).then(
+                                                addDemoAssets('e_'+levelChar,1).then(
+							loadMp3().then(
+								addBullet('b_'+levelChar).then(
+									addExplosion('x_'+levelChar).then(
+										addBulletD('bd_'+levelChar).then(
+											requestAnimationFrame(gAF)
+										)
+									)
+								)
+							)
+						)
 					)
-				)
-			)
-		)
+			    )
 	     )
     }else{
         this.showSplashEnd().then(
