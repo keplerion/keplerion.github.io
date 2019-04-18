@@ -121,7 +121,7 @@ var gC = {
                     me.readBackData().then(
                         me.readControllerData().then(
                             me.readAmbientData().then(
-                                res();
+                                res()
                             )
                         )
                     )
