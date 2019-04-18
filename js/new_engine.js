@@ -537,7 +537,7 @@ function l(){
     var levelChar = gC.gameLevelChar[gC.gameLevel-1];
     assets.length = 0;
     if(gC.lifes){
-	    gC.readJsons().then(
+	    gC.loadJsons().then(
 	    	loadMp3().then(
                 	addBullet('b_'+levelChar).then(
                         	addExplosion('x_'+levelChar).then(
