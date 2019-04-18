@@ -538,21 +538,45 @@ function l(){
     assets.length = 0;
     if(gC.lifes){
 	    gC.loadJsons().then(
-		    addBack('k_'+levelChar).then(
-                                        addHero('h_'+levelChar).then(
-                                                addDemoAssets('e_'+levelChar,1).then(
-							loadMp3().then(
-								addBullet('b_'+levelChar).then(
-									addExplosion('x_'+levelChar).then(
-										addBulletD('bd_'+levelChar).then(
-											requestAnimationFrame(gAF)
+		    (succ)=>{
+		    	addBack('k_'+levelChar).then(
+			    (succ)=>{
+				addHero('h_'+levelChar).then(
+				    (succ)=>{
+					    addDemoAssets('e_'+levelChar,1).then(
+						    (succ)=>{
+						    								loadMp3().then(
+		    (succ)=>{
+			    addBullet('b_'+levelChar).then(
+		    (succ)=>{
+			    addExplosion('x_'+levelChar).then(
+		    (succ)=>{
+			    	addBulletD('bd_'+levelChar).then(
+		    (succ)=>{
+			    	requestAnimationFrame(gAF)
+										
+		    }
 										)
+		    }
+									
 									)
+		    }
+									
 								)
+		    }
+								
 							)
 						)
 					)
-			    )
+
+						    }
+
+				    }
+				)
+
+			    }
+                    }
+		    
 	     )
     }else{
         this.showSplashEnd().then(
