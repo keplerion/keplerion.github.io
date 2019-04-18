@@ -114,7 +114,7 @@ var gC = {
 
     },
     loadJsons: function(){
-        ver me = this;
+        var me = this;
         return new Promise((res,rej)=>{
             me.readDemonData().then(
                 me.readShipData().then(
