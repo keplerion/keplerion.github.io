@@ -114,7 +114,7 @@ var gC = {
 
     },
     loadJsons: function(){
-        return new Promise((res,rej){
+        return new Promise((res,rej)=>{
                            
         })
     },
