@@ -537,56 +537,17 @@ function l(){
     var levelChar = gC.gameLevelChar[gC.gameLevel-1];
     assets.length = 0;
     if(gC.lifes){
-        readBackData().then(
-            (succ)=>{
-                readDemonData().then(
-                    (succ) => {
-                        readShipData().then(
-                            (succ) => {
-                                addBack('k_'+levelChar).then(
-                                    (succ) => {
-                                        addHero('h_'+levelChar).then(
-                                            (succ) => {
-                                                addDemoAssets('e_'+levelChar,1).then(
-                                                    
-                                                    (succ) => {
-                                                        loadMp3().then(
-                                                    
-                                                            (succ) => {
-                                                                addBullet('b_'+levelChar).then(
-                                                    
-                                                                    (succ) => {
-                                                                        addExplosion('x_'+levelChar).then(
-                                                    
-                                                                            (succ) => {
-                                                                                addBulletD('bd_'+levelChar).then(
-                                                    
-                                                                                    (succ) => {
-                                                                                        requestAnimationFrame(gAF);
-                                                                                        
-                                                                                    }
-                                                                                )
-                                                                                
-                                                                            }
-                                                                        )
-                                                                        
-                                                                    }
-                                                                )
-                                                                
-                                                            }
-                                                        )
-                                                    }
-                                                )
-                                            }
-                                        )
-                                    }
-                                )                                    
-                            }
-                        )
-                    }
-                )
-            }
-        )
+	    gC.readJsons().then(
+	    	loadMp3().then(
+                	addBullet('b_'+levelChar).then(
+                        	addExplosion('x_'+levelChar).then(
+                                	addBulletD('bd_'+levelChar).then(
+                                        	requestAnimationFrame(gAF);
+					)
+				)
+			)
+		)
+	     )
     }else{
         this.showSplashEnd().then(
             (succ)=>{
