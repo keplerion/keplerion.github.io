@@ -117,15 +117,26 @@ var gC = {
         var me = this;
         return new Promise((res,rej)=>{
             me.readDemonData().then(
-                me.readShipData().then(
-                    me.readBackData().then(
-                        me.readControllerData().then(
-                            me.readAmbientData().then(
-                                res()
+                (succ)=>{
+                    me.readShipData().then(
+                        (succ)=>{
+                            me.readBackData().then(
+                                (succ)=>{
+                                    me.readControllerData().then(
+                                        (succ)=>{
+                                            me.readAmbientData().then(
+                                                res()
+                                            )
+                                        }
+                                    )
+                                }
+                                
                             )
-                        )
+                        }
+                        
                     )
-                )
+                }
+                
             )
                            
         })
