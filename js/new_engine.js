@@ -541,7 +541,6 @@ function l(){
 		gC.loadJsons().then(
 			(succ)=>{
 					gC.loadAmbientAudio();
-					(succ)=>{
 					addBack('k_'+levelChar).then(
 						(succ)=>{
 							addHero('h_'+levelChar).then(
@@ -579,7 +578,7 @@ function l(){
 							)
 
 						}
-					)
+					
 				}
 			}
 			
