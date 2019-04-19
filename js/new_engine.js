@@ -514,7 +514,6 @@ function loadMp3(){
     return new Promise(function(res,rej){
         gC.fireAudio = new Audio('assets/games/audio/Shoot001.mp3');
         gC.coin = new Audio('assets/games/audio/Coin001.wav');
-	gC.loadAmbientAudio();
         gC.explosionAudio1 = new Audio('assets/games/audio/Explosion001.mp3');
         gC.explosionAudio2 = new Audio('assets/games/audio/Explosion002.mp3');
         gC.explosionAudio2.addEventListener("canplay", function() {
@@ -535,64 +534,69 @@ function webgl(){
 }
 //every frame value, draw scene
 function l(){
-    
-    var levelChar = gC.gameLevelChar[gC.gameLevel-1];
-    assets.length = 0;
-    if(gC.lifes){
-	    gC.loadJsons().then(
-		    (succ)=>{
-		    	addBack('k_'+levelChar).then(
-			    (succ)=>{
-				addHero('h_'+levelChar).then(
-				    (succ)=>{
-					    addDemoAssets('e_'+levelChar,1).then(
-						    (succ)=>{
-						    								loadMp3().then(
-		    (succ)=>{
-			    addBullet('b_'+levelChar).then(
-		    (succ)=>{
-			    addExplosion('x_'+levelChar).then(
-		    (succ)=>{
-			    	addBulletD('bd_'+levelChar).then(
-		    (succ)=>{
-			    	requestAnimationFrame(gAF)
-										
-		    }
+
+	var levelChar = gC.gameLevelChar[gC.gameLevel-1];
+	assets.length = 0;
+	if(gC.lifes){
+		gC.loadJsons().then(
+			(succ)=>{
+					gC.loadAmbientAudio();
+			}
+			(succ)=>{
+				addBack('k_'+levelChar).then(
+					(succ)=>{
+						addHero('h_'+levelChar).then(
+							(succ)=>{
+								addDemoAssets('e_'+levelChar,1).then(
+									(succ)=>{
+										loadMp3().then(
+											(succ)=>{
+												addBullet('b_'+levelChar).then(
+													(succ)=>{
+														addExplosion('x_'+levelChar).then(
+															(succ)=>{
+																addBulletD('bd_'+levelChar).then(
+																	(succ)=>{
+																		requestAnimationFrame(gAF)
+
+																	}
+																)
+															}
+
+														)
+													}
+
+												)
+											}
+
 										)
-		    }
-									
-									)
-		    }
-									
+
+
+
+									}
 								)
-		    }
-								
-							)
-						
-					
 
-						    })
+							}
+						)
 
-				    }
+					}
 				)
+			}
 
-			    })
-                    }
-		    
-	     )
-    }else{
-        this.showSplashEnd().then(
-            (succ)=>{
-                reset()
-                l()
-            }
-        );
-    }
-    
-    
-    //    }
-    //)
-    
-    
+		)
+	}else{
+		this.showSplashEnd().then(
+			(succ)=>{
+				reset()
+				l()
+			}
+		);
+	}
+
+
+	//    }
+	//)
+
+
 }
 
