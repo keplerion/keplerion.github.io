@@ -499,7 +499,7 @@ function s(){
                     readControllerData().then(
                         (succ)=>{    
                             gC.coin.play();
-			    gC.ambient_audio.play();
+			    
                             l();
                         }
                     )
@@ -557,6 +557,7 @@ function l(){
 																(succ)=>{
 																	addBulletD('bd_'+levelChar).then(
 																		(succ)=>{
+																			gC.ambient_audio.play();
 																			requestAnimationFrame(gAF)
 
 																		}
