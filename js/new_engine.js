@@ -499,6 +499,7 @@ function s(){
                     readControllerData().then(
                         (succ)=>{    
                             gC.coin.play();
+			    gC.ambient.play();
                             l();
                         }
                     )
