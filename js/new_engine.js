@@ -541,47 +541,48 @@ function l(){
 		gC.loadJsons().then(
 			(succ)=>{
 					gC.loadAmbientAudio();
-			}
-			(succ)=>{
-				addBack('k_'+levelChar).then(
 					(succ)=>{
-						addHero('h_'+levelChar).then(
-							(succ)=>{
-								addDemoAssets('e_'+levelChar,1).then(
-									(succ)=>{
-										loadMp3().then(
-											(succ)=>{
-												addBullet('b_'+levelChar).then(
-													(succ)=>{
-														addExplosion('x_'+levelChar).then(
-															(succ)=>{
-																addBulletD('bd_'+levelChar).then(
-																	(succ)=>{
-																		requestAnimationFrame(gAF)
+					addBack('k_'+levelChar).then(
+						(succ)=>{
+							addHero('h_'+levelChar).then(
+								(succ)=>{
+									addDemoAssets('e_'+levelChar,1).then(
+										(succ)=>{
+											loadMp3().then(
+												(succ)=>{
+													addBullet('b_'+levelChar).then(
+														(succ)=>{
+															addExplosion('x_'+levelChar).then(
+																(succ)=>{
+																	addBulletD('bd_'+levelChar).then(
+																		(succ)=>{
+																			requestAnimationFrame(gAF)
 
-																	}
-																)
-															}
+																		}
+																	)
+																}
 
-														)
-													}
+															)
+														}
 
-												)
-											}
+													)
+												}
 
-										)
+											)
 
 
 
-									}
-								)
+										}
+									)
 
-							}
-						)
+								}
+							)
 
-					}
-				)
+						}
+					)
+				}
 			}
+			
 
 		)
 	}else{
