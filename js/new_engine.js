@@ -513,6 +513,7 @@ function loadMp3(){
     return new Promise(function(res,rej){
         gC.fireAudio = new Audio('assets/games/audio/Shoot001.mp3');
         gC.coin = new Audio('assets/games/audio/Coin001.wav');
+	gC.loadAmbientAudio();
         gC.explosionAudio1 = new Audio('assets/games/audio/Explosion001.mp3');
         gC.explosionAudio2 = new Audio('assets/games/audio/Explosion002.mp3');
         gC.explosionAudio2.addEventListener("canplay", function() {
