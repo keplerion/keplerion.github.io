@@ -541,8 +541,9 @@ function l(){
 	if(gC.lifes){
 		gC.loadJsons().then(
 			(succ)=>{
-					gC.loadAmbientAudio();
-					addBack('k_'+levelChar).then(
+					gC.loadAmbientAudio().then(
+						(succ)=>{
+							addBack('k_'+levelChar).then(
 						(succ)=>{
 							addHero('h_'+levelChar).then(
 								(succ)=>{
@@ -579,6 +580,9 @@ function l(){
 							)
 
 						})
+						}
+					)
+					
 					
 				})
 			
