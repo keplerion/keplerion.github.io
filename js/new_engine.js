@@ -499,7 +499,7 @@ function s(){
                     readControllerData().then(
                         (succ)=>{    
                             gC.coin.play();
-			    gC.ambient.play();
+			    gC.ambient_audio.play();
                             l();
                         }
                     )
