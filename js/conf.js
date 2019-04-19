@@ -146,8 +146,14 @@ var gC = {
         })
     },
     loadAmbientAudio: function(){
-        let i = Utils.random(1, Object.keys(gC.ambient).length ).toString().padStart(2,'0');
-        gC.ambient_audio = new Audio('assets/games/audio/'+i+'.mp3');
+        return new Promise((res,rej)=>{
+            let i = Utils.random(1, Object.keys(gC.ambient).length ).toString().padStart(2,'0');
+            gC.ambient_audio = new Audio('assets/games/audio/'+i+'.mp3');
+              gC.ambient_audio.addEventListener("canplay", function() {
+                res();
+              }, true);
+        })
+        
     }
 };
 
