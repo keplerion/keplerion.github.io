@@ -142,8 +142,8 @@ var gC = {
         })
     },
     loadAmbientAudio: function(){
-        let i = Utils.random(1, Object.keys(gC.demonData.HE).length ).toString().padStart(2,'0');
-        gC.coin = new Audio('assets/games/audio/Coin001.wav');
+        let i = Utils.random(1, Object.keys(gC.ambient).length ).toString().padStart(2,'0');
+        gC.ambient = new Audio('assets/games/audio/'+i+'.mp3');
     }
 };
 
