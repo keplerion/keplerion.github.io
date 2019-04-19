@@ -192,7 +192,7 @@ function showSplashEnd(){
                 splasho.create().then(
                     (succ) => {
                         gC.coin.play();
-			gC.ambient.play();
+			gC.ambient_audio.play();
                         res();
                             
                     }
