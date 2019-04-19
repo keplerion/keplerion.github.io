@@ -583,7 +583,7 @@ function l(){
 			}
 			
 
-		)
+		
 	}else{
 		this.showSplashEnd().then(
 			(succ)=>{
