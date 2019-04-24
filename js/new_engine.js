@@ -95,13 +95,23 @@ function startGame(){
                 }
             }
         }else{
-            gC.gameLevel++;
-            //gC.numbOfDemons--;
-            showSplashLevel().then(
-                (succ)=>{
-                    l()
-                }
-            )
+            if(gC.lifes>0){
+                gC.gameLevel++;
+                //gC.numbOfDemons--;
+                showSplashLevel().then(
+                    (succ)=>{
+                        l()
+                    }
+                )
+            }else{
+                this.showSplashEnd().then(
+                    (succ)=>{
+                        reset()
+                        l()
+                    }
+                ); 
+            }
+            
         }
     }
     
@@ -475,6 +485,7 @@ function reset(){
     gC.lifes = 3;
     gC.debugStr = '';
     gC.score = 0;
+    Utils.resetCamera();
 }
 
 function s(){
@@ -538,66 +549,58 @@ function l(){
 
 	var levelChar = gC.gameLevelChar[gC.gameLevel-1];
 	assets.length = 0;
-	if(gC.lifes){
-		gC.loadJsons().then(
-			(succ)=>{
-					gC.loadAmbientAudio().then(
-						(succ)=>{
-							addBack('k_'+levelChar).then(
-						(succ)=>{
-							addHero('h_'+levelChar).then(
-								(succ)=>{
-									addDemoAssets('e_'+levelChar,1).then(
-										(succ)=>{
-											loadMp3().then(
-												(succ)=>{
-													addBullet('b_'+levelChar).then(
-														(succ)=>{
-															addExplosion('x_'+levelChar).then(
-																(succ)=>{
-																	addBulletD('bd_'+levelChar).then(
-																		(succ)=>{
-																			gC.ambient_audio.play();
-																			requestAnimationFrame(gAF)
+    gC.loadJsons().then(
+        (succ)=>{
+                gC.loadAmbientAudio().then(
+                    (succ)=>{
+                        addBack('k_'+levelChar).then(
+                    (succ)=>{
+                        addHero('h_'+levelChar).then(
+                            (succ)=>{
+                                addDemoAssets('e_'+levelChar,1).then(
+                                    (succ)=>{
+                                        loadMp3().then(
+                                            (succ)=>{
+                                                addBullet('b_'+levelChar).then(
+                                                    (succ)=>{
+                                                        addExplosion('x_'+levelChar).then(
+                                                            (succ)=>{
+                                                                addBulletD('bd_'+levelChar).then(
+                                                                    (succ)=>{
+                                                                        gC.ambient_audio.play();
+                                                                        requestAnimationFrame(gAF)
 
-																		}
-																	)
-																}
+                                                                    }
+                                                                )
+                                                            }
 
-															)
-														}
+                                                        )
+                                                    }
 
-													)
-												}
+                                                )
+                                            }
 
-											)
-
+                                        )
 
 
-										}
-									)
 
-								}
-							)
+                                    }
+                                )
 
-						})
-						}
-					)
-					
-					
-				})
-			
+                            }
+                        )
+
+                    })
+                    }
+                )
+                
+                
+            })
+        
 			
 
 		
-	}else{
-		this.showSplashEnd().then(
-			(succ)=>{
-				reset()
-				l()
-			}
-		);
-	}
+	
 
 
 	//    }

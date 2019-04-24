@@ -67,9 +67,13 @@ setCanvas3D(e){
 		
 		
     }
-    
-    cameraShake(y){
-        gC.camera.position.set(this.cameraX, this.cameraY+y, this.cameraZ );        
+    resetCamera(){
+        this.cameraX = 0;
+        this.cameraY = 1200;
+        this.cameraZ = 0;
+    }
+    cameraShake(z){
+        gC.camera.position.set(this.cameraX, this.cameraY, this.cameraZ+=z );        
 
     }
 

@@ -8,7 +8,7 @@ class explosion extends entity{
 		this.randomX = x;
 		this.randomY = y;
 				this.type = type;
-				this.cameraShake = [-50,100,-100,100,-100,100,-100,100,-100,50];
+				this.cameraShake = [-50,50,50,-50,-50,50,50,-50,-50,50];
     }
 	
     create(){
@@ -18,8 +18,12 @@ class explosion extends entity{
 			if(!me.frames) me.frames = me.__proto__.images[me.level]['EX'].width/gC.spriteW;
 			if(me.frame===me.frames){
 				assets[me.id].end = true;
-				if(me.type == 'demon') gC.demonsCountdown--;
-				else gC.lifes--;
+				if(me.type == 'demon'){
+					gC.demonsCountdown--;
+				}
+				else{ 
+					gC.lifes--;
+				}
 				res();
 			}else{
 				Utils.drawAnimation(me.__proto__.images[me.level]['EX'], gC.spriteW*me.frame, 0,gC.spriteW,gC.spriteH, me.randomX, me.randomY,gC.spriteW,gC.spriteH);
