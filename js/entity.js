@@ -159,10 +159,9 @@ class entity{
 
 	circle(cx,cy,r){
 		var me = this;
-		return new Promise((res,rej)=>{
-
-			var centerX=cx;
-			var centerY=cy;
+		if(!me.sf_points){
+			var centerX=Utils.random(r/2,gC.width-r);
+			var centerY=Utils.random(r/2,gC.height/2);;
 			var radius=r;
 
 			// an array to save your points
@@ -175,8 +174,11 @@ class entity{
 				points.push({x:x,y:y});
 			}
 			me.sf_points = points;
+			me.anim();	
+		}else{
 			me.anim();
-		})
+		}
+		
 	}
     start(){
         var me = this;

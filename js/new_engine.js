@@ -28,7 +28,7 @@ function startGame(){
             gC.controller.timestamp = now;
             if(gC.demonsCountdown < gC.controller.level.nummaxdem){
                 if((gC.totDemonsInLevel+1)<=gC.controller.level.numtotdem){
-                    var e = new enemy(gC.gameLevelChar[gC.gameLevel-1]);
+                    var e = new enemy("e_"+gC.levelChar);
                     e.preload().then(
                         (succ) => {
                             assets.push(e);
@@ -51,16 +51,7 @@ function startGame(){
                         (succ)=>{
                         if(assets[a].animation)
                             assets[a].animation(assets[a].getPosX(),assets[a].getPosY())
-                            .then(
-                                (succ)=>{
-                                //console.log(succ);
-                                }
-                            )
-                            .catch(
-                                (err)=>{
-                                console.log(err);
-                                }
-                            )
+                            
                         //else
                         //    console.log('asset senza animazione')
                         }
@@ -547,25 +538,25 @@ function webgl(){
 //every frame value, draw scene
 function l(){
 
-	var levelChar = gC.gameLevelChar[gC.gameLevel-1];
+	gC.levelChar = gC.gameLevelChar[gC.gameLevel-1];
 	assets.length = 0;
     gC.loadJsons().then(
         (succ)=>{
                 gC.loadAmbientAudio().then(
                     (succ)=>{
-                        addBack('k_'+levelChar).then(
+                        addBack('k_'+gC.levelChar).then(
                     (succ)=>{
-                        addHero('h_'+levelChar).then(
+                        addHero('h_'+gC.levelChar).then(
                             (succ)=>{
-                                addDemoAssets('e_'+levelChar,1).then(
+                                addDemoAssets('e_'+gC.levelChar,1).then(
                                     (succ)=>{
                                         loadMp3().then(
                                             (succ)=>{
-                                                addBullet('b_'+levelChar).then(
+                                                addBullet('b_'+gC.levelChar).then(
                                                     (succ)=>{
-                                                        addExplosion('x_'+levelChar).then(
+                                                        addExplosion('x_'+gC.levelChar).then(
                                                             (succ)=>{
-                                                                addBulletD('bd_'+levelChar).then(
+                                                                addBulletD('bd_'+gC.levelChar).then(
                                                                     (succ)=>{
                                                                         gC.ambient_audio.play();
                                                                         requestAnimationFrame(gAF)

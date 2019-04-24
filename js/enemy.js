@@ -2,7 +2,7 @@ class enemy extends entity{
     constructor(level,xpos,offset){
 		super(level,xpos,offset)
     }
-	animation(){
+	animation(x,y){
         /**
             if(this.offset)
                 return this.gaussian();
@@ -11,7 +11,7 @@ class enemy extends entity{
             return this.superformula(9,6,4,2,2,2,1,400,1,100);
 
         */
-       return this.circle(gC.width/2,100,100)
+       this.circle(gC.width/2,100,100)
         
 		
 		
