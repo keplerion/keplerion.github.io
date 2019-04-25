@@ -157,21 +157,22 @@ class entity{
         })
 	}
 
-	circle(cx,cy,r){
+	circle(cx,cy,r,v){
 		var me = this;
 		if(!me.sf_points){
 			var centerX=Utils.random(r/2,gC.width-r);
-			var centerY=Utils.random(r/2,gC.height/2);;
+			var centerY=Utils.random(r/2,gC.height/2);
 			var radius=r;
 
 			// an array to save your points
 			var points=[];
-
-			for(var degree=0;degree<360;degree++){
+			if(!v) v = 1;
+			for(var degree=0;degree<360;){
 				var radians = degree * Math.PI/180;
 				var x = centerX + radius * Math.cos(radians);
 				var y = centerY + radius * Math.sin(radians);
 				points.push({x:x,y:y});
+				degree+=v;
 			}
 			me.sf_points = points;
 			me.anim();	
@@ -179,6 +180,44 @@ class entity{
 			me.anim();
 		}
 		
+	}
+	parallelepiped(sx,sy,w,h,v){
+		if(!this.sf_points){
+			sx=Utils.random(0,gC.width-w);
+			sy=Utils.random(0,h);
+			
+			var tw = w/v;
+			var th = h/v;
+			var points = [];
+			var pointsX = [];
+			var pointsY = [];
+			var pointsXR = [];
+			var pointsYR = [];
+			for(let x = 0;x<v;x++){
+				pointsX.push({x:sx+tw,y:sy})
+				sx+=tw;
+			}
+			for(let y = 0;y<v;y++){
+				pointsY.push({x:sx,y:sy+th})
+				sy+=th;
+			}
+			for(let x = 0;x<v;x++){
+				pointsXR.push({x:sx-tw,y:sy})
+				sx-=tw;
+			}
+			for(let y = 0;y<v;y++){
+				pointsYR.push({x:sx,y:sy-th})
+				sy-=th;
+			}
+			points = points.concat(pointsX);
+			points = points.concat(pointsY);
+			points = points.concat(pointsXR);
+			points = points.concat(pointsYR);
+			this.sf_points = points;
+			this.anim();
+		}else{
+			this.anim();
+		}	
 	}
     start(){
         var me = this;

@@ -11,7 +11,8 @@ class enemy extends entity{
             return this.superformula(9,6,4,2,2,2,1,400,1,100);
 
         */
-       this.circle(gC.width/2,100,100)
+       //this.circle(gC.width/2,100,100,10)
+       this.parallelepiped(1,1,200,100,10)
         
 		
 		
