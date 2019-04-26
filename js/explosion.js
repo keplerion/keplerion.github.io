@@ -22,7 +22,7 @@ class explosion extends entity{
 					gC.demonsCountdown--;
 				}
 				else{ 
-					gC.lifes--;
+					if((gC.lifes-1)>=0)gC.lifes--;
 				}
 				res();
 			}else{
