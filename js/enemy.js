@@ -12,7 +12,7 @@ class enemy extends entity{
 
         */
        //this.circle(gC.width/2,100,100,10)
-       this.parallelepiped(1,1,200,100,10)
+       this.parallelepiped(1,1,200,100,20)
         
 		
 		
