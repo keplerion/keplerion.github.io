@@ -181,7 +181,7 @@ class entity{
 		}
 		
 	}
-	parallelepiped(sx,sy,w,h,v){
+	rectangle(sx,sy,w,h,v){
 		if(!this.sf_points){
 			sx=Utils.random(0,gC.width-w);
 			sy=Utils.random(0,h);
