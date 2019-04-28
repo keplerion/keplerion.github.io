@@ -15,7 +15,7 @@ class enemy extends entity{
        //x,y,r,v (v=10 +veloce, v=1 lento)
        //this.circle(gC.width/2,100,100,10)
        //x,y,w,h,v (v=10 veloce, v=30 più lento)
-       this.parallelepiped(1,1,200,100,30)
+       this.rectangle(1,1,200,100,30)
         
 		
 		
