@@ -15,7 +15,18 @@ class enemy extends entity{
        //x,y,r,v (v=10 +veloce, v=1 lento)
        //this.circle(gC.width/2,100,100,10)
        //x,y,w,h,v (v=10 veloce, v=30 più lento)
-       this.rectangle(1,1,200,100,30)
+       switch(gC.demonAttr.HE.movetype){
+            case 'rectangle':
+                this.rectangle(1,1,200,100,30);
+                break;
+            case 'circle':
+                this.circle(gC.width/2,100,100,1);
+                break;
+            default:
+                this.circle(gC.width/2,100,100,1);
+                break;
+       }    
+       
         
 		
 		

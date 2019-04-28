@@ -160,8 +160,8 @@ class entity{
 	circle(cx,cy,r,v){
 		var me = this;
 		if(!me.sf_points){
-			var centerX=Utils.random(r/2,gC.width-r);
-			var centerY=Utils.random(r/2,gC.height/2);
+			var centerX=this.randomX;//Utils.random(r/2,gC.width-r);
+			var centerY=this.randomY;//Utils.random(r/2,gC.height/2);
 			var radius=r;
 
 			// an array to save your points
@@ -183,8 +183,8 @@ class entity{
 	}
 	rectangle(sx,sy,w,h,v){
 		if(!this.sf_points){
-			sx=Utils.random(0,gC.width-w);
-			sy=Utils.random(0,h);
+			sx=this.randomX;//Utils.random(0,gC.width-w);
+			sy=this.randomY;//Utils.random(0,h);
 			
 			var tw = w/v;
 			var th = h/v;

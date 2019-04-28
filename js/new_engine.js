@@ -29,11 +29,7 @@ function startGame(){
             if(gC.demonsCountdown < gC.controller.level.nummaxdem){
                 if((gC.totDemonsInLevel+1)<=gC.controller.level.numtotdem){
                     var e = new enemy("e_"+gC.levelChar);
-                    e.preload().then(
-                        (succ) => {
-                            assets.push(e);
-                        }
-                    )
+                    assets.push(e);
                     gC.totDemonsInLevel++;
                     gC.demonsCountdown++;
                 }
@@ -471,6 +467,7 @@ function reset(){
     gC.demoClock = 0;
     gC.numbOfDemons = 1;
     gC.gameLevel = 1;
+    gC.heroLevel = 1;
     gC.demonBulletInterval = 50;
     gC.demonBulletFrame = 1;
     gC.lifes = 3;
@@ -538,15 +535,16 @@ function webgl(){
 //every frame value, draw scene
 function l(){
 
-	gC.levelChar = gC.gameLevelChar[gC.gameLevel-1];
-	assets.length = 0;
+    gC.levelChar = gC.gameLevelChar[gC.gameLevel-1];
+    gC.heroChar = gC.gameLevelChar[gC.heroLevel-1];
+    assets.length = 0;
     gC.loadJsons().then(
         (succ)=>{
                 gC.loadAmbientAudio().then(
                     (succ)=>{
                         addBack('k_'+gC.levelChar).then(
                     (succ)=>{
-                        addHero('h_'+gC.levelChar).then(
+                        addHero('h_'+gC.heroChar).then(
                             (succ)=>{
                                 addDemoAssets('e_'+gC.levelChar,1).then(
                                     (succ)=>{
