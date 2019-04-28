@@ -41,6 +41,11 @@ class enemy extends entity{
 		gC.debugStr += 'Demon LW: '+this.indexes.LW+', RW:'+this.indexes.RW+', LB:'+this.indexes.LB+', HE:'+this.indexes.HE+', BO:'+this.indexes.BO+'; <br>';
         var lI = Utils.loadImage;
         
+        gC.demonAttr.LW = gC.demonData['LW'][this.indexes.LW];
+		gC.demonAttr.RW = gC.demonData['RW'][this.indexes.RW];
+		gC.demonAttr.LB = gC.demonData['LB'][this.indexes.LB];
+		gC.demonAttr.BO = gC.demonData['BO'][this.indexes.BO];
+		gC.demonAttr.HE = gC.demonData['HE'][this.indexes.HE];
 
 		preloaded.push(lI(me.__proto__.images[me.level],Utils.demonImagePath(gC.demonData['LW'][this.indexes.LW]), 'LW',gC.demonData['LW'][this.indexes.LW]));
 		preloaded.push(lI(me.__proto__.images[me.level],Utils.demonImagePath(gC.demonData['RW'][this.indexes.RW]), 'RW',gC.demonData['RW'][this.indexes.RW]));

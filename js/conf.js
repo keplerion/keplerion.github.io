@@ -12,6 +12,7 @@ var gC = {
     offset_arrow:5,
     offset_bullet:5,
     score:0,
+    demonAttr:{},
     readJsonData: function(gCDataName,jsonUrl){
         return new Promise(function(res,rej){
             if(!gC[gCDataName]){
@@ -42,10 +43,10 @@ var gC = {
             var resArray = [];
             resArray.push(me.readJsonData('bullets','assets/games/demonbull/animsjs/demonbull4js.json'));
             resArray.push(me.readJsonData('demonfx','assets/games/demonfx/animsjs/demonfx4js.json'));
-            resArray.push(me.readJsonData('demonData','assets/games/demons/demons4js.json'));
+            resArray.push(me.readJsonData('demonData','assets/games/demons/animsjs/demons4js.json'));
             resArray.push(me.readJsonData('shipData','assets/games/demonship/demonship/demonship4js.json'));
             resArray.push(me.readJsonData('demonBack','assets/games/demonback/demonback4js.json'));
-            resArray.push(me.readJsonData('shipData','assets/games/controller.json'));
+            resArray.push(me.readJsonData('controller','assets/games/controller.json'));
             resArray.push(me.readJsonData('ambient','assets/games/audio/ambient.json'));
 
             Promise.all(resArray).then(
