@@ -1,3 +1,4 @@
+
 var gC = {
     width: 996,
     height: 498,
@@ -11,14 +12,14 @@ var gC = {
     offset_arrow:5,
     offset_bullet:5,
     score:0,
-    readDemonData: function(){
+    readJsonData: function(gCDataName,jsonUrl){
         return new Promise(function(res,rej){
-            if(!gC.demonData){
+            if(!gC[gCDataName]){
                 var xmlhttp = new XMLHttpRequest();
-                var url = 'assets/games/demons/demons4js.json';
+                var url = jsonUrl;
                 xmlhttp.onreadystatechange = function() {
                     if (this.readyState == 4 && this.status == 200) {
-                        gC.demonData = JSON.parse(this.responseText);
+                        gC[gCDataName] = JSON.parse(this.responseText);
                         return res();
                     }
                 };
@@ -31,118 +32,27 @@ var gC = {
 
 
     },
-    readShipData: function(){
-        return new Promise(function(res,rej){
-            if(!gC.shipData){
-                var xmlhttp = new XMLHttpRequest();
-                var url = 'assets/games/demonship/demonship/demonship4js.json';
-                xmlhttp.onreadystatechange = function() {
-                    if (this.readyState == 4 && this.status == 200) {
-                        gC.shipData = JSON.parse(this.responseText);
-                        return res();
-                    }
-                };
-                xmlhttp.open("GET", url, true);
-                xmlhttp.send();
-            }else{
-                return res();
-            }
-        })
+    
 
+    
 
-    },
-
-    readBackData: function(){
-        return new Promise(function(res,rej){
-            if(!gC.demonBack){
-                var xmlhttp = new XMLHttpRequest();
-                var url = 'assets/games/demonback/demonback4js.json';
-                xmlhttp.onreadystatechange = function() {
-                    if (this.readyState == 4 && this.status == 200) {
-                        gC.demonBack = JSON.parse(this.responseText);
-                        return res();
-                    }
-                };
-                xmlhttp.open("GET", url, true);
-                xmlhttp.send();
-            }else{
-                return res();
-            }
-        })
-
-
-    },
-
-    readControllerData: function(){
-        return new Promise(function(res,rej){
-            if(!gC.shipData){
-                var xmlhttp = new XMLHttpRequest();
-                var url = 'assets/games/controller.json';
-                xmlhttp.onreadystatechange = function() {
-                    if (this.readyState == 4 && this.status == 200) {
-                        gC.controller = JSON.parse(this.responseText);
-                        return res();
-                    }
-                };
-                xmlhttp.open("GET", url, true);
-                xmlhttp.send();
-            }else{
-                return res();
-            }
-        })
-
-
-    },
-    readAmbientData: function(){
-        return new Promise(function(res,rej){
-            if(!gC.ambient){
-                var xmlhttp = new XMLHttpRequest();
-                var url = 'assets/games/audio/ambient.json';
-                xmlhttp.onreadystatechange = function() {
-                    if (this.readyState == 4 && this.status == 200) {
-                        gC.ambient = JSON.parse(this.responseText);
-                        return res();
-                    }
-                };
-                xmlhttp.open("GET", url, true);
-                xmlhttp.send();
-            }else{
-                return res();
-            }
-        })
-
-
-    },
     loadJsons: function(){
         var me = this;
         return new Promise((res,rej)=>{
-            me.readDemonData().then(
+            var resArray = [];
+            resArray.push(me.readJsonData('bullets','assets/games/demonbull/animsjs/demonbull4js.json'));
+            resArray.push(me.readJsonData('demonfx','assets/games/demonfx/animsjs/demonfx4js.json'));
+            resArray.push(me.readJsonData('demonData','assets/games/demons/demons4js.json'));
+            resArray.push(me.readJsonData('shipData','assets/games/demonship/demonship/demonship4js.json'));
+            resArray.push(me.readJsonData('demonBack','assets/games/demonback/demonback4js.json'));
+            resArray.push(me.readJsonData('shipData','assets/games/controller.json'));
+            resArray.push(me.readJsonData('ambient','assets/games/audio/ambient.json'));
+
+            Promise.all(resArray).then(
                 (succ)=>{
-                    me.readShipData().then(
-                        (succ)=>{
-                            me.readBackData().then(
-                                (succ)=>{
-                                    me.readControllerData().then(
-                                        (succ)=>{
-                                            me.readAmbientData().then(
-                                                (succ)=>{
-                                                    res()
-                                            
-                                                }
-                                                
-                                            )
-                                        }
-                                    )
-                                }
-                                
-                            )
-                        }
-                        
-                    )
+                    res();
                 }
-                
-            )
-                           
+            )              
         })
     },
     loadAmbientAudio: function(){
