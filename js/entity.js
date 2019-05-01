@@ -4,7 +4,7 @@ class entity{
 		this.level = level;
 		this.offset = offset;
 		this.randomX = xpos;
-		if(!this.__proto__.bulletId)this.__proto__.bulletId = 0;
+		//if(!this.__proto__.bulletId)this.__proto__.bulletId = 0;
 		if(!this.__proto__.explosionId)this.__proto__.explosionId = 0;
 		if(!this.__proto__.images)this.__proto__.images = {};
         if(!this.__proto__.images[level])this.__proto__.images[level] = {};
@@ -160,8 +160,8 @@ class entity{
 	circle(cx,cy,r,v){
 		var me = this;
 		if(!me.sf_points){
-			var centerX=this.randomX;//Utils.random(r/2,gC.width-r);
-			var centerY=this.randomY;//Utils.random(r/2,gC.height/2);
+			var centerX=me.randomX;//Utils.random(r/2,gC.width-r);
+			var centerY=me.randomY;//Utils.random(r/2,gC.height/2);
 			var radius=r;
 
 			// an array to save your points
@@ -252,7 +252,7 @@ class entity{
         var me = this;
         return new Promise((res,rej)=>{
             
-	    Utils.drawImages(me.__proto__.images[this.level], me.randomX, me.randomY);
+	    Utils.drawImages(me.__proto__.images[me.level], me.randomX, me.randomY);
 		
             
             res();

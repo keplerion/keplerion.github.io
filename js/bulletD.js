@@ -40,7 +40,7 @@ class bulletD extends entity{
 						me.randomY += gC.offset_bullet;
 						me.BBoxY += gC.offset_bullet;
 					}else{
-						this.removeBullet();	
+						me.removeBullet();	
 						return rej();	
 					}
 				}
@@ -53,7 +53,7 @@ class bulletD extends entity{
 						//gC.lifes--;
 						gC.explosionAudio1.play();
 						
-						this.removeBullet().then(
+						me.removeBullet().then(
 							()=>{
 								res();
 							}
@@ -70,9 +70,10 @@ class bulletD extends entity{
 	
 	removeBullet(){
 		let a_l = assets.length;
+		var me = this;
 		return new Promise((res,rej)=>{
 			for(let b = 0;b<a_l;b++){
-				if(typeof assets[b].id !== 'undefined' && assets[b].id === this.id){
+				if(typeof assets[b].id !== 'undefined' && assets[b].id === me.id){
 					console.log('remove bullet')
 					assets[b].end = true;
 					return res();
@@ -86,16 +87,15 @@ class bulletD extends entity{
 		 var me = this;
 	return new Promise((res,rej)=>{
 		let preloaded = [];
-		if(!this.indexes)
-			this.indexes = {}
+		if(!me.indexes)
+			me.indexes = {}
 		
-		if(!this.indexes.BU)
-			this.indexes.BU = (gC.demonAttr.LB.bid)?gC.demonAttr.LB.bid.toString().padStart(2,'0'):'01';//Utils.random(1,4).toString().padStart(2,'0');
+		me.indexes.BU = (gC.demonAttr.LB.bid)?gC.demonAttr.LB.bid.toString().padStart(2,'0'):'01';//Utils.random(1,4).toString().padStart(2,'0');
         
 		var lI = Utils.loadImage;
 		//lI(me.__proto__.images[me.level],'assets/games/bullets/BULLET-001.png', 'BU');
 
-		lI(me.__proto__.images[me.level],'assets/games/demonbull/animsjs/'+gC.bullets.BO[this.indexes.BU].img, 'BU', gC.bullets.BO[+this.indexes.BU]);
+		lI(me.__proto__.images[me.level],'assets/games/demonbull/animsjs/'+gC.bullets.BO[me.indexes.BU].img, 'BU', gC.bullets.BO[me.indexes.BU]);
 		res();
         })
         

@@ -49,7 +49,7 @@ class enemy extends entity{
             this.indexes.HE= Utils.random(1, Object.keys(gC.demonData.HE).length ).toString().padStart(2,'0');
         if(!this.indexes.BO)
             this.indexes.BO= Utils.random(1, Object.keys(gC.demonData.BO).length ).toString().padStart(2,'0');
-		gC.debugStr += 'Demon LW: '+this.indexes.LW+', RW:'+this.indexes.RW+', LB:'+this.indexes.LB+', HE:'+this.indexes.HE+', BO:'+this.indexes.BO+'; <br>';
+            
         var lI = Utils.loadImage;
         
         gC.demonAttr.LW = gC.demonData['LW'][this.indexes.LW];
@@ -57,6 +57,11 @@ class enemy extends entity{
 		gC.demonAttr.LB = gC.demonData['LB'][this.indexes.LB];
 		gC.demonAttr.BO = gC.demonData['BO'][this.indexes.BO];
 		gC.demonAttr.HE = gC.demonData['HE'][this.indexes.HE];
+
+        let bid = '';
+        if(gC && gC.demonAttr && gC.demonAttr.LB && gC.demonAttr.LB.bid) bid = gC.demonAttr.LB.bid.toString().padStart(2,'0');
+        gC.debugStr += 'Back LW: '+this.indexes.LW+', RW:'+this.indexes.RW+', LB:'+this.indexes.LB+', HE:'+this.indexes.HE+', BO:'+this.indexes.BO+'; BU:'+bid+' <br>';
+        
 
 		preloaded.push(lI(me.__proto__.images[me.level],Utils.demonImagePath(gC.demonData['LW'][this.indexes.LW]), 'LW',gC.demonData['LW'][this.indexes.LW]));
 		preloaded.push(lI(me.__proto__.images[me.level],Utils.demonImagePath(gC.demonData['RW'][this.indexes.RW]), 'RW',gC.demonData['RW'][this.indexes.RW]));
