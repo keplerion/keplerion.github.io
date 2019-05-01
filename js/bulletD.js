@@ -89,13 +89,13 @@ class bulletD extends entity{
 		if(!this.indexes)
 			this.indexes = {}
 		
-	    if(!this.indexes.BU)
-            	this.indexes.BU= Utils.random(1,4).toString().padStart(2,'0');
+		if(!this.indexes.BU)
+			this.indexes.BU = (gC.demonAttr.LB.bid)?gC.demonAttr.LB.bid.toString().padStart(2,'0'):'01';//Utils.random(1,4).toString().padStart(2,'0');
         
-		
 		var lI = Utils.loadImage;
 		//lI(me.__proto__.images[me.level],'assets/games/bullets/BULLET-001.png', 'BU');
-		lI(me.__proto__.images[me.level],'assets/games/animations/bullets/bullet2.png', 'BU');
+
+		lI(me.__proto__.images[me.level],'assets/games/demonbull/animsjs/'+gC.bullets.BO[this.indexes.BU].img, 'BU', gC.bullets.BO[+this.indexes.BU]);
 		res();
         })
         
