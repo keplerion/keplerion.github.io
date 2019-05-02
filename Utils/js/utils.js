@@ -330,14 +330,18 @@ setCanvas3D(e){
         
     }
 
-    drawBackground(images){
+    async drawBackground(images){
 	    this.ctxo.save();
         this.ctxo.scale(2,2);
 		let keys = Object.keys(images);
 		for(let p = 0,p_l = keys.length;p<p_l;p++){
-			this.ctxo.drawImage(images[keys[p]],0,0)
+            this.ctxo.drawImage(images[keys[p]],0,0)
+            if(p == p_l-1){
+                this.ctxo.restore();
+                return 'ok'; 
+            }
         }
-        this.ctxo.restore();
+        
 		
 	
         
@@ -435,7 +439,7 @@ setCanvas3D(e){
 isNumber(n) {
     return !isNaN(parseFloat(n)) && isFinite(n);
 }
-setFilter(k){
+async setFilter(k){
     let filter = '';
     switch(k){
         case '0':
@@ -469,8 +473,9 @@ setFilter(k){
             filter = 'hue-rotate(90deg)';
             break;
     }
-    this.ctx.filter = filter;
+    this.ctxo.filter = filter;
     gC.canvasFilter = filter;
+    return 'ok';
             
 }
 getQuadBezierPathStr(ps) {
