@@ -464,7 +464,7 @@ async setFilter(k){
             filter = 'brightness(150%)';
             break;
         case '7':
-            filter = 'blur(10px)';
+            filter = 'blur(7px)';
             break;
         case '8':
             filter = 'saturate(0%)';
