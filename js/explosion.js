@@ -9,7 +9,7 @@ class explosion extends entity{
 		this.randomY = y;
 				this.type = type;
 				this.cameraShake = [-50,50,50,-50,-50,50,50,-50,-50,50];
-				this.filterBN = ['4','0','4','0','4','0','4','0','4','0'];
+				this.filterBN = ['3','0','3','0','3','0','3','0','3','0'];
 
     }
 	
@@ -31,7 +31,7 @@ class explosion extends entity{
 				Utils.drawAnimation(me.__proto__.images[me.level]['EX'], gC.spriteW*me.frame, 0,gC.spriteW,gC.spriteH, me.randomX, me.randomY,gC.spriteW,gC.spriteH);
 				if(me.type != 'demon'){
 					Utils.cameraShake(me.cameraShake[me.frame]);
-					//Utils.setFilter(me.filterBN[me.frame]);
+					Utils.setFilter(me.filterBN[me.frame]);
 				}
 			//add the echo feature
 			//Utils.drawBBox(me.BBoxX, me.BBoxY,gC.bulletW,gC.bulletH,me.BBoxColor);

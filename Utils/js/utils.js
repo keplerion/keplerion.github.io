@@ -473,10 +473,58 @@ async setFilter(k){
             filter = 'hue-rotate(90deg)';
             break;
     }
-    this.ctxo.filter = filter;
     gC.canvasFilter = filter;
-    return 'ok';
+    return await this.composeFilter();
             
+}
+async setSecondFilter(k){
+    let filter = '';
+    switch(k){
+        case '0':
+            filter = 'none';
+            break;
+        case '1':
+            filter = 'sepia(100%)';
+            break;
+        case '2':
+            filter = 'opacity(50%)';
+            break;
+        case '3':
+            filter = 'invert(100%)';
+            break;
+        case '4':
+            filter = 'grayscale(100%)';
+            break;
+        case '5':
+            filter = 'contrast(0%)';
+            break;
+        case '6':
+            filter = 'brightness(150%)';
+            break;
+        case '7':
+            filter = 'blur(7px)';
+            break;
+        case '8':
+            filter = 'saturate(0%)';
+            break;
+        case '9':
+            filter = 'hue-rotate(90deg)';
+            break;
+    }
+    gC.canvasSecondFilter += filter;
+    return await this.composeFilter();
+            
+}
+async composeFilter(){
+    
+    this.ctxo.filter =  (gC.canvasFilter.indexOf('none')==-1)?
+                            (gC.canvasSecondFilter.indexOf('none')==-1)?
+                                gC.canvasFilter +' '+gC.canvasSecondFilter:
+                                gC.canvasFilter
+                        :(gC.canvasFilter.indexOf('none')!=-1 && gC.canvasSecondFilter.indexOf('none')!=-1)?
+                            'none':
+                            gC.canvasFilter;
+    return 'ok';                      
 }
 getQuadBezierPathStr(ps) {
     let [[x0,y0],[x1,y1],[x2,y2]] = ps;

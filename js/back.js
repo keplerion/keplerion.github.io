@@ -62,10 +62,10 @@ class back extends entity{
 	   create(){
         var me = this;
         return new Promise((res,rej)=>{
-            var ret = Utils.setFilter('7');
+            var ret = Utils.setSecondFilter('7');
 		    
 	        ret = Utils.drawBackground(me.__proto__.images[this.level]);
-            ret = Utils.setFilter('0');
+            ret = Utils.setSecondFilter('0');
         
             
             res();
