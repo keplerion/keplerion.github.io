@@ -3,7 +3,7 @@ class splash{
         this.images = {};
         this.stringToWrite = str;
 	    this.level = 's';
-	    if(!this.images[level])this.images[level] = {};
+	    if(!this.images[this.level])this.images[this.level] = {};
     }
     
     preload(){
