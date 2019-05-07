@@ -41,7 +41,7 @@ var gC = {
         var me = this;
         return new Promise((res,rej)=>{
             var resArray = [];
-            resArray.push(me.readJsonData('demontitle','assets/games/demontitle/demontitle4js.json'));
+            resArray.push(me.readJsonData('demonTitle','assets/games/demontitle/demontitle4js.json'));
             resArray.push(me.readJsonData('bullets','assets/games/demonbull/animsjs/demonbull4js.json'));
             resArray.push(me.readJsonData('demonfx','assets/games/demonfx/animsjs/demonfx4js.json'));
             resArray.push(me.readJsonData('demonData','assets/games/demons/animsjs/demons4js.json'));
