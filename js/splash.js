@@ -114,7 +114,7 @@ class splash{
         
         
     })*/
-}
+//}
 createLevel(){
     var me = this;
     return new Promise((res,rej)=>{
