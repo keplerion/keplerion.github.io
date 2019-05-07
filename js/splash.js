@@ -72,7 +72,7 @@ class splash{
             }
         }
         document.addEventListener('keydown',k,false)
-            
+        Utils.c2c();   
         })
         
         
