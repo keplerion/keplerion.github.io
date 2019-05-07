@@ -3,6 +3,7 @@ class splash{
         this.images = {};
         this.stringToWrite = str;
 	    this.level = 's';
+	    if(!this.images[level])this.images[level] = {};
     }
     
     preload(){
@@ -30,11 +31,11 @@ class splash{
 		gC.debugStr += 'SPLASH LW: '+this.indexes.LW+', RW:'+this.indexes.RW+', LB:'+this.indexes.LB+', HE:'+this.indexes.HE+', BO:'+this.indexes.BO+'; BU:'+bid+' <br>';
 
 
-			preloaded.push(lI(me.__proto__.images[me.level],gC.demonTitle['LW'][this.indexes.LW], 'LW',gC.demonTitle['LW'][this.indexes.LW]));
-			preloaded.push(lI(me.__proto__.images[me.level],gC.demonTitle['RW'][this.indexes.RW], 'RW',gC.demonTitle['RW'][this.indexes.RW]));
-			preloaded.push(lI(me.__proto__.images[me.level],gC.demonTitle['LB'][this.indexes.LB], 'LB',gC.demonTitle['LB'][this.indexes.LB]));
-			preloaded.push(lI(me.__proto__.images[me.level],gC.demonTitle['BO'][this.indexes.BO], 'BO',gC.demonTitle['BO'][this.indexes.BO]));
-			preloaded.push(lI(me.__proto__.images[me.level],gC.demonTitle['HE'][this.indexes.HE], 'HE',gC.demonTitle['HE'][this.indexes.HE]));
+			preloaded.push(lI(me.images[me.level],gC.demonTitle['LW'][this.indexes.LW], 'LW',gC.demonTitle['LW'][this.indexes.LW]));
+			preloaded.push(lI(me.images[me.level],gC.demonTitle['RW'][this.indexes.RW], 'RW',gC.demonTitle['RW'][this.indexes.RW]));
+			preloaded.push(lI(me.images[me.level],gC.demonTitle['LB'][this.indexes.LB], 'LB',gC.demonTitle['LB'][this.indexes.LB]));
+			preloaded.push(lI(me.images[me.level],gC.demonTitle['BO'][this.indexes.BO], 'BO',gC.demonTitle['BO'][this.indexes.BO]));
+			preloaded.push(lI(me.images[me.level],gC.demonTitle['HE'][this.indexes.HE], 'HE',gC.demonTitle['HE'][this.indexes.HE]));
 
 			Promise.all(preloaded)
 		    .then(
