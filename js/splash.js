@@ -54,7 +54,20 @@ class splash{
 	}   
 	
 
-	
+	create(){
+        var me = this;
+        return new Promise((res,rej)=>{
+            
+	    Utils.drawImages(me.images[me.level], 0, 0);
+		
+            
+            res();
+            
+        })
+        
+        
+    }
+	/*
 	   create(){
         var me = this;
         return new Promise((res,rej)=>{
@@ -77,7 +90,7 @@ class splash{
         
         
     })
-
+*/
     
 		/*   
 	createOffscreen(){
