@@ -8,14 +8,46 @@ class splash{
 		 var me = this;
 	return new Promise((res,rej)=>{
 		
-		    var lI = Utils.loadImage;
-		    lI(me.images,'assets/games/demontitle/badge_A_HE_1_01.png', 'SP').then(
-             (succ)=>{
-		        res();
-             }   
-            )
+		    let preloaded = [];
+		if(!this.indexes)
+			this.indexes = {}
+		
+	    if(!this.indexes.LW)
+		    this.indexes.LW= Utils.random( 1, Object.keys(gC.demonTitle.LW).length ).toString().padStart(2,'0');
+		if(!this.indexes.RW)
+		    this.indexes.RW= this.indexes.LW;
+		if(!this.indexes.LB)
+		    this.indexes.LB= Utils.random(1, Object.keys(gC.demonTitle.LB).length ).toString().padStart(2,'0');
+		if(!this.indexes.HE)
+		    this.indexes.HE= Utils.random(1, Object.keys(gC.demonTitle.HE).length ).toString().padStart(2,'0');
+		if(!this.indexes.BO)
+		    this.indexes.BO= Utils.random(1, Object.keys(gC.demonTitle.BO).length ).toString().padStart(2,'0');
 
-        })
+		var lI = Utils.loadImage;
+
+		let bid = '';
+		gC.debugStr += 'SPLASH LW: '+this.indexes.LW+', RW:'+this.indexes.RW+', LB:'+this.indexes.LB+', HE:'+this.indexes.HE+', BO:'+this.indexes.BO+'; BU:'+bid+' <br>';
+
+
+			preloaded.push(lI(me.__proto__.images[me.level],gC.demonTitle['LW'][this.indexes.LW], 'LW',gC.demonTitle['LW'][this.indexes.LW]));
+			preloaded.push(lI(me.__proto__.images[me.level],gC.demonTitle['RW'][this.indexes.RW], 'RW',gC.demonTitle['RW'][this.indexes.RW]));
+			preloaded.push(lI(me.__proto__.images[me.level],gC.demonTitle['LB'][this.indexes.LB], 'LB',gC.demonTitle['LB'][this.indexes.LB]));
+			preloaded.push(lI(me.__proto__.images[me.level],gC.demonTitle['BO'][this.indexes.BO], 'BO',gC.demonTitle['BO'][this.indexes.BO]));
+			preloaded.push(lI(me.__proto__.images[me.level],gC.demonTitle['HE'][this.indexes.HE], 'HE',gC.demonTitle['HE'][this.indexes.HE]));
+
+			Promise.all(preloaded)
+		    .then(
+			(succ)=>{
+			res();
+			}
+		    )
+		    .catch(
+			(err)=>{
+			rej();
+			}
+		    )
+
+		})
         
 	}   
 	
