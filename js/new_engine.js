@@ -491,22 +491,25 @@ function s(){
         
     )
     */
-	addCanvas3D().then(
-        (succ)=>{
-            showSplash().then(
-                (succ)=>{
-                    readControllerData().then(
-                        (succ)=>{    
-                            gC.coin.play();
-			    
-                            l();
-                        }
-                    )
-                
-                }
-            )
-        }
-        
+	gC.loadJsons().then(
+		(succ)=>{
+			addCanvas3D().then(
+			(succ)=>{
+			    showSplash().then(
+				(succ)=>{
+				    readControllerData().then(
+					(succ)=>{    
+					    gC.coin.play();
+
+					    l();
+					}
+				    )
+
+				}
+			    )
+			}
+		}
+	)
     )
 }
 
@@ -538,8 +541,6 @@ function l(){
     gC.levelChar = gC.gameLevelChar[gC.gameLevel-1];
     gC.heroChar = gC.gameLevelChar[gC.heroLevel-1];
     assets.length = 0;
-    gC.loadJsons().then(
-        (succ)=>{
                 gC.loadAmbientAudio().then(
                     (succ)=>{
                         addBack('k_'+gC.levelChar).then(
@@ -584,7 +585,6 @@ function l(){
                 )
                 
                 
-            })
         
 			
 
