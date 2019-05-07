@@ -61,7 +61,17 @@ class splash{
 	    Utils.drawImages(me.images[me.level], 0, 0);
 		
             
-            res();
+            function k(e){
+            switch(e.keyCode){
+                case 83:
+                    document.removeEventListener('keydown',k,false)
+        
+                    res();
+                    break;
+                
+            }
+        }
+        document.addEventListener('keydown',k,false)
             
         })
         
