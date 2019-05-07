@@ -60,7 +60,8 @@ class splash{
             
 	    Utils.drawImages(me.images[me.level], 0, 0);
 		
-            
+            if(!this.stringToWrite) this.stringToWrite = 'Press  s  to  start';
+        	Utils.drawText(this.stringToWrite,380,400,'#FFF')
             function k(e){
             switch(e.keyCode){
                 case 83:
