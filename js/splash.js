@@ -2,6 +2,7 @@ class splash{
     constructor(str){
         this.images = {};
         this.stringToWrite = str;
+	    this.level = 's';
     }
     
     preload(){
