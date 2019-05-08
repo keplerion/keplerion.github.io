@@ -13,6 +13,7 @@ var gC = {
     offset_bullet:5,
     score:0,
     demonAttr:{},
+    canvasFilter:'none',
     readJsonData: function(gCDataName,jsonUrl){
         return new Promise(function(res,rej){
             if(!gC[gCDataName]){

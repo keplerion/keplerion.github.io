@@ -315,6 +315,14 @@ setCanvas3D(e){
 	    let coords =[{x:0,y:0},{x:gC.width,y:0},{x:0,y:gC.height},{x:x,y:y},{x:gC.width,y:gC.height}]
 		for(let p = 0,p_l = keys.length;p<p_l;p++){
             let i = images[keys[p]];
+            var tmpX, tmpY;
+            if(!i.startx && !i.starty){
+                tmpX = coords[p].x;
+                tmpY = coords[p].y;
+            }else{
+                tmpX = i.startx;
+                tmpY = i.starty;
+            }
             if(i.frames && typeof i.frames == 'number'){
                 if(!i.timer) 
                     i.timer = mytimer;
@@ -326,20 +334,14 @@ setCanvas3D(e){
                     i.timer = mytimer;		
                     i.frame++;
                 }
-		if(!i.startx && !i.starty){
-			x = coords[p].x;
-			y = coords[p].y;
-		}else{
-			x = coords[p].x + ((x - coords[p].x)/2);
-			y = coords[p].y + ((y - coords[p].y)/2);
-		}
-                this.drawAnimation(i, gC.spriteW*i.frame, 0,gC.spriteW,gC.spriteH, x,y,gC.spriteW,gC.spriteH);
-                    coords[p].x = coords[p].x + ((x - coords[p].x)/2);
-			coords[p].y = coords[p].y + ((y - coords[p].y)/2);
+		
+                this.drawAnimation(i, gC.spriteW*i.frame, 0,gC.spriteW,gC.spriteH, tmpX,tmpY,gC.spriteW,gC.spriteH);
+                
             }else{
-                this.ctxo.drawImage(i, x, y)
+                this.ctxo.drawImage(i, tmpX,tmpY)
             }
-			
+			i.startx = coords[p].x + ((x - tmpX)/2);
+            i.starty = coords[p].y + ((y - tmpY)/2);
 		}
 		
 	
@@ -506,7 +508,7 @@ async setFilter(k){
             filter = 'brightness(150%)';
             break;
         case '7':
-            filter = 'blur(7px)';
+            filter = 'blur(8px)';
             break;
         case '8':
             filter = 'saturate(0%)';
@@ -544,7 +546,7 @@ async setSecondFilter(k){
             filter = 'brightness(150%)';
             break;
         case '7':
-            filter = 'blur(7px)';
+            filter = 'blur(8px)';
             break;
         case '8':
             filter = 'saturate(0%)';
