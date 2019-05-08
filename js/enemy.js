@@ -32,7 +32,20 @@ class enemy extends entity{
 		
 	}
     
-	drawImageCompose
+	create(){
+        var me = this;
+        return new Promise((res,rej)=>{
+            
+	    Utils.drawImageCompose(me.__proto__.images[me.level], me.randomX, me.randomY);
+		
+            
+            res();
+            
+        })
+        
+        
+    }
+	
 	
     preload(){
 		 var me = this;
