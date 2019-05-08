@@ -330,12 +330,12 @@ setCanvas3D(e){
 			x = coords[p].x;
 			y = coords[p].y;
 		}else{
-			x = coords[p].x + ((x - coords[p].x)\2);
-			y = coords[p].y + ((y - coords[p].y)\2);
+			x = coords[p].x + ((x - coords[p].x)/2);
+			y = coords[p].y + ((y - coords[p].y)/2);
 		}
                 this.drawAnimation(i, gC.spriteW*i.frame, 0,gC.spriteW,gC.spriteH, x,y,gC.spriteW,gC.spriteH);
-                    coords[p].x = coords[p].x + ((x - coords[p].x)\2);
-			coords[p].y = coords[p].y + ((y - coords[p].y)\2);
+                    coords[p].x = coords[p].x + ((x - coords[p].x)/2);
+			coords[p].y = coords[p].y + ((y - coords[p].y)/2);
             }else{
                 this.ctxo.drawImage(i, x, y)
             }
