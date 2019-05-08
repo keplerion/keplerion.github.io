@@ -303,6 +303,39 @@ setCanvas3D(e){
 	
         
     }
+	
+    drawImageCompose(images,x,y){
+	    //data structure with start points (4 screen angles)
+	    //if no variable in image->use coordinates in data structure, store coordinateds in image calculated as middle point from angle to x,y
+	    //if variable -> use this coordinates, store new coordinateds in image calculated as middle point from coordinates in image to x,y
+	    //if variable < 0 use x,y
+	
+        let keys = Object.keys(images);
+        let mytimer = new Date().getTime();
+		for(let p = 0,p_l = keys.length;p<p_l;p++){
+            let i = images[keys[p]];
+            if(i.frames && typeof i.frames == 'number'){
+                if(!i.timer) 
+                    i.timer = mytimer;
+                let diff = mytimer-i.timer;
+                if(diff>(i.time*1000/i.frames)){
+                    if(i.frame==i.frames-1){
+                        i.frame = 0;
+                    }
+                    i.timer = mytimer;		
+                    i.frame++;
+                }
+                this.drawAnimation(i, gC.spriteW*i.frame, 0,gC.spriteW,gC.spriteH, x,y,gC.spriteW,gC.spriteH);
+                    
+            }else{
+                this.ctxo.drawImage(i, x, y)
+            }
+			
+		}
+		
+	
+        
+    }
     demonImagePath(j){
         let base_path = 'assets/games/demons/';
         if(j.frames)
