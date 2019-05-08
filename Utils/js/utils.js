@@ -312,6 +312,7 @@ setCanvas3D(e){
 	
         let keys = Object.keys(images);
         let mytimer = new Date().getTime();
+	    let coords =[{x:0,y:0},{x:gC.width,y:0},{x:0,y:gC.height},{x:x,y:y},{x:gC.width,y:gC.height}]
 		for(let p = 0,p_l = keys.length;p<p_l;p++){
             let i = images[keys[p]];
             if(i.frames && typeof i.frames == 'number'){
@@ -325,8 +326,16 @@ setCanvas3D(e){
                     i.timer = mytimer;		
                     i.frame++;
                 }
+		if(!i.startx && !i.starty){
+			x = coords[p].x;
+			y = coords[p].y;
+		}else{
+			x = coords[p].x + ((x - coords[p].x)\2);
+			y = coords[p].y + ((y - coords[p].y)\2);
+		}
                 this.drawAnimation(i, gC.spriteW*i.frame, 0,gC.spriteW,gC.spriteH, x,y,gC.spriteW,gC.spriteH);
-                    
+                    coords[p].x = coords[p].x + ((x - coords[p].x)\2);
+			coords[p].y = coords[p].y + ((y - coords[p].y)\2);
             }else{
                 this.ctxo.drawImage(i, x, y)
             }
