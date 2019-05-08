@@ -32,6 +32,8 @@ class enemy extends entity{
 		
 	}
     
+	drawImageCompose
+	
     preload(){
 		 var me = this;
 	return new Promise((res,rej)=>{
