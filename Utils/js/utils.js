@@ -319,6 +319,8 @@ setCanvas3D(e){
             if(!i.startx && !i.starty){
                 tmpX = coords[p].x;
                 tmpY = coords[p].y;
+		i.startx = coords[p].x;
+                i.starty = coords[p].y;
             }else{
                 tmpX = i.startx;
                 tmpY = i.starty;
