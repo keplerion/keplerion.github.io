@@ -340,8 +340,8 @@ setCanvas3D(e){
             }else{
                 this.ctxo.drawImage(i, tmpX,tmpY)
             }
-			i.startx = coords[p].x + ((x - tmpX)/2);
-            i.starty = coords[p].y + ((y - tmpY)/2);
+			i.startx = i.startx + ((x - tmpX)/2);
+            i.starty = i.startx + ((y - tmpY)/2);
 		}
 		
 	
