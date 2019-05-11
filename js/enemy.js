@@ -31,7 +31,7 @@ class enemy extends entity{
 		
 		
 	}
-    	/*
+    	
 	create(){
         var me = this;
         return new Promise((res,rej)=>{
@@ -45,7 +45,7 @@ class enemy extends entity{
         
         
     }
-	*/
+	
 	
     preload(){
 		 var me = this;

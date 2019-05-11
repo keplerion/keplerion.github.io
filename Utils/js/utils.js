@@ -309,21 +309,16 @@ setCanvas3D(e){
 	    //if no variable in image->use coordinates in data structure, store coordinateds in image calculated as middle point from angle to x,y
 	    //if variable -> use this coordinates, store new coordinateds in image calculated as middle point from coordinates in image to x,y
 	    //if variable < 0 use x,y
-	
+        let width = gC.width - gC.spriteW;
+        let height = gC.height - gC.spriteH;
         let keys = Object.keys(images);
         let mytimer = new Date().getTime();
-	    let coords =[{x:0,y:0},{x:gC.width,y:0},{x:0,y:gC.height},{x:x,y:y},{x:gC.width,y:gC.height}]
+	     let coords =[{x:0,y:0},{x:width,y:0},{x:0,y:height},{x:x,y:y},{x:width,y:height}]
 		for(let p = 0,p_l = keys.length;p<p_l;p++){
             let i = images[keys[p]];
-            var tmpX, tmpY;
             if(!i.startx && !i.starty){
-                tmpX = coords[p].x;
-                tmpY = coords[p].y;
-		i.startx = coords[p].x;
+                i.startx = coords[p].x;
                 i.starty = coords[p].y;
-            }else{
-                tmpX = i.startx;
-                tmpY = i.starty;
             }
             if(i.frames && typeof i.frames == 'number'){
                 if(!i.timer) 
@@ -337,13 +332,15 @@ setCanvas3D(e){
                     i.frame++;
                 }
 		
-                this.drawAnimation(i, gC.spriteW*i.frame, 0,gC.spriteW,gC.spriteH, tmpX,tmpY,gC.spriteW,gC.spriteH);
+                this.drawAnimation(i, gC.spriteW*i.frame, 0,gC.spriteW,gC.spriteH, i.startx,i.starty,gC.spriteW,gC.spriteH);
                 
             }else{
-                this.ctxo.drawImage(i, tmpX,tmpY)
+                this.ctxo.drawImage(i, i.startx,i.starty)
             }
-			i.startx = i.startx + ((x - tmpX)/2);
-            i.starty = i.startx + ((y - tmpY)/2);
+            if(x>i.startx) if((x - i.startx)>2)i.startx = i.startx + ((x - i.startx)/2);
+            else if((i.startx - x)>2)i.startx = i.startx + ((i.startx - x)/2);
+            if(y>i.starty) if((y - i.starty)>2)i.starty = i.starty + ((y - i.starty)/2);
+            else if((i.starty - y)>2)i.starty = i.starty + ((i.starty - y)/2);
 		}
 		
 	
@@ -390,6 +387,16 @@ setCanvas3D(e){
         
 		
 	
+        
+    }
+    setStrokeStyle(str){
+        this.ctxo.strokeStyle = str;
+        this.ctxo.lineWidth = 5;
+    }
+    drawCircle(x,y,r){
+        this.ctxo.beginPath();
+        this.ctxo.arc(x,y, r, 0, 2 * Math.PI);
+        this.ctxo.stroke();
         
     }
     drawImage(img,x,y){
