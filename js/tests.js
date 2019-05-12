@@ -23,10 +23,18 @@ class Test{
                 
                 Utils.drawCircle(i.startx,i.starty, 50);
                 
-                if(x>i.startx) if((x - i.startx)>2)i.startx = i.startx + ((x - i.startx)/2);
-                else if((i.startx - x)>2)i.startx = i.startx + ((i.startx - x)/2);
-                if(y>i.starty) if((y - i.starty)>2)i.starty = i.starty + ((y - i.starty)/2);
-                else if((i.starty - y)>2)i.starty = i.starty + ((i.starty - y)/2);
+                if(x>i.startx){
+                    if((x - i.startx)>2)i.startx = i.startx + ((x - i.startx)/2);
+                } 
+                else{
+                    if((i.startx - x)>2)i.startx = i.startx - ((i.startx - x)/2);
+                } 
+                if(y>i.starty){
+                    if((y - i.starty)>2)i.starty = i.starty + ((y - i.starty)/2);
+                } 
+                else{
+                    if((i.starty - y)>2)i.starty = i.starty - ((i.starty - y)/2);
+                } 
                 if(p==(p_l-1))res();
             }
         })
@@ -34,7 +42,7 @@ class Test{
     }
     run(){
         var me = this;
-        this.setVariables();
+        
         return new Promise((res,rej)=>{
             this.drawImageCompose(me.coords,me.randomX,me.randomY).then(
                 (succ)=>{

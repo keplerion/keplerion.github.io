@@ -18,7 +18,9 @@ class splashT{
         
 	}   
 	
-
+    createVariables(){
+        gC.test.setVariables();
+    }
 	create(){
         return new Promise((res,rej)=>{
             Utils.clearCanvas('#000');

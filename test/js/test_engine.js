@@ -170,6 +170,7 @@ function showTest(){
         }
         
         gC.splasht = new splashT();
+        gC.splasht.createVariables();
         gC.splasht.preload().then(
             (succ) => {
                 gC.runCreate();
