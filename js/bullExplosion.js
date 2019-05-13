@@ -63,7 +63,7 @@ class bullExplosion extends entity{
 		
 		var lI = Utils.loadImage;
 		//lI(me.__proto__.images[me.level],'assets/games/bullets/BULLET-001.png', 'BU');
-		lI(me.__proto__.images[me.level],'assets/games/animations/explosions/explosion1.png', 'EX');
+		lI(me.__proto__.images[me.level],'assets/games/demonfx/animjs/'+gC.demonfx, 'EX');
 		res();
         })
         
