@@ -55,7 +55,9 @@ class bullExplosion extends entity{
 		
 		var lI = Utils.loadImage;
 		//lI(me.__proto__.images[me.level],'assets/games/bullets/BULLET-001.png', 'BU');
+		console.log(gC.demonAttr.LB)
 		let bid = gC.demonAttr.LB.bid.toString().padStart(2,'0');
+		
 		lI(me.__proto__.images[me.level],'assets/games/demonfx/animsjs/'+gC.demonfx.BO[bid].img, 'EX');
 		res();
         })

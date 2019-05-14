@@ -1,5 +1,6 @@
 class bulletD extends entity{
-    constructor(level,dir,x,y,start){
+	//demon HE ha firesp, che dice quanto raggio max, a dx o sx, va il proiettile
+    constructor(level,dir,x,y,start,angle){
 		super(level)
 		//this.id = this.__proto__.bulletId++;
 		this.BBoxColor = 'green';
@@ -11,6 +12,10 @@ class bulletD extends entity{
 		this.BBoxX = this.randomX + gC.spriteW/2 - gC.bulletW/2;
 		this.BBoxY = this.randomY + gC.spriteH/2 - gC.bulletH/2;
 		if(!start) gC.fireAudio.play();
+		this.dxsx = Utils.random(1,2);
+		if(angle==3)this.angle=1;
+		else if(angle==5)this.angle=2
+		else this.angle = 3;
     }
 	
     create(){
@@ -39,6 +44,13 @@ class bulletD extends entity{
 					if((me.BBoxY+gC.offset_bullet)<(gC.height-20)){
 						me.randomY += gC.offset_bullet;
 						me.BBoxY += gC.offset_bullet;
+						if(this.dxsx==1){
+							me.randomX += this.angle;
+							me.BBoxX += this.angle;
+						}else{
+							me.randomX -= this.angle;
+							me.BBoxX -= this.angle;
+						}
 					}else{
 						me.removeBullet();
 						assets.push(new bullExplosion('fx_a',me.randomX,me.randomY,'fx'))	
