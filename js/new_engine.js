@@ -242,6 +242,19 @@ function addBulletD(l){
         
 }
 
+function addBulletFx(l){
+    return new Promise(function(res,rej){
+    
+        gC.bulletFX = new bullExplosion(l,'','','',true);
+        gC.bulletFX.preload().then(
+            (succ) => {
+                res();
+            }
+        )
+    })
+        
+}
+
 function addExplosion(l){
     return new Promise(function(res,rej){
     
@@ -557,8 +570,13 @@ function l(){
                                                             (succ)=>{
                                                                 addBulletD('bd_'+gC.levelChar).then(
                                                                     (succ)=>{
-                                                                        gC.ambient_audio.play();
-                                                                        requestAnimationFrame(gAF)
+                                                                        addBulletFx('fx_'+gC.levelChar).then(
+                                                                            (succ)=>{
+                                                                                gC.ambient_audio.play();
+                                                                                requestAnimationFrame(gAF);
+        
+                                                                            }
+                                                                        )
 
                                                                     }
                                                                 )

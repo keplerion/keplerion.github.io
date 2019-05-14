@@ -36,12 +36,13 @@ class bulletD extends entity{
 		return new Promise((res,rej)=>{
 			
 				if(me.dir === 'd'){
-					if((me.BBoxY+gC.offset_bullet)<gC.height){
+					if((me.BBoxY+gC.offset_bullet)<(gC.height-20)){
 						me.randomY += gC.offset_bullet;
 						me.BBoxY += gC.offset_bullet;
 					}else{
-						me.removeBullet();	
-						return rej();	
+						me.removeBullet();
+						assets.push(new bullExplosion('fx_a',me.randomX,me.randomY,'fx'))	
+						//return rej();	
 					}
 				}
 				for(let a = 0,a_l = assets.length;a<a_l;a++){

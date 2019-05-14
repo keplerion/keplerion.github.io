@@ -20,19 +20,11 @@ class bullExplosion extends entity{
 			if(!me.frames) me.frames = me.__proto__.images[me.level]['EX'].width/gC.spriteW;
 			if(me.frame===me.frames){
 				assets[me.id].end = true;
-				if(me.type == 'demon'){
-					gC.demonsCountdown--;
-				}
-				else{ 
-					if((gC.lifes-1)>=0)gC.lifes--;
-				}
+				
 				res();
 			}else{
 				Utils.drawAnimation(me.__proto__.images[me.level]['EX'], gC.spriteW*me.frame, 0,gC.spriteW,gC.spriteH, me.randomX, me.randomY,gC.spriteW,gC.spriteH);
-				if(me.type != 'demon'){
-					Utils.cameraShake(me.cameraShake[me.frame]);
-					Utils.setFilter(me.filterBN[me.frame]);
-				}
+				
 			//add the echo feature
 			//Utils.drawBBox(me.BBoxX, me.BBoxY,gC.bulletW,gC.bulletH,me.BBoxColor);
 			//gC.fireAudio.play();
@@ -63,7 +55,8 @@ class bullExplosion extends entity{
 		
 		var lI = Utils.loadImage;
 		//lI(me.__proto__.images[me.level],'assets/games/bullets/BULLET-001.png', 'BU');
-		lI(me.__proto__.images[me.level],'assets/games/demonfx/animjs/'+gC.demonfx, 'EX');
+		let bid = gC.demonAttr.LB.bid.toString().padStart(2,'0');
+		lI(me.__proto__.images[me.level],'assets/games/demonfx/animsjs/'+gC.demonfx.BO[bid].img, 'EX');
 		res();
         })
         
