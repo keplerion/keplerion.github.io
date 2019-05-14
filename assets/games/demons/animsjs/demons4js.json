@@ -1774,7 +1774,7 @@
         "01": {
             "type": "",
             "img": "dem_A_LB_2_01.png",
-            "bid": 1,
+            "bid": "01",
             "partname": "",
             "effect": "",
             "frames": "16",
@@ -1783,14 +1783,14 @@
         "02": {
             "type": "",
             "img": "dem_A_LB_2_02.png",
-            "bid": 1,
+            "bid": "01",
             "partname": "",
             "effect": ""
         },
         "03": {
             "type": "",
             "img": "dem_A_LB_2_03.png",
-            "bid": 1,
+            "bid": "01",
             "partname": "",
             "effect": "",
             "frames": "8",
@@ -1799,7 +1799,7 @@
         "04": {
             "type": "",
             "img": "dem_A_LB_2_04.png",
-            "bid": 1,
+            "bid": "01",
             "partname": "",
             "effect": "",
             "frames": "8",
@@ -1808,7 +1808,7 @@
         "05": {
             "type": "",
             "img": "dem_A_LB_2_05.png",
-            "bid": 1,
+            "bid": "01",
             "partname": "",
             "effect": "",
             "frames": "8",
@@ -1817,21 +1817,21 @@
         "06": {
             "type": "",
             "img": "dem_A_LB_2_06.png",
-            "bid": 1,
+            "bid": "01",
             "partname": "",
             "effect": ""
         },
         "07": {
             "type": "",
             "img": "dem_A_LB_2_07.png",
-            "bid": 1,
+            "bid": "01",
             "partname": "",
             "effect": ""
         },
         "08": {
             "type": "",
             "img": "dem_A_LB_2_08.png",
-            "bid": 1,
+            "bid": "01",
             "partname": "",
             "effect": "",
             "frames": "24",
@@ -1840,7 +1840,7 @@
         "09": {
             "type": "",
             "img": "dem_A_LB_2_09.png",
-            "bid": 1,
+            "bid": "01",
             "partname": "",
             "effect": "",
             "frames": "8",
@@ -1851,7 +1851,7 @@
             "img": "dem_A_LB_2_10.png",
             "partname": "",
             "effect": "",
-            "bid": 16,
+            "bid": "16",
             "firedir": "rand",
             "firefx": 5,
             "moveinv": 5
@@ -1863,7 +1863,7 @@
             "effect": "",
             "frames": "16",
             "time": "2",
-            "bid": 24,
+            "bid": "24",
             "firedir": "aim",
             "firefx": 10,
             "moveinv": 4
@@ -1873,7 +1873,7 @@
             "img": "dem_A_LB_2_12.png",
             "partname": "",
             "effect": "",
-            "bid": 10,
+            "bid": "10",
             "firedir": "aim",
             "firefx": 7,
             "moveinv": 4
@@ -1885,7 +1885,7 @@
             "effect": "",
             "frames": "8",
             "time": "0.8",
-            "bid": 23,
+            "bid": "23",
             "firedir": "aim",
             "firefx": 7,
             "moveinv": 7
@@ -1897,7 +1897,7 @@
             "effect": "",
             "frames": "8",
             "time": "1",
-            "bid": 20,
+            "bid": "20",
             "firedir": "rand",
             "firefx": 7,
             "moveinv": 2
@@ -1909,7 +1909,7 @@
             "effect": "",
             "frames": "24",
             "time": "2",
-            "bid": 24,
+            "bid": "24",
             "firedir": "down",
             "firefx": 5,
             "moveinv": 4
@@ -1919,7 +1919,7 @@
             "img": "dem_A_LB_2_16.png",
             "partname": "",
             "effect": "",
-            "bid": 10,
+            "bid": "10",
             "firedir": "rand",
             "firefx": 10,
             "moveinv": 6
@@ -1931,7 +1931,7 @@
             "effect": "",
             "frames": "8",
             "time": "1.2",
-            "bid": 14,
+            "bid": "14",
             "firedir": "aim",
             "firefx": 7,
             "moveinv": 7
@@ -1943,7 +1943,7 @@
             "effect": "",
             "frames": "8",
             "time": "0.8",
-            "bid": 7,
+            "bid": "07",
             "firedir": "ship",
             "firefx": 10,
             "moveinv": 6
@@ -1953,7 +1953,7 @@
             "img": "dem_A_LB_2_19.png",
             "partname": "",
             "effect": "",
-            "bid": 8,
+            "bid": "08",
             "firedir": "ship",
             "firefx": 5,
             "moveinv": 7
@@ -1963,7 +1963,7 @@
             "img": "dem_A_LB_2_20.png",
             "partname": "",
             "effect": "",
-            "bid": 12,
+            "bid": "12",
             "firedir": "rand",
             "firefx": 10,
             "moveinv": 7
@@ -1973,7 +1973,7 @@
             "img": "dem_A_LB_2_21.png",
             "partname": "",
             "effect": "",
-            "bid": 10,
+            "bid": "10",
             "firedir": "aim",
             "firefx": 7,
             "moveinv": 7
@@ -1985,7 +1985,7 @@
             "effect": "",
             "frames": "16",
             "time": "2",
-            "bid": 5,
+            "bid": "05",
             "firedir": "rand",
             "firefx": 5,
             "moveinv": 6
@@ -1995,7 +1995,7 @@
             "img": "dem_A_LB_2_23.png",
             "partname": "",
             "effect": "",
-            "bid": 19,
+            "bid": "19",
             "firedir": "down",
             "firefx": 10,
             "moveinv": 4
@@ -2007,7 +2007,7 @@
             "effect": "",
             "frames": "16",
             "time": "2",
-            "bid": 1,
+            "bid": "01",
             "firedir": "down",
             "firefx": 7,
             "moveinv": 6
@@ -2017,7 +2017,7 @@
             "img": "dem_A_LB_2_25.png",
             "partname": "",
             "effect": "",
-            "bid": 18,
+            "bid": "18",
             "firedir": "down",
             "firefx": 3,
             "moveinv": 1
@@ -2027,7 +2027,7 @@
             "img": "dem_A_LB_2_26.png",
             "partname": "",
             "effect": "",
-            "bid": 12,
+            "bid": "12",
             "firedir": "down",
             "firefx": 10,
             "moveinv": 4
@@ -2037,7 +2037,7 @@
             "img": "dem_A_LB_2_27.png",
             "partname": "",
             "effect": "",
-            "bid": 9,
+            "bid": "09",
             "firedir": "aim",
             "firefx": 7,
             "moveinv": 3
@@ -2047,7 +2047,7 @@
             "img": "dem_A_LB_2_28.png",
             "partname": "",
             "effect": "",
-            "bid": 7,
+            "bid": "07",
             "firedir": "down",
             "firefx": 5,
             "moveinv": 4
@@ -2057,7 +2057,7 @@
             "img": "dem_A_LB_2_29.png",
             "partname": "",
             "effect": "",
-            "bid": 5,
+            "bid": "05",
             "firedir": "down",
             "firefx": 5,
             "moveinv": 4
@@ -2067,7 +2067,7 @@
             "img": "dem_A_LB_2_30.png",
             "partname": "",
             "effect": "",
-            "bid": 23,
+            "bid": "23",
             "firedir": "ship",
             "firefx": 10,
             "moveinv": 2
@@ -2079,7 +2079,7 @@
             "effect": "",
             "frames": "48",
             "time": "4",
-            "bid": 2,
+            "bid": "02",
             "firedir": "down",
             "firefx": 10,
             "moveinv": 4
@@ -2091,7 +2091,7 @@
             "effect": "",
             "frames": "8",
             "time": "1",
-            "bid": 15,
+            "bid": "15",
             "firedir": "rand",
             "firefx": 5,
             "moveinv": 5
@@ -2101,7 +2101,7 @@
             "img": "dem_A_LB_2_33.png",
             "partname": "",
             "effect": "",
-            "bid": 22,
+            "bid": "22",
             "firedir": "down",
             "firefx": 3,
             "moveinv": 2
@@ -2113,7 +2113,7 @@
             "effect": "",
             "frames": "8",
             "time": "1",
-            "bid": 1,
+            "bid": "01",
             "firedir": "ship",
             "firefx": 3,
             "moveinv": 3
@@ -2125,7 +2125,7 @@
             "effect": "",
             "frames": "16",
             "time": "2",
-            "bid": 9,
+            "bid": "09",
             "firedir": "ship",
             "firefx": 5,
             "moveinv": 6
@@ -2135,7 +2135,7 @@
             "img": "dem_A_LB_2_36.png",
             "partname": "",
             "effect": "",
-            "bid": 2,
+            "bid": "02",
             "firedir": "ship",
             "firefx": 3,
             "moveinv": 4
@@ -2147,7 +2147,7 @@
             "effect": "",
             "frames": "16",
             "time": "2",
-            "bid": 13,
+            "bid": "13",
             "firedir": "ship",
             "firefx": 5,
             "moveinv": 5
@@ -2159,7 +2159,7 @@
             "effect": "",
             "frames": "8",
             "time": ".5",
-            "bid": 8,
+            "bid": "08",
             "firedir": "aim",
             "firefx": 3,
             "moveinv": 6
@@ -2171,7 +2171,7 @@
             "effect": "",
             "frames": "16",
             "time": "2",
-            "bid": 24,
+            "bid": "24",
             "firedir": "rand",
             "firefx": 10,
             "moveinv": 4
@@ -2183,7 +2183,7 @@
             "effect": "",
             "frames": "8",
             "time": "1",
-            "bid": 1,
+            "bid": "01",
             "firedir": "down",
             "firefx": 7,
             "moveinv": 1
@@ -2193,7 +2193,7 @@
             "img": "dem_A_LB_2_41.png",
             "partname": "",
             "effect": "",
-            "bid": 22,
+            "bid": "22",
             "firedir": "aim",
             "firefx": 5,
             "moveinv": 1
@@ -2205,7 +2205,7 @@
             "effect": "",
             "frames": "8",
             "time": "1",
-            "bid": 14,
+            "bid": "14",
             "firedir": "aim",
             "firefx": 10,
             "moveinv": 3
@@ -2217,7 +2217,7 @@
             "effect": "",
             "frames": "8",
             "time": "1",
-            "bid": 4,
+            "bid": "04",
             "firedir": "ship",
             "firefx": 10,
             "moveinv": 7
@@ -2229,7 +2229,7 @@
             "effect": "",
             "frames": "8",
             "time": ".8",
-            "bid": 17,
+            "bid": "17",
             "firedir": "down",
             "firefx": 3,
             "moveinv": 1
@@ -2241,7 +2241,7 @@
             "effect": "",
             "frames": "16",
             "time": "1.6",
-            "bid": 3,
+            "bid": "03",
             "firedir": "aim",
             "firefx": 10,
             "moveinv": 2
@@ -2253,7 +2253,7 @@
             "effect": "",
             "frames": "16",
             "time": "2",
-            "bid": 1,
+            "bid": "01",
             "firedir": "rand",
             "firefx": 7,
             "moveinv": 5
@@ -2263,7 +2263,7 @@
             "img": "dem_A_LB_2_47.png",
             "partname": "",
             "effect": "",
-            "bid": 24,
+            "bid": "24",
             "firedir": "aim",
             "firefx": 5,
             "moveinv": 4
@@ -2273,7 +2273,7 @@
             "img": "dem_A_LB_2_48.png",
             "partname": "",
             "effect": "",
-            "bid": 21,
+            "bid": "21",
             "firedir": "ship",
             "firefx": 5,
             "moveinv": 2
@@ -2283,7 +2283,7 @@
             "img": "dem_A_LB_2_49.png",
             "partname": "",
             "effect": "",
-            "bid": 1,
+            "bid": "01",
             "firedir": "ship",
             "firefx": 10,
             "moveinv": 7
@@ -2293,7 +2293,7 @@
             "img": "dem_A_LB_2_50.png",
             "partname": "",
             "effect": "",
-            "bid": 8,
+            "bid": "08",
             "firedir": "ship",
             "firefx": 7,
             "moveinv": 7
