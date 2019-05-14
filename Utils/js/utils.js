@@ -337,17 +337,18 @@ setCanvas3D(e){
             }else{
                 this.ctxo.drawImage(i, i.startx,i.starty)
             }
+            let velocity=5;
             if(x>i.startx){
-                if((x - i.startx)>2)i.startx = i.startx + ((x - i.startx)/2);
+                if((x - i.startx)>velocity)i.startx = i.startx + ((x - i.startx)/velocity);
             } 
             else{
-                if((i.startx - x)>2)i.startx = i.startx - ((i.startx - x)/2);
+                if((i.startx - x)>velocity)i.startx = i.startx - ((i.startx - x)/velocity);
             } 
             if(y>i.starty){
-                if((y - i.starty)>2)i.starty = i.starty + ((y - i.starty)/2);
+                if((y - i.starty)>velocity)i.starty = i.starty + ((y - i.starty)/velocity);
             } 
             else{
-                if((i.starty - y)>2)i.starty = i.starty - ((i.starty - y)/2);
+                if((i.starty - y)>velocity)i.starty = i.starty - ((i.starty - y)/velocity);
             } 
 		}
 		
