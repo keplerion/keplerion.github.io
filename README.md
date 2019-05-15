@@ -9,3 +9,7 @@ on trello
 __animation__:
 
 http://dynamicsjs.com/
+
+__lib to use__:
+
+https://github.com/kripken/sql.js
