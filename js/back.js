@@ -72,7 +72,7 @@ class back extends entity{
         return new Promise((res,rej)=>{
             var ret = Utils.setSecondFilter('7');
 		    
-	        ret = Utils.drawBackground(me.__proto__.images[this.level]);
+	        ret = Utils.drawBackgroundParallax(me.__proto__.images[this.level]);
             ret = Utils.setSecondFilter('0');
         
             
