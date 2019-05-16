@@ -4,7 +4,8 @@ class back extends entity{
     }
     
     preload(){
-		 var me = this;
+	
+	var me = this;
 	return new Promise((res,rej)=>{
 		let preloaded = [];
 		if(!this.indexes)
@@ -24,10 +25,11 @@ class back extends entity{
         gC.debugStr = 'Back LW: '+this.indexes.LW+', RW:'+this.indexes.RW+', LB:'+this.indexes.LB+', HE:'+this.indexes.HE+', BO:'+this.indexes.BO+'; <br>';
 
         var lI = Utils.loadImage;
-        preloaded.push(lI(me.__proto__.images[me.level],'assets/games/demonback/'+gC.demonBack['LW'][this.indexes.LW].img, 'LW',gC.demonBack['LW'][this.indexes.LW]));
-		preloaded.push(lI(me.__proto__.images[me.level],'assets/games/demonback/'+gC.demonBack['RW'][this.indexes.RW].img, 'RW',gC.demonBack['RW'][this.indexes.RW]));
+	//BO (più lontano), LB, LW, RW, HE (più vicino)
+        preloaded.push(lI(me.__proto__.images[me.level],'assets/games/demonback/'+gC.demonBack['BO'][this.indexes.BO].img, 'BO',gC.demonBack['BO'][this.indexes.BO]));
 		preloaded.push(lI(me.__proto__.images[me.level],'assets/games/demonback/'+gC.demonBack['LB'][this.indexes.LB].img, 'LB',gC.demonBack['LB'][this.indexes.LB]));
-		preloaded.push(lI(me.__proto__.images[me.level],'assets/games/demonback/'+gC.demonBack['BO'][this.indexes.BO].img, 'BO',gC.demonBack['BO'][this.indexes.BO]));
+		preloaded.push(lI(me.__proto__.images[me.level],'assets/games/demonback/'+gC.demonBack['LW'][this.indexes.LW].img, 'LW',gC.demonBack['LW'][this.indexes.LW]));
+		preloaded.push(lI(me.__proto__.images[me.level],'assets/games/demonback/'+gC.demonBack['RW'][this.indexes.RW].img, 'RW',gC.demonBack['RW'][this.indexes.RW]));
 		preloaded.push(lI(me.__proto__.images[me.level],'assets/games/demonback/'+gC.demonBack['HE'][this.indexes.HE].img, 'HE',gC.demonBack['HE'][this.indexes.HE]));
 
 		Promise.all(preloaded)
