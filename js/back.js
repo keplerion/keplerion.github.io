@@ -1,11 +1,7 @@
 class back extends entity{
     constructor(level){
         super(level);
-	    this.tok1 = gC.width;
-	    this.tok2 = tok1/3;
-	    this.tok3 = tok1/5;
-	    this.tok4 = tok1/7;
-	    this.tok5 = tok1/9;
+	    
 			
     }
     
