@@ -5,6 +5,7 @@ class utils{
 	    this.images = {};
 	    this.sketches = [];
 	    this.numSketch = 0;
+	    //parametrizzati il numero di step per livello (1,3,5,7,9 ... devono comunque essere dispari)
 	    this.tokens = {
 	    		'BO': gC.width,
 		    'LB': gC.width/3,
@@ -395,6 +396,7 @@ setCanvas3D(e){
 		
 		let x = gC.player.getPosX();
 		let y = gC.player.getPosY();
+		//x%tok -> return number is used to calculate layer offset, compared to number_of_move_tokes/2.
 		this.ctxo.save();
         this.ctxo.scale(2,2);
 		let keys = Object.keys(images);
