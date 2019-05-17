@@ -385,11 +385,15 @@ setCanvas3D(e){
 	
 
 	async drawBackgroundParallax(images){
-	    	this.tok1 = gC.width;
-		    this.tok2 = this.tok1/3;
-		    this.tok3 = this.tok1/5;
-		    this.tok4 = this.tok1/7;
-		    this.tok5 = this.tok1/9;
+		var tokens = {
+	    		'BO': gC.width,
+		    'LB': gC.width/3,
+		    'LW': gC.width/5,
+		    'RW': gC.width/7,
+		    'HE': gC.width/9
+		};
+		let x = gC.player.getPosX();
+		let y = gC.player.getPosY();
 		this.ctxo.save();
         this.ctxo.scale(2,2);
 		let keys = Object.keys(images);
