@@ -5,6 +5,13 @@ class utils{
 	    this.images = {};
 	    this.sketches = [];
 	    this.numSketch = 0;
+	    this.tokens = {
+	    		'BO': gC.width,
+		    'LB': gC.width/3,
+		    'LW': gC.width/5,
+		    'RW': gC.width/7,
+		    'HE': gC.width/9
+		};
     }
     random(s,e){
         return Math.floor(Math.random() * (e - s + 1)) + s;
@@ -385,13 +392,7 @@ setCanvas3D(e){
 	
 
 	async drawBackgroundParallax(images){
-		var tokens = {
-	    		'BO': gC.width,
-		    'LB': gC.width/3,
-		    'LW': gC.width/5,
-		    'RW': gC.width/7,
-		    'HE': gC.width/9
-		};
+		
 		let x = gC.player.getPosX();
 		let y = gC.player.getPosY();
 		this.ctxo.save();
