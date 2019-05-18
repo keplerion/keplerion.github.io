@@ -6,13 +6,22 @@ class utils{
 	    this.sketches = [];
 	    this.numSketch = 0;
 	    //parametrizzati il numero di step per livello (1,3,5,7,9 ... devono comunque essere dispari)
-	    this.tokens = {
-	    		'BO': gC.width,
-		    'LB': gC.width/3,
-		    'LW': gC.width/5,
-		    'RW': gC.width/7,
-		    'HE': gC.width/9
-		};
+        
+        this.tokens = {
+            'BO': 1,
+            'LB': 3,
+            'LW': 5,
+            'RW': 7,
+            'HE': 9
+        };
+        this.pxtokens = {
+	    	'BO': gC.width/this.tokens['BO'],
+		    'LB': gC.width/this.tokens['LB'],
+		    'LW': gC.width/this.tokens['LW'],
+		    'RW': gC.width/this.tokens['RW'],
+		    'HE': gC.width/this.tokens['HE']
+        };
+        this.offset = 2;
     }
     random(s,e){
         return Math.floor(Math.random() * (e - s + 1)) + s;
@@ -401,7 +410,9 @@ setCanvas3D(e){
         this.ctxo.scale(2,2);
 		let keys = Object.keys(images);
 		for(let p = 0,p_l = keys.length;p<p_l;p++){
-            this.ctxo.drawImage(images[keys[p]],0,0)
+            let ox = Math.floor(x/this.pxtokens[keys[p]]);
+            ox = (ox-Math.floor(this.tokens[keys[p]]/2))*this.offset;
+            this.ctxo.drawImage(images[keys[p]],ox,0);
             if(p == p_l-1){
                 this.ctxo.restore();
                 return 'ok'; 
