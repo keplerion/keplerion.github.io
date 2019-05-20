@@ -1,0 +1,77 @@
+{
+  "01": {
+    "standard": {
+      "1": { 
+        "type": "HE",
+        "scale": "1.0",
+        "xoff": "0",
+        "yoff": "0"
+      },
+      "2": {
+        "type": "BO",
+        "scale": "1.0",
+        "xoff": "0",
+        "yoff": "0"
+      },
+      "3": {
+        "type": "LW",
+        "scale": "1.0",
+        "xoff": "0",
+        "yoff": "0"
+      },
+      "4": {
+        "type": "RW",
+        "scale": "1.0",
+        "xoff": "0",
+        "yoff": "0"
+      },
+      "5": {
+        "type": "LB",
+        "scale": "1.0",
+        "xoff": "0",
+        "yoff": "0"
+      }
+    }
+  },  
+  "02": {
+    "big": {
+      "1": { 
+        "type": "HE",
+        "scale": "2.0",
+        "xoff": "0",
+        "yoff": "60"
+      },
+      "2": {
+        "type": "BO",
+        "scale": "2.0",
+        "xoff": "0",
+        "yoff": "0"
+      },
+      "3": {
+        "type": "LW",
+        "scale": "2.0",
+        "xoff": "-60",
+        "yoff": "0"
+      },
+      "4": {
+        "type": "RW",
+        "scale": "2.0",
+        "xoff": "60",
+        "yoff": "0"
+      },
+      "5": {
+        "type": "LB",
+        "scale": "2.0",
+        "xoff": "0",
+        "yoff": "-60"
+      }
+    }
+  },  
+  "info": {
+    "credit": "masayume",
+    "URL": "https://keplerion.github.io",
+    "title": "Keplerion BOSS structure"
+  }
+
+
+}
