@@ -373,9 +373,8 @@ setCanvas3D(e){
         
     }
     demonImagePath(j){
-        let base_path = 'assets/games/demons/';
-        if(j.frames)
-            base_path += 'animsjs/';
+        let base_path = 'assets/games/demons/animsjs/';
+        
         return base_path += j.img;
     }
     drawAnimation(image,srcX,srcY,width,height,realx,realy,realwidth,realheight){
