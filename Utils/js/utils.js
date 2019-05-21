@@ -21,7 +21,7 @@ class utils{
 		    'RW': gC.width/this.tokens['RW'],
 		    'HE': gC.width/this.tokens['HE']
         };
-        this.offset = 2;
+        this.offset = 1;
     }
     random(s,e){
         return Math.floor(Math.random() * (e - s + 1)) + s;
