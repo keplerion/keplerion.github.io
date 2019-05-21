@@ -373,7 +373,9 @@ setCanvas3D(e){
         
     }
     demonImagePath(j){
-        let base_path = 'assets/games/demons/animsjs/';
+	let base_path = 'assets/games/demons/';
+        if(j.frames)
+            base_path += 'animsjs/';
         
         return base_path += j.img;
     }
