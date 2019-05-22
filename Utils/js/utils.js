@@ -6,13 +6,13 @@ class utils{
 	    this.sketches = [];
 	    this.numSketch = 0;
 	    //parametrizzati il numero di step per livello (1,3,5,7,9 ... devono comunque essere dispari)
-        
+        //1,3,5,7,9
         this.tokens = {
             'BO': 1,
-            'LB': 9,
-            'LW': 15,
-            'RW': 21,
-            'HE': 27
+            'LB': 12,
+            'LW': 20,
+            'RW': 28,
+            'HE': 36
         };
         this.pxtokens = {
 	    	'BO': gC.width/this.tokens['BO'],
