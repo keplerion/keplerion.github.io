@@ -9,10 +9,10 @@ class utils{
         
         this.tokens = {
             'BO': 1,
-            'LB': 6,
-            'LW': 10,
-            'RW': 14,
-            'HE': 18
+            'LB': 9,
+            'LW': 15,
+            'RW': 21,
+            'HE': 27
         };
         this.pxtokens = {
 	    	'BO': gC.width/this.tokens['BO'],
