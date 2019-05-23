@@ -133,7 +133,8 @@ class entity{
 		this.BBoxY=this.randomY;
 		if(!this.TSmoveinv) this.TSmoveinv =  new Date().getTime();
 		let TS = new Date().getTime();
-		if((TS-this.TSmoveinv)>(gC.demonAttr.LB.moveinv*1000)) this.animDir = (this.animDir == 'o')?'a':'o';
+		if((TS-this.TSmoveinv)>(gC.demonAttr.LB.moveinv*1000)) 
+			this.animDir = (this.animDir == 'o')?'a':'o';
 		if(this.animDir == 'o')
 			this.sf_index++;
 		else
