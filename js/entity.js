@@ -137,7 +137,7 @@ class entity{
 		if(this.animDir == 'o')
 			this.sf_index++;
 		else
-			this.sf_index++;
+			this.sf_index--;
 	}
 	superformula(m,n1,n2,n3,a,b,i,x,y,np){
 		var me = this;
