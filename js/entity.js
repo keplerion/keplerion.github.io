@@ -122,15 +122,22 @@ class entity{
 		
 	}
 	anim(){
-		if(!this.sf_index || this.sf_index==this.sf_points.length)
+		if(!this.sf_index || this.sf_index==this.sf_points.length && this.animDir == 'o')
 			this.sf_index=0;
+		if(this.sf_index<0 && this.animDir == 'a')
+			this.sf_index=this.sf_points.length-1;
+		if(!this.animDir) this.animDir = 'o';
 		this.randomX = this.sf_points[this.sf_index].x;
 		this.BBoxX=this.randomX;
 		this.randomY = this.sf_points[this.sf_index].y;
 		this.BBoxY=this.randomY;
-		//if(!this.TSmoveinv) this.TSmoveinv =  new Date().getTime();
-		//LB
-		this.sf_index++;
+		if(!this.TSmoveinv) this.TSmoveinv =  new Date().getTime();
+		let TS = new Date().getTime();
+		if((TS-this.TSmoveinv)>(gC.demonAttr.LB.moveinv*1000)) this.animDir = (this.animDir == 'o')?'a':'o';
+		if(this.animDir == 'o')
+			this.sf_index++;
+		else
+			this.sf_index++;
 	}
 	superformula(m,n1,n2,n3,a,b,i,x,y,np){
 		var me = this;
