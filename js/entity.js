@@ -128,6 +128,8 @@ class entity{
 		this.BBoxX=this.randomX;
 		this.randomY = this.sf_points[this.sf_index].y;
 		this.BBoxY=this.randomY;
+		//if(!this.TSmoveinv) this.TSmoveinv =  new Date().getTime();
+		//LB
 		this.sf_index++;
 	}
 	superformula(m,n1,n2,n3,a,b,i,x,y,np){
