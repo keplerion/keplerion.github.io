@@ -14,8 +14,8 @@ class bulletD extends entity{
 		if(!start) gC.fireAudio.play();
 		this.dxsx = Utils.random(1,2);
 		if(angle==3)this.angle=1;
-		else if(angle==5)this.angle=2
-		else this.angle = 3;
+		else if(angle==5)this.angle=Utils.random(1,2);
+		else this.angle = Utils.random(1,3);
     }
 	
     create(){
