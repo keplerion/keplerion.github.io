@@ -85,11 +85,20 @@ function startGame(){
             if(gC.lifes>0){
                 gC.gameLevel++;
                 //gC.numbOfDemons--;
-                showSplashLevel().then(
-                    (succ)=>{
-                        l()
-                    }
-                )
+		if(gC.gameLevelChar[gC.gameLevel-1] != undefined)
+                	showSplashLevel().then(
+                    		(succ)=>{
+                        		l()
+                    		}
+                	)
+		else
+			this.showSplashEnd().then(
+			    (succ)=>{
+				reset()
+				l()
+			    }
+			); 
+		 
             }else{
                 this.showSplashEnd().then(
                     (succ)=>{
