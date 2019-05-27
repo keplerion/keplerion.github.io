@@ -396,7 +396,7 @@ function addCanvas(){
                         gC.player.rightDown();
                         break;
                     case 32:
-                        assets.push(gC.player.fire('b_a','u'));
+                        assets.push(gC.player.fire('b_1','u'));
                         
                         break;
                 }
