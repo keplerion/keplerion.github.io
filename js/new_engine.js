@@ -28,7 +28,7 @@ function startGame(){
             gC.controller.timestamp = now;
             if(gC.demonsCountdown < gC.controller.level.nummaxdem){
                 if((gC.totDemonsInLevel+1)<=gC.controller.level.numtotdem){
-                    var e = new enemy("e_"+gC.gameLevel);
+                    var e = new enemy("e_"+gC.levelChar);
                     assets.push(e);
                     gC.totDemonsInLevel++;
                     gC.demonsCountdown++;
@@ -39,7 +39,7 @@ function startGame(){
             for(let a = 0;a<a_l;a++){
                 if(!assets[a].end){
                     if(assets[a] instanceof enemy && demonFire){
-                         assets.push(assets[a].fire('bd_'+gC.gameLevel,'d'))
+                         assets.push(assets[a].fire('bd_'+gC.levelChar,'d'))
                          //demonFire = false;
                     }
                     assets[a].start()
@@ -84,12 +84,20 @@ function startGame(){
         }else{
             if(gC.lifes>0){
                 gC.gameLevel++;
-		showSplashLevel().then(
-			(succ)=>{
+                //gC.numbOfDemons--;
+		if(gC.gameLevelChar[gC.gameLevel-1] != undefined)
+                	showSplashLevel().then(
+                    		(succ)=>{
+                        		l()
+                    		}
+                	)
+		else
+			this.showSplashEnd().then(
+			    (succ)=>{
+				reset()
 				l()
-			}
-		)
-
+			    }
+			); 
 		 
             }else{
                 this.showSplashEnd().then(
@@ -204,7 +212,7 @@ function showSplashEnd(){
 function showSplashLevel(){
     return new Promise(function(res,rej){
     
-        let splasho = new splash('Next Level: '+gC.gameLevel);
+        let splasho = new splash('Next Level: '+gC.gameLevelChar[gC.gameLevel-1]);
         splasho.preload().then(
             (succ) => {
         splasho.createLevel().then(
@@ -396,7 +404,7 @@ function addCanvas(){
                         gC.player.rightDown();
                         break;
                     case 32:
-                        assets.push(gC.player.fire('b_1','u'));
+                        assets.push(gC.player.fire('b_a','u'));
                         
                         break;
                 }
@@ -492,7 +500,8 @@ function reset(){
 
 function s(){
     reset();
-    	/*
+    gC.gameLevelChar = 'abcdefghijklmnopqrstuvwxyz';
+	/*
     addCanvas().then(
         (succ)=>{
             showSplash().then(
@@ -551,24 +560,26 @@ function webgl(){
 //every frame value, draw scene
 function l(){
 
+    gC.levelChar = gC.gameLevelChar[gC.gameLevel-1];
+    gC.heroChar = gC.gameLevelChar[gC.heroLevel-1];
     assets.length = 0;
                 gC.loadAmbientAudio().then(
                     (succ)=>{
-                        addBack('k_'+gC.gameLevel).then(
+                        addBack('k_'+gC.levelChar).then(
                     (succ)=>{
-                        addHero('h_'+gC.heroLevel).then(
+                        addHero('h_'+gC.heroChar).then(
                             (succ)=>{
-                                addDemoAssets('e_'+gC.gameLevel,1).then(
+                                addDemoAssets('e_'+gC.levelChar,1).then(
                                     (succ)=>{
                                         loadMp3().then(
                                             (succ)=>{
-                                                addBullet('b_'+gC.gameLevel).then(
+                                                addBullet('b_'+gC.levelChar).then(
                                                     (succ)=>{
-                                                        addExplosion('x_'+gC.gameLevel).then(
+                                                        addExplosion('x_'+gC.levelChar).then(
                                                             (succ)=>{
-                                                                addBulletD('bd_'+gC.gameLevel).then(
+                                                                addBulletD('bd_'+gC.levelChar).then(
                                                                     (succ)=>{
-                                                                        addBulletFx('fx_'+gC.gameLevel).then(
+                                                                        addBulletFx('fx_'+gC.levelChar).then(
                                                                             (succ)=>{
                                                                                 gC.ambient_audio.play();
                                                                                 requestAnimationFrame(gAF);
@@ -613,4 +624,3 @@ function l(){
 
 
 }
-
