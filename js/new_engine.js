@@ -39,7 +39,7 @@ function startGame(){
             for(let a = 0;a<a_l;a++){
                 if(!assets[a].end){
                     if(assets[a] instanceof enemy && demonFire){
-                         assets.push(assets[a].fire('bd_'+gC.levelChar,'d'))
+                         assets.push(assets[a].fire('bd_'+gC.gameLevel,'d'))
                          //demonFire = false;
                     }
                     assets[a].start()
