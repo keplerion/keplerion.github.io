@@ -28,7 +28,7 @@ function startGame(){
             gC.controller.timestamp = now;
             if(gC.demonsCountdown < gC.controller.level.nummaxdem){
                 if((gC.totDemonsInLevel+1)<=gC.controller.level.numtotdem){
-                    var e = new enemy("e_"+gC.levelChar);
+                    var e = new enemy("e_"+gC.gameLevel);
                     assets.push(e);
                     gC.totDemonsInLevel++;
                     gC.demonsCountdown++;
