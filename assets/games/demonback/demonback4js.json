@@ -1,160 +1,160 @@
 {
     "HE": {
-        "26": {
-            "type": "head",
-            "img": "back_A_HE_1_26.png",
-            "partname": "fen",
-            "effect": "pattern:M"
-        },
         "01": {
             "type": "head",
             "img": "back_A_HE_1_01.png",
             "partname": "ahl",
-            "effect": "pattern:M"
+            "level": "clear"
         },
         "02": {
             "type": "head",
             "img": "back_A_HE_1_02.png",
             "partname": "ahn",
-            "effect": "pattern:M"
+            "level": "bright"
         },
         "03": {
             "type": "head",
             "img": "back_A_HE_1_03.png",
             "partname": "ahv",
-            "effect": "pattern:M"
+            "level": "luminous"
         },
         "04": {
             "type": "head",
             "img": "back_A_HE_1_04.png",
             "partname": "an",
-            "effect": "pattern:M"
+            "level": "dazzling"
         },
         "05": {
             "type": "head",
             "img": "back_A_HE_1_05.png",
             "partname": "anl",
-            "effect": "pattern:M"
+            "level": "glowing"
         },
         "06": {
             "type": "head",
             "img": "back_A_HE_1_06.png",
             "partname": "anv",
-            "effect": "pattern:M"
+            "level": "glittering"
         },
         "07": {
             "type": "head",
             "img": "back_A_HE_1_07.png",
             "partname": "as",
-            "effect": "pattern:M"
+            "level": "beaming"
         },
         "08": {
             "type": "head",
             "img": "back_A_HE_1_08.png",
             "partname": "az",
-            "effect": "pattern:M"
+            "level": "glaring"
         },
         "09": {
             "type": "head",
             "img": "back_A_HE_1_09.png",
             "partname": "ba",
-            "effect": "pattern:M"
+            "level": "shiny"
         },
         "10": {
             "type": "head",
             "img": "back_A_HE_1_10.png",
             "partname": "be",
-            "effect": "pattern:M"
+            "level": "radiant"
         },
         "11": {
             "type": "head",
             "img": "back_A_HE_1_11.png",
             "partname": "de",
-            "effect": "pattern:M"
+            "level": "lustruous"
         },
         "12": {
             "type": "head",
             "img": "back_A_HE_1_12.png",
             "partname": "du",
-            "effect": "pattern:M"
+            "level": "flashing"
         },
         "13": {
             "type": "head",
             "img": "back_A_HE_1_13.png",
             "partname": "bal",
-            "effect": "pattern:M"
+            "level": "misty"
         },
         "14": {
             "type": "head",
             "img": "back_A_HE_1_14.png",
             "partname": "ang",
-            "effect": "pattern:M"
+            "level": "cloudy"
         },
         "15": {
             "type": "head",
             "img": "back_A_HE_1_15.png",
             "partname": "bav",
-            "effect": "pattern:M"
+            "level": "hazy"
         },
         "16": {
             "type": "head",
             "img": "back_A_HE_1_16.png",
             "partname": "dul",
-            "effect": "pattern:M"
+            "level": "foggy"
         },
         "17": {
             "type": "head",
             "img": "back_A_HE_1_17.png",
             "partname": "ban",
-            "effect": "pattern:M"
+            "level": "wet"
         },
         "18": {
             "type": "head",
             "img": "back_A_HE_1_18.png",
             "partname": "bav",
-            "effect": "pattern:M"
+            "level": "sparky"
         },
         "19": {
             "type": "head",
             "img": "back_A_HE_1_19.png",
             "partname": "ank",
-            "effect": "pattern:M"
+            "level": "gaseous"
         },
         "20": {
             "type": "head",
             "img": "back_A_HE_1_20.png",
             "partname": "ant",
-            "effect": "pattern:M"
+            "level": "cloudy"
         },
         "21": {
             "type": "head",
             "img": "back_A_HE_1_21.png",
             "partname": "eh",
-            "effect": "pattern:M"
+            "level": "rainy"
         },
         "22": {
             "type": "head",
             "img": "back_A_HE_1_22.png",
             "partname": "akh",
-            "effect": "pattern:M"
+            "level": "showery"
         },
         "23": {
             "type": "head",
             "img": "back_A_HE_1_23.png",
             "partname": "el",
-            "effect": "pattern:M"
+            "level": ""
         },
         "24": {
             "type": "head",
             "img": "back_A_HE_1_24.png",
             "partname": "elh",
-            "effect": "pattern:M"
+            "level": ""
         },
         "25": {
             "type": "head",
             "img": "back_A_HE_1_25.png",
             "partname": "fel",
-            "effect": "pattern:M"
+            "level": ""
+        },
+        "26": {
+            "type": "head",
+            "img": "back_A_HE_1_26.png",
+            "partname": "fen",
+            "level": ""
         }
     },
     "LB": {
@@ -162,199 +162,199 @@
             "type": "lowerbody",
             "img": "back_A_LB_3_01.png",
             "partname": "an",
-            "effect": "weapon:Q"
+            "level": "road"
         },
         "02": {
             "type": "lowerbody",
             "img": "back_A_LB_3_02.png",
             "partname": "as",
-            "effect": "weapon:Q"
+            "level": "road"
         },
         "03": {
             "type": "lowerbody",
             "img": "back_A_LB_3_03.png",
             "partname": "ash",
-            "effect": "weapon:Q"
+            "level": "road"
         },
         "04": {
             "type": "lowerbody",
             "img": "back_A_LB_3_04.png",
             "partname": "tl",
-            "effect": "weapon:Q"
+            "level": "plains"
         },
         "05": {
             "type": "lowerbody",
             "img": "back_A_LB_3_05.png",
             "partname": "ask",
-            "effect": "weapon:Q"
+            "level": "hills"
         },
         "06": {
             "type": "lowerbody",
             "img": "back_A_LB_3_06.png",
             "partname": "ba",
-            "effect": "weapon:Q"
+            "level": "river"
         },
         "07": {
             "type": "lowerbody",
             "img": "back_A_LB_3_07.png",
             "partname": "bub",
-            "effect": "weapon:Q"
+            "level": "woods"
         },
         "08": {
             "type": "lowerbody",
             "img": "back_A_LB_3_08.png",
             "partname": "buv",
-            "effect": "weapon:Q"
+            "level": "sea"
         },
         "09": {
             "type": "lowerbody",
             "img": "back_A_LB_3_09.png",
             "partname": "gra",
-            "effect": "weapon:Q"
+            "level": "surface"
         },
         "10": {
             "type": "lowerbody",
             "img": "back_A_LB_3_10.png",
             "partname": "del",
-            "effect": "weapon:Q"
+            "level": "sea"
         },
         "11": {
             "type": "lowerbody",
             "img": "back_A_LB_3_11.png",
             "partname": "isk",
-            "effect": "weapon:Q"
+            "level": "desert"
         },
         "12": {
             "type": "lowerbody",
             "img": "back_A_LB_3_12.png",
             "partname": "eg",
-            "effect": "weapon:Q"
+            "level": "sands"
         },
         "13": {
             "type": "lowerbody",
             "img": "back_A_LB_3_13.png",
             "partname": "gor",
-            "effect": "weapon:Q"
+            "level": "sand"
         },
         "14": {
             "type": "lowerbody",
             "img": "back_A_LB_3_14.png",
             "partname": "las",
-            "effect": "weapon:Q"
+            "level": "ice"
         },
         "15": {
             "type": "lowerbody",
             "img": "back_A_LB_3_15.png",
             "partname": "nal",
-            "effect": "weapon:Q"
+            "level": "lake"
         },
         "16": {
             "type": "lowerbody",
             "img": "back_A_LB_3_16.png",
             "partname": "el",
-            "effect": "weapon:Q"
+            "level": "obelisks"
         },
         "17": {
             "type": "lowerbody",
             "img": "back_A_LB_3_17.png",
             "partname": "eh",
-            "effect": "weapon:Q"
+            "level": "desert"
         },
         "18": {
             "type": "lowerbody",
             "img": "back_A_LB_3_18.png",
             "partname": "lac",
-            "effect": "weapon:Q"
+            "level": "earth"
         },
         "19": {
             "type": "lowerbody",
             "img": "back_A_LB_3_19.png",
             "partname": "lah",
-            "effect": "weapon:Q"
+            "level": "dunes"
         },
         "20": {
             "type": "lowerbody",
             "img": "back_A_LB_3_20.png",
             "partname": "ehl",
-            "effect": "weapon:Q"
+            "level": "rocks"
         },
         "21": {
             "type": "lowerbody",
             "img": "back_A_LB_3_21.png",
             "partname": "ehk",
-            "effect": "weapon:Q"
+            "level": "forests"
         },
         "22": {
             "type": "lowerbody",
             "img": "back_A_LB_3_22.png",
             "partname": "leth",
-            "effect": "weapon:Q"
+            "level": "plains"
         },
         "23": {
             "type": "lowerbody",
             "img": "back_A_LB_3_23.png",
             "partname": "lekh",
-            "effect": "weapon:Q"
+            "level": "desert"
         },
         "24": {
             "type": "lowerbody",
             "img": "back_A_LB_3_24.png",
             "partname": "lev",
-            "effect": "weapon:Q"
+            "level": "earth"
         },
         "25": {
             "type": "lowerbody",
             "img": "back_A_LB_3_25.png",
             "partname": "leh",
-            "effect": "weapon:Q"
+            "level": "snow"
         },
         "26": {
             "type": "lowerbody",
             "img": "back_A_LB_3_26.png",
             "partname": "roh",
-            "effect": "weapon:Q"
+            "level": "rocks"
         },
         "27": {
             "type": "lowerbody",
             "img": "back_A_LB_3_27.png",
             "partname": "sh",
-            "effect": "weapon:Q"
+            "level": "rocks"
         },
         "28": {
             "type": "lowerbody",
             "img": "back_A_LB_3_28.png",
             "partname": "l",
-            "effect": "weapon:Q"
+            "level": "soil"
         },
         "29": {
             "type": "lowerbody",
             "img": "back_A_LB_3_29.png",
             "partname": "lak",
-            "effect": "weapon:Q"
+            "level": "mountains"
         },
         "30": {
             "type": "lowerbody",
             "img": "back_A_LB_3_30.png",
             "partname": "ehr",
-            "effect": "weapon:Q"
+            "level": "mountains"
         },
         "31": {
             "type": "lowerbody",
             "img": "back_A_LB_3_31.png",
             "partname": "meh",
-            "effect": "weapon:Q"
+            "level": "mountains"
         },
         "32": {
             "type": "lowerbody",
             "img": "back_A_LB_3_32.png",
             "partname": "mel",
-            "effect": "weapon:Q"
+            "level": "sea"
         },
         "33": {
             "type": "lowerbody",
             "img": "back_A_LB_3_33.png",
             "partname": "moh",
-            "effect": "weapon:Q"
+            "level": "rocks"
         }
     },
     "LW": {
@@ -362,55 +362,55 @@
             "type": "leftwing",
             "img": "back_A_LW_2_01.png",
             "partname": "",
-            "effect": "var:A"
+            "level": "var:A"
         },
         "02": {
             "type": "leftwing",
             "img": "back_A_LW_2_02.png",
             "partname": "",
-            "effect": "var:A"
+            "level": "var:A"
         },
         "03": {
             "type": "leftwing",
             "img": "back_A_LW_2_03.png",
             "partname": "",
-            "effect": "var:A"
+            "level": "var:A"
         },
         "04": {
             "type": "leftwing",
             "img": "back_A_LW_2_04.png",
             "partname": "",
-            "effect": "var:A"
+            "level": "var:A"
         },
         "05": {
             "type": "leftwing",
             "img": "back_A_LW_2_05.png",
             "partname": "",
-            "effect": "var:A"
+            "level": "var:A"
         },
         "06": {
             "type": "leftwing",
             "img": "back_A_LW_2_06.png",
             "partname": "",
-            "effect": "var:A"
+            "level": "var:A"
         },
         "07": {
             "type": "leftwing",
             "img": "back_A_LW_2_07.png",
             "partname": "",
-            "effect": "var:A"
+            "level": "var:A"
         },
         "08": {
             "type": "leftwing",
             "img": "back_A_LW_2_08.png",
             "partname": "",
-            "effect": "var:A"
+            "level": "var:A"
         },
         "09": {
             "type": "leftwing",
             "img": "back_A_LW_2_09.png",
             "partname": "",
-            "effect": "var:A"
+            "level": "var:A"
         }
     },
     "RW": {
@@ -418,115 +418,115 @@
             "type": "rightwing",
             "img": "back_A_RW_2_01.png",
             "partname": "",
-            "effect": ""
+            "level": ""
         },
         "02": {
             "type": "rightwing",
             "img": "back_A_RW_2_02.png",
             "partname": "",
-            "effect": ""
+            "level": ""
         },
         "03": {
             "type": "rightwing",
             "img": "back_A_RW_2_03.png",
             "partname": "",
-            "effect": ""
+            "level": ""
         },
         "04": {
             "type": "rightwing",
             "img": "back_A_RW_2_04.png",
             "partname": "",
-            "effect": ""
+            "level": ""
         },
         "05": {
             "type": "rightwing",
             "img": "back_A_RW_2_05.png",
             "partname": "",
-            "effect": ""
+            "level": ""
         },
         "06": {
             "type": "rightwing",
             "img": "back_A_RW_2_06.png",
             "partname": "",
-            "effect": ""
+            "level": ""
         },
         "07": {
             "type": "rightwing",
             "img": "back_A_RW_2_07.png",
             "partname": "",
-            "effect": ""
+            "level": ""
         },
         "08": {
             "type": "rightwing",
             "img": "back_A_RW_2_08.png",
             "partname": "",
-            "effect": ""
+            "level": ""
         },
         "09": {
             "type": "rightwing",
             "img": "back_A_RW_2_09.png",
             "partname": "",
-            "effect": ""
+            "level": ""
         },
         "10": {
             "type": "rightwing",
             "img": "back_A_RW_2_10.png",
             "partname": "",
-            "effect": ""
+            "level": ""
         },
         "11": {
             "type": "rightwing",
             "img": "back_A_RW_2_11.png",
             "partname": "",
-            "effect": ""
+            "level": ""
         },
         "12": {
             "type": "rightwing",
             "img": "back_A_RW_2_12.png",
             "partname": "",
-            "effect": ""
+            "level": ""
         },
         "13": {
             "type": "rightwing",
             "img": "back_A_RW_2_13.png",
             "partname": "",
-            "effect": ""
+            "level": ""
         },
         "14": {
             "type": "rightwing",
             "img": "back_A_RW_2_14.png",
             "partname": "",
-            "effect": ""
+            "level": ""
         },
         "15": {
             "type": "rightwing",
             "img": "back_A_RW_2_15.png",
             "partname": "",
-            "effect": ""
+            "level": ""
         },
         "16": {
             "type": "rightwing",
             "img": "back_A_RW_2_16.png",
             "partname": "",
-            "effect": ""
+            "level": ""
         },
         "17": {
             "type": "rightwing",
             "img": "back_A_RW_2_17.png",
             "partname": "",
-            "effect": ""
+            "level": ""
         },
         "18": {
             "type": "rightwing",
             "img": "back_A_RW_2_18.png",
             "partname": "",
-            "effect": ""
+            "level": ""
         },
         "19": {
             "type": "rightwing",
             "img": "back_A_RW_2_19.png",
             "partname": "",
-            "effect": ""
+            "level": ""
         }
     },
     "BO": {
@@ -534,517 +534,517 @@
             "type": "body",
             "img": "back_A_BO_5_01.png",
             "partname": "bal",
-            "effect": "energy:K"
+            "level": "nebula"
         },
         "02": {
             "type": "body",
             "img": "back_A_BO_5_02.png",
             "partname": "bav",
-            "effect": "energy:K"
+            "level": "horizons"
         },
         "03": {
             "type": "body",
             "img": "back_A_BO_5_03.png",
             "partname": "ol",
-            "effect": "energy:K"
+            "level": "horizon"
         },
         "04": {
             "type": "body",
             "img": "back_A_BO_5_04.png",
             "partname": "bam",
-            "effect": "energy:K"
+            "level": "end"
         },
         "05": {
             "type": "body",
             "img": "back_A_BO_5_05.png",
             "partname": "ci",
-            "effect": "energy:K"
+            "level": "ozone"
         },
         "06": {
             "type": "body",
             "img": "back_A_BO_5_06.png",
             "partname": "bat",
-            "effect": "energy:K"
+            "level": "coast"
         },
         "07": {
             "type": "body",
             "img": "back_A_BO_5_07.png",
             "partname": "cih",
-            "effect": "energy:K"
+            "level": "sea"
         },
         "08": {
             "type": "body",
             "img": "back_A_BO_5_08.png",
             "partname": "da",
-            "effect": "energy:K"
+            "level": "twilight"
         },
         "09": {
             "type": "body",
             "img": "back_A_BO_5_09.png",
             "partname": "ske",
-            "effect": "energy:K"
+            "level": "forests"
         },
         "10": {
             "type": "body",
             "img": "back_A_BO_5_10.png",
             "partname": "ste",
-            "effect": "energy:K"
+            "level": "gasses"
         },
         "11": {
             "type": "body",
             "img": "back_A_BO_5_11.png",
             "partname": "cil",
-            "effect": "energy:K"
+            "level": "rock"
         },
         "12": {
             "type": "body",
             "img": "back_A_BO_5_12.png",
             "partname": "om",
-            "effect": "energy:K"
+            "level": "skies"
         },
         "13": {
             "type": "body",
             "img": "back_A_BO_5_13.png",
             "partname": "de",
-            "effect": "energy:K"
+            "level": "road"
         },
         "14": {
             "type": "body",
             "img": "back_A_BO_5_14.png",
             "partname": "civ",
-            "effect": "energy:K"
+            "level": "flux"
         },
         "15": {
             "type": "body",
             "img": "back_A_BO_5_15.png",
             "partname": "do",
-            "effect": "energy:K"
+            "level": "star"
         },
         "16": {
             "type": "body",
             "img": "back_A_BO_5_16.png",
             "partname": "dov",
-            "effect": "energy:K"
+            "level": "galaxy"
         },
         "17": {
             "type": "body",
             "img": "back_A_BO_5_17.png",
             "partname": "dok",
-            "effect": "energy:K"
+            "level": "stars"
         },
         "18": {
             "type": "body",
             "img": "back_A_BO_5_18.png",
             "partname": "mah",
-            "effect": "energy:K"
+            "level": "front"
         },
         "19": {
             "type": "body",
             "img": "back_A_BO_5_19.png",
             "partname": "mal",
-            "effect": "energy:K"
+            "level": "cluster"
         },
         "20": {
             "type": "body",
             "img": "back_A_BO_5_20.png",
             "partname": "mo",
-            "effect": "energy:K"
+            "level": "ring"
         },
         "21": {
             "type": "body",
             "img": "back_A_BO_5_21.png",
             "partname": "moh",
-            "effect": "energy:K"
+            "level": "ray"
         },
         "22": {
             "type": "body",
             "img": "back_A_BO_5_22.png",
             "partname": "mol",
-            "effect": "energy:K"
+            "level": "moon"
         },
         "23": {
             "type": "body",
             "img": "back_A_BO_5_23.png",
             "partname": "mov",
-            "effect": "energy:K"
+            "level": "surface"
         },
         "24": {
             "type": "body",
             "img": "back_A_BO_5_24.png",
             "partname": "mok",
-            "effect": "energy:K"
+            "level": "pulviscle"
         },
         "25": {
             "type": "body",
             "img": "back_A_BO_5_25.png",
             "partname": "mog",
-            "effect": "energy:K"
+            "level": "rocks"
         },
         "26": {
             "type": "body",
             "img": "back_A_BO_5_26.png",
             "partname": "mogg",
-            "effect": "energy:K"
+            "level": "sway"
         },
         "27": {
             "type": "body",
             "img": "back_A_BO_5_27.png",
             "partname": "me",
-            "effect": "energy:K"
+            "level": "clouds"
         },
         "28": {
             "type": "body",
             "img": "back_A_BO_5_28.png",
             "partname": "mu",
-            "effect": "energy:K"
+            "level": "lakes"
         },
         "29": {
             "type": "body",
             "img": "back_A_BO_5_29.png",
             "partname": "mi",
-            "effect": "energy:K"
+            "level": "moon"
         },
         "30": {
             "type": "body",
             "img": "back_A_BO_5_30.png",
             "partname": "mih",
-            "effect": "energy:K"
+            "level": "mirror"
         },
         "31": {
             "type": "body",
             "img": "back_A_BO_5_31.png",
             "partname": "miv",
-            "effect": "energy:K"
+            "level": "dawn"
         },
         "32": {
             "type": "body",
             "img": "back_A_BO_5_32.png",
             "partname": "nol",
-            "effect": "energy:K"
+            "level": "dusk"
         },
         "33": {
             "type": "body",
             "img": "back_A_BO_5_33.png",
             "partname": "nov",
-            "effect": "energy:K"
+            "level": "vapors"
         },
         "34": {
             "type": "body",
             "img": "back_A_BO_5_34.png",
             "partname": "pa",
-            "effect": "energy:K"
+            "level": "streams"
         },
         "35": {
             "type": "body",
             "img": "back_A_BO_5_35.png",
             "partname": "pav",
-            "effect": "energy:K"
+            "level": "fumes"
         },
         "36": {
             "type": "body",
             "img": "back_A_BO_5_36.png",
             "partname": "nog",
-            "effect": "energy:K"
+            "level": "sun"
         },
         "37": {
             "type": "body",
             "img": "back_A_BO_5_37.png",
             "partname": "og",
-            "effect": "energy:K"
+            "level": "sea"
         },
         "38": {
             "type": "body",
             "img": "back_A_BO_5_38.png",
             "partname": "qo",
-            "effect": "energy:K"
+            "level": "nova"
         },
         "39": {
             "type": "body",
             "img": "back_A_BO_5_39.png",
             "partname": "pav",
-            "effect": "energy:K"
+            "level": "nova"
         },
         "40": {
             "type": "body",
             "img": "back_A_BO_5_40.png",
             "partname": "ba",
-            "effect": "energy:K"
+            "level": "nova"
         },
         "41": {
             "type": "body",
             "img": "back_A_BO_5_41.png",
             "partname": "bal",
-            "effect": "energy:K"
+            "level": "star"
         },
         "42": {
             "type": "body",
             "img": "back_A_BO_5_42.png",
             "partname": "bav",
-            "effect": "energy:K"
+            "level": "zone"
         },
         "43": {
             "type": "body",
             "img": "back_A_BO_5_43.png",
             "partname": "ol",
-            "effect": "energy:K"
+            "level": "orbit"
         },
         "44": {
             "type": "body",
             "img": "back_A_BO_5_44.png",
             "partname": "bam",
-            "effect": "energy:K"
+            "level": "eye"
         },
         "45": {
             "type": "body",
             "img": "back_A_BO_5_45.png",
             "partname": "ci",
-            "effect": "energy:K"
+            "level": "rings"
         },
         "46": {
             "type": "body",
             "img": "back_A_BO_5_46.png",
             "partname": "bat",
-            "effect": "energy:K"
+            "level": "rings"
         },
         "47": {
             "type": "body",
             "img": "back_A_BO_5_47.png",
             "partname": "cih",
-            "effect": "energy:K"
+            "level": "eclipse"
         },
         "48": {
             "type": "body",
             "img": "back_A_BO_5_48.png",
             "partname": "da",
-            "effect": "energy:K"
+            "level": "moon"
         },
         "49": {
             "type": "body",
             "img": "back_A_BO_5_49.png",
             "partname": "ske",
-            "effect": "energy:K"
+            "level": "stars"
         },
         "50": {
             "type": "body",
             "img": "back_A_BO_5_50.png",
             "partname": "ste",
-            "effect": "energy:K"
+            "level": "way"
         },
         "51": {
             "type": "body",
             "img": "back_A_BO_5_51.png",
             "partname": "cil",
-            "effect": "energy:K"
+            "level": "front"
         },
         "52": {
             "type": "body",
             "img": "back_A_BO_5_52.png",
             "partname": "om",
-            "effect": "energy:K"
+            "level": "mountains"
         },
         "53": {
             "type": "body",
             "img": "back_A_BO_5_53.png",
             "partname": "de",
-            "effect": "energy:K"
+            "level": "system"
         },
         "54": {
             "type": "body",
             "img": "back_A_BO_5_54.png",
             "partname": "civ",
-            "effect": "energy:K"
+            "level": "clusters"
         },
         "55": {
             "type": "body",
             "img": "back_A_BO_5_55.png",
             "partname": "do",
-            "effect": "energy:K"
+            "level": "pulsar"
         },
         "56": {
             "type": "body",
             "img": "back_A_BO_5_56.png",
             "partname": "dov",
-            "effect": "energy:K"
+            "level": "jet"
         },
         "57": {
             "type": "body",
             "img": "back_A_BO_5_57.png",
             "partname": "dok",
-            "effect": "energy:K"
+            "level": "skies"
         },
         "58": {
             "type": "body",
             "img": "back_A_BO_5_58.png",
             "partname": "mah",
-            "effect": "energy:K"
+            "level": "view"
         },
         "59": {
             "type": "body",
             "img": "back_A_BO_5_59.png",
             "partname": "mal",
-            "effect": "energy:K"
+            "level": "clouds"
         },
         "60": {
             "type": "body",
             "img": "back_A_BO_5_60.png",
             "partname": "mo",
-            "effect": "energy:K"
+            "level": "clouds"
         },
         "61": {
             "type": "body",
             "img": "back_A_BO_5_61.png",
             "partname": "moh",
-            "effect": "energy:K"
+            "level": "mass"
         },
         "62": {
             "type": "body",
             "img": "back_A_BO_5_62.png",
             "partname": "mol",
-            "effect": "energy:K"
+            "level": "nebula"
         },
         "63": {
             "type": "body",
             "img": "back_A_BO_5_63.png",
             "partname": "mov",
-            "effect": "energy:K"
+            "level": "stars"
         },
         "64": {
             "type": "body",
             "img": "back_A_BO_5_64.png",
             "partname": "mok",
-            "effect": "energy:K"
+            "level": "light"
         },
         "65": {
             "type": "body",
             "img": "back_A_BO_5_65.png",
             "partname": "mog",
-            "effect": "energy:K"
+            "level": "sector"
         },
         "66": {
             "type": "body",
             "img": "back_A_BO_5_66.png",
             "partname": "mogg",
-            "effect": "energy:K"
+            "level": "city"
         },
         "67": {
             "type": "body",
             "img": "back_A_BO_5_67.png",
             "partname": "me",
-            "effect": "energy:K"
+            "level": "complex"
         },
         "68": {
             "type": "body",
             "img": "back_A_BO_5_68.png",
             "partname": "mu",
-            "effect": "energy:K"
+            "level": "cirri"
         },
         "69": {
             "type": "body",
             "img": "back_A_BO_5_69.png",
             "partname": "mi",
-            "effect": "energy:K"
+            "level": "sea"
         },
         "70": {
             "type": "body",
             "img": "back_A_BO_5_70.png",
             "partname": "mih",
-            "effect": "energy:K"
+            "level": "arches"
         },
         "71": {
             "type": "body",
             "img": "back_A_BO_5_71.png",
             "partname": "miv",
-            "effect": "energy:K"
+            "level": "nebula"
         },
         "72": {
             "type": "body",
             "img": "back_A_BO_5_72.png",
             "partname": "nol",
-            "effect": "energy:K"
+            "level": "phoenix"
         },
         "73": {
             "type": "body",
             "img": "back_A_BO_5_73.png",
             "partname": "nov",
-            "effect": "energy:K"
+            "level": "phoenix"
         },
         "74": {
             "type": "body",
             "img": "back_A_BO_5_74.png",
             "partname": "pa",
-            "effect": "energy:K"
+            "level": "towers"
         },
         "75": {
             "type": "body",
             "img": "back_A_BO_5_75.png",
             "partname": "pav",
-            "effect": "energy:K"
+            "level": "planet"
         },
         "76": {
             "type": "body",
             "img": "back_A_BO_5_76.png",
             "partname": "nog",
-            "effect": "energy:K"
+            "level": "night"
         },
         "77": {
             "type": "body",
             "img": "back_A_BO_5_77.png",
             "partname": "og",
-            "effect": "energy:K"
+            "level": "desert"
         },
         "78": {
             "type": "body",
             "img": "back_A_BO_5_78.png",
             "partname": "qo",
-            "effect": "energy:K"
+            "level": "peaks"
         },
         "79": {
             "type": "body",
             "img": "back_A_BO_5_79.png",
             "partname": "pav",
-            "effect": "energy:K"
+            "level": "peak"
         },
         "80": {
             "type": "body",
             "img": "back_A_BO_5_80.png",
             "partname": "2bdef",
-            "effect": "energy:K"
+            "level": "mountains"
         },
         "81": {
             "type": "body",
             "img": "back_A_BO_5_81.png",
             "partname": "2bdef",
-            "effect": "energy:K"
+            "level": "sky"
         },
         "82": {
             "type": "body",
             "img": "back_A_BO_5_82.png",
             "partname": "2bdef",
-            "effect": "energy:K"
+            "level": "ocean"
         },
         "83": {
             "type": "body",
             "img": "back_A_BO_5_83.png",
             "partname": "2bdef",
-            "effect": "energy:K"
+            "level": "tower"
         },
         "84": {
             "type": "body",
             "img": "back_A_BO_5_84.png",
             "partname": "2bdef",
-            "effect": "energy:K"
+            "level": "zone"
         },
         "85": {
             "type": "body",
             "img": "back_A_BO_5_85.png",
             "partname": "2bdef",
-            "effect": "energy:K"
+            "level": "stars"
         },
         "86": {
             "type": "body",
             "img": "back_A_BO_5_86.png",
             "partname": "2bdef",
-            "effect": "energy:K"
+            "level": "stars"
         }
     }
 }
