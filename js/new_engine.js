@@ -84,20 +84,12 @@ function startGame(){
         }else{
             if(gC.lifes>0){
                 gC.gameLevel++;
-                //gC.numbOfDemons--;
-		if(gC.gameLevelChar[gC.gameLevel-1] != undefined)
-                	showSplashLevel().then(
-                    		(succ)=>{
-                        		l()
-                    		}
-                	)
-		else
-			this.showSplashEnd().then(
-			    (succ)=>{
-				reset()
+		showSplashLevel().then(
+			(succ)=>{
 				l()
-			    }
-			); 
+			}
+		)
+
 		 
             }else{
                 this.showSplashEnd().then(
@@ -212,7 +204,7 @@ function showSplashEnd(){
 function showSplashLevel(){
     return new Promise(function(res,rej){
     
-        let splasho = new splash('Next Level: '+gC.gameLevelChar[gC.gameLevel-1]);
+        let splasho = new splash('Next Level: '+gC.gameLevel);
         splasho.preload().then(
             (succ) => {
         splasho.createLevel().then(
@@ -500,8 +492,7 @@ function reset(){
 
 function s(){
     reset();
-    gC.gameLevelChar = 'abcdefghijklmnopqrstuvwxyz';
-	/*
+    	/*
     addCanvas().then(
         (succ)=>{
             showSplash().then(
@@ -560,26 +551,24 @@ function webgl(){
 //every frame value, draw scene
 function l(){
 
-    gC.levelChar = gC.gameLevelChar[gC.gameLevel-1];
-    gC.heroChar = gC.gameLevelChar[gC.heroLevel-1];
     assets.length = 0;
                 gC.loadAmbientAudio().then(
                     (succ)=>{
-                        addBack('k_'+gC.levelChar).then(
+                        addBack('k_'+gC.gameLevel).then(
                     (succ)=>{
-                        addHero('h_'+gC.heroChar).then(
+                        addHero('h_'+gC.heroLevel).then(
                             (succ)=>{
-                                addDemoAssets('e_'+gC.levelChar,1).then(
+                                addDemoAssets('e_'+gC.gameLevel,1).then(
                                     (succ)=>{
                                         loadMp3().then(
                                             (succ)=>{
-                                                addBullet('b_'+gC.levelChar).then(
+                                                addBullet('b_'+gC.gameLevel).then(
                                                     (succ)=>{
-                                                        addExplosion('x_'+gC.levelChar).then(
+                                                        addExplosion('x_'+gC.gameLevel).then(
                                                             (succ)=>{
-                                                                addBulletD('bd_'+gC.levelChar).then(
+                                                                addBulletD('bd_'+gC.gameLevel).then(
                                                                     (succ)=>{
-                                                                        addBulletFx('fx_'+gC.levelChar).then(
+                                                                        addBulletFx('fx_'+gC.gameLevel).then(
                                                                             (succ)=>{
                                                                                 gC.ambient_audio.play();
                                                                                 requestAnimationFrame(gAF);
