@@ -85,12 +85,20 @@ function startGame(){
             if(gC.lifes>0){
                 gC.gameLevel++;
                 //gC.numbOfDemons--;
-		showSplashLevel().then(
-			(succ)=>{
+		if(gC.gameLevelChar[gC.gameLevel-1] != undefined)
+                	showSplashLevel().then(
+                    		(succ)=>{
+                        		l()
+                    		}
+                	)
+		else
+			this.showSplashEnd().then(
+			    (succ)=>{
+				reset()
 				l()
-			}
-		)
-		
+			    }
+			); 
+		 
             }else{
                 this.showSplashEnd().then(
                     (succ)=>{
@@ -204,7 +212,7 @@ function showSplashEnd(){
 function showSplashLevel(){
     return new Promise(function(res,rej){
     
-        let splasho = new splash('Next Level: '+gC.gameLevel);
+        let splasho = new splash('Next Level: '+gC.gameLevelChar[gC.gameLevel-1]);
         splasho.preload().then(
             (succ) => {
         splasho.createLevel().then(
@@ -396,7 +404,7 @@ function addCanvas(){
                         gC.player.rightDown();
                         break;
                     case 32:
-                        assets.push(gC.player.fire('b_1','u'));
+                        assets.push(gC.player.fire('b_a','u'));
                         
                         break;
                 }
@@ -434,7 +442,7 @@ function addCanvas3D(){
 					gC.player.rightDown();
 					break;
 				    case 32:
-					assets.push(gC.player.fire('b_1','u'));
+					assets.push(gC.player.fire('b_a','u'));
 
                     break;
                     case 68:
@@ -552,8 +560,8 @@ function webgl(){
 //every frame value, draw scene
 function l(){
 
-    gC.levelChar = gC.gameLevel;
-    gC.heroChar = gC.heroLevel;
+    gC.levelChar = gC.gameLevelChar[gC.gameLevel-1];
+    gC.heroChar = gC.gameLevelChar[gC.heroLevel-1];
     assets.length = 0;
                 gC.loadAmbientAudio().then(
                     (succ)=>{
