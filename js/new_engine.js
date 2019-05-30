@@ -85,7 +85,7 @@ function startGame(){
             if(gC.lifes>0){
                 gC.gameLevel++;
                 //gC.numbOfDemons--;
-		if(gC.gameLevelChar[gC.gameLevel-1] != undefined)
+		if(gC.gameLevel)
                 	showSplashLevel().then(
                     		(succ)=>{
                         		l()
@@ -212,7 +212,7 @@ function showSplashEnd(){
 function showSplashLevel(){
     return new Promise(function(res,rej){
     
-        let splasho = new splash('Next Level: '+gC.gameLevelChar[gC.gameLevel-1]);
+        let splasho = new splash('Next Level: '+gC.gameLevel);
         splasho.preload().then(
             (succ) => {
         splasho.createLevel().then(
@@ -404,7 +404,7 @@ function addCanvas(){
                         gC.player.rightDown();
                         break;
                     case 32:
-                        assets.push(gC.player.fire('b_a','u'));
+                        assets.push(gC.player.fire('b_'+gC.heroChar,'u'));
                         
                         break;
                 }
@@ -442,7 +442,7 @@ function addCanvas3D(){
 					gC.player.rightDown();
 					break;
 				    case 32:
-					assets.push(gC.player.fire('b_a','u'));
+					assets.push(gC.player.fire('b_'+gC.heroChar,'u'));
 
                     break;
                     case 68:
@@ -500,19 +500,7 @@ function reset(){
 
 function s(){
     reset();
-    gC.gameLevelChar = 'abcdefghijklmnopqrstuvwxyz';
-	/*
-    addCanvas().then(
-        (succ)=>{
-            showSplash().then(
-                (succ)=>{
-                    l()
-                }
-            )
-        }
-        
-    )
-    */
+    
 	gC.loadJsons().then(
 		(succ)=>{
 			addCanvas3D().then(
@@ -560,12 +548,12 @@ function webgl(){
 //every frame value, draw scene
 function l(){
 
-    gC.levelChar = gC.gameLevelChar[gC.gameLevel-1];
-    gC.heroChar = gC.gameLevelChar[gC.heroLevel-1];
+    gC.levelChar = gC.gameLevel;
+    gC.heroChar = gC.heroLevel;
     assets.length = 0;
                 gC.loadAmbientAudio().then(
                     (succ)=>{
-                        addBack('k_'+gC.levelChar).then(
+                        addBack('k_'+gC.heroChar).then(
                     (succ)=>{
                         addHero('h_'+gC.heroChar).then(
                             (succ)=>{
@@ -573,9 +561,9 @@ function l(){
                                     (succ)=>{
                                         loadMp3().then(
                                             (succ)=>{
-                                                addBullet('b_'+gC.levelChar).then(
+                                                addBullet('b_'+gC.heroChar).then(
                                                     (succ)=>{
-                                                        addExplosion('x_'+gC.levelChar).then(
+                                                        addExplosion('x_'+gC.heroChar).then(
                                                             (succ)=>{
                                                                 addBulletD('bd_'+gC.levelChar).then(
                                                                     (succ)=>{
