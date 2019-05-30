@@ -489,6 +489,7 @@ function reset(){
     gC.demoClock = 0;
     gC.numbOfDemons = 1;
     gC.gameLevel = 1;
+    gC.planetLevel = 1;
     gC.heroLevel = 1;
     gC.demonBulletInterval = 50;
     gC.demonBulletFrame = 1;
@@ -550,10 +551,11 @@ function l(){
 
     gC.levelChar = gC.gameLevel;
     gC.heroChar = gC.heroLevel;
+    var planet = gC.planetLevel;
     assets.length = 0;
                 gC.loadAmbientAudio().then(
                     (succ)=>{
-                        addBack('k_'+gC.heroChar).then(
+                        addBack('k_'+gC.planetChar).then(
                     (succ)=>{
                         addHero('h_'+gC.heroChar).then(
                             (succ)=>{
