@@ -1,0 +1,22 @@
+{
+  "demons": {
+    "demon-01.mp3": "light demon",
+    "demon-02.mp3": "avg demon",
+    "demon-03.mp3": "large demon",
+    "demon-04.mp3": "low mech howl #1",
+    "demon-05.mp3": "low mech howl #2",
+    "demon-06.mp3": "intermittent mech howl",
+    "demon-07.mp3": "low mech shift #1",
+    "demon-08.mp3": "low mech shift #2",
+    "demon-09.mp3": "low mech shift #3",
+    "demon-10.mp3": "low mech shift #4",
+    "demon-11.mp3": "hi mech howl"
+  },
+  "info": {
+    "credit": "Sonniss",
+    "URL": "https://sonniss.com/sound-effects/",
+    "title": "Glitchy Circuits"
+  }
+
+
+}
