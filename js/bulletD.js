@@ -53,7 +53,7 @@ class bulletD extends entity{
 						}
 					}else{
 						me.removeBullet();
-						assets.push(new bullExplosion('fx_a',me.randomX,me.randomY,'fx'))	
+						assets.push(new bullExplosion('fx_'+gC.heroChar,me.randomX,me.randomY,'fx'))	
 						//return rej();	
 					}
 				}
