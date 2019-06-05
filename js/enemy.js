@@ -17,7 +17,7 @@ class enemy extends entity{
        //x,y,w,h,v (v=10 veloce, v=30 più lento)
        switch(gC.demonAttr.HE.movetype){
             case 'rectangle':
-                this.rectangle(1,1,200,100,30);
+                this.rectangle(1,1,gC.animationWidth,gC.animationHeight,30);
                 break;
             case 'circle':
                 this.circle(gC.width/2,100,100,1);
