@@ -306,7 +306,7 @@ paint(x,y){
 			if(!me.randomX)
 				me.randomX = Utils.random(1,gC.spritePosX);
 			me.BBoxX = me.randomX;
-			me.randomY = this.__proto__.posy*(gC.spriteH/2);//Utils.random(1,gC.spritePosY);
+			me.randomY = 0;//this.__proto__.posy*(gC.spriteH/2);//Utils.random(1,gC.spritePosY);
 			if((this.__proto__.posy+1) < gC.controller.level.nummaxdem) this.__proto__.posy++;
 			else this.__proto__.posy = 0;
 			me.BBoxY = me.randomY;
