@@ -2416,19 +2416,22 @@
             "type": "",
             "img": "dem_A_BO_3_01.png",
             "partname": "",
-            "effect": ""
+            "effect": "",
+            "movespd": 1
         },
         "02": {
             "type": "",
             "img": "dem_A_BO_3_02.png",
             "partname": "",
-            "effect": ""
+            "effect": "",
+            "movespd": 2
         },
         "03": {
             "type": "",
             "img": "dem_A_BO_3_03.png",
             "partname": "",
-            "effect": ""
+            "effect": "",
+            "movespd": 3
         },
         "04": {
             "type": "",
@@ -2436,31 +2439,36 @@
             "partname": "",
             "effect": "",
             "frames": "16",
-            "time": "1"
+            "time": "1",
+            "movespd": 5
         },
         "05": {
             "type": "",
             "img": "dem_A_BO_3_05.png",
             "partname": "",
-            "effect": ""
+            "effect": "",
+            "movespd": 4
         },
         "06": {
             "type": "",
             "img": "dem_A_BO_3_06.png",
             "partname": "",
-            "effect": ""
+            "effect": "",
+            "movespd": 3
         },
         "07": {
             "type": "",
             "img": "dem_A_BO_3_07.png",
             "partname": "",
-            "effect": ""
+            "effect": "",
+            "movespd": 1
         },
         "08": {
             "type": "",
             "img": "dem_A_BO_3_08.png",
             "partname": "",
-            "effect": ""
+            "effect": "",
+            "movespd": 1
         },
         "09": {
             "type": "",
@@ -2468,7 +2476,8 @@
             "partname": "",
             "effect": "",
             "frames": "8",
-            "time": "1"
+            "time": "1",
+            "movespd": 1
         },
         "10": {
             "type": "",
