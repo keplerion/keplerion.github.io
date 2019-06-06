@@ -75,7 +75,7 @@ class enemy extends entity{
 
         let bid = '';
         if(gC && gC.demonAttr && gC.demonAttr.LB && gC.demonAttr.LB.bid) bid = gC.demonAttr.LB.bid.toString().padStart(2,'0');
-        gC.debugStr += 'Back LW: '+this.indexes.LW+', RW:'+this.indexes.RW+', LB:'+this.indexes.LB+', HE:'+this.indexes.HE+', BO:'+this.indexes.BO+'; BU:'+bid+' <br>';
+        gC.debugStr += 'Demon LW: '+this.indexes.LW+', RW:'+this.indexes.RW+', LB:'+this.indexes.LB+', HE:'+this.indexes.HE+', BO:'+this.indexes.BO+'; BU:'+bid+' <br>';
         
 
 		preloaded.push(lI(me.__proto__.images[me.level],Utils.demonImagePath(gC.demonData['LW'][this.indexes.LW]), 'LW',gC.demonData['LW'][this.indexes.LW]));
