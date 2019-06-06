@@ -14,7 +14,7 @@ var gC = {
     score:0,
     demonAttr:{},
     canvasFilter:'none',
-    animation_Width:200,
+    animationWidth:200,
     animationHeight:100,
     readJsonData: function(gCDataName,jsonUrl){
         return new Promise(function(res,rej){
