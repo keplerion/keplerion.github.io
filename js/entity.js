@@ -8,7 +8,7 @@ class entity{
 		if(!this.__proto__.explosionId)this.__proto__.explosionId = 0;
 		if(!this.__proto__.images)this.__proto__.images = {};
         if(!this.__proto__.images[level])this.__proto__.images[level] = {};
-	    //if(!this.__proto__.posY)this.__proto__.posY = 0;
+	    if(!this.__proto__.posY)this.__proto__.posY = 0;
     }
 	rightBorder2LeftBorder(){
 		return new Promise((res,rej)=>{
@@ -306,9 +306,9 @@ paint(x,y){
 			if(!me.randomX)
 				me.randomX = Utils.random(1,gC.spritePosX);
 			me.BBoxX = me.randomX;
-			me.randomY = 0;//this.__proto__.posy*(gC.spriteH/2);//Utils.random(1,gC.spritePosY);
-			//if((this.__proto__.posy+1) < gC.controller.level.nummaxdem) this.__proto__.posy++;
-			//else this.__proto__.posy = 0;
+			me.randomY = this.__proto__.posy*(gC.spriteH/2);//Utils.random(1,gC.spritePosY);
+			if((this.__proto__.posy+1) < gC.controller.level.nummaxdem) this.__proto__.posy++;
+			else this.__proto__.posy = 0;
 			me.BBoxY = me.randomY;
 			me.BBoxH = gC.spriteH;
 			me.BBoxW = gC.spriteW;
