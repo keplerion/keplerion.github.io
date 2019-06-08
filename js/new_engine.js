@@ -88,6 +88,7 @@ function startGame(){
 		if(gC.gameLevel)
                 	showSplashLevel().then(
                     		(succ)=>{
+                                Utils.resetCamera();
                         		l()
                     		}
                 	)

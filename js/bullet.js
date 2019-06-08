@@ -58,6 +58,16 @@ class bullet extends entity{
 								res();
 							}
 						)
+					}else if((assets[a] instanceof bulletD) && assets[a].hit(me.BBoxX,me.BBoxY,gC.bulletW,gC.bulletH)){
+						assets[a].removeBullet()
+						
+						//gC.explosionAudio1.play();
+						
+						me.removeBullet().then(
+							()=>{
+								res();
+							}
+						)
 					}else{
 						if(a == assets.length-1) res();
 					}
