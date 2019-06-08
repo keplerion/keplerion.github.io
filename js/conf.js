@@ -72,6 +72,8 @@ var gC = {
     }
 };
 
+gC.spritePosXA = gC.width-gC.animationWidth;
+gC.spritePosYA = gC.height-gC.animationHeight;
 gC.spritePosX = gC.width-gC.spriteW;
 gC.spritePosY = gC.height-gC.spriteH;
 
