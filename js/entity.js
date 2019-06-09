@@ -122,6 +122,59 @@ class entity{
 		})
 		
 	}
+	windDirection(movedir,movespd){
+		let x;
+		let y;
+		switch(movedir){
+			case 'u':
+				x=0;
+				y=+movespd;
+				break;
+			case 'ur':
+				x=+movespd;
+				y=+movespd;
+				break;
+			case 'dr':
+				x=+movespd;
+				y=-movespd;
+				break;
+			case 'r':
+				x=+movespd;
+				y=0;
+				break;
+			case 'l':
+				x=-movespd;
+				y=0;
+				break;
+			case 'ul':
+				x=-movespd;
+				y=+movespd;
+				break;
+			case 'dl':
+				x=-movespd;
+				y=-movespd;
+				break;
+			case 'd':
+				x=0;
+				y=-movespd;
+				break;
+		}
+		this.randomX += x;
+		this.BBoxX=this.randomX;
+		this.randomY += y;
+		this.BBoxY=this.randomY;
+	}
+	starOfTheWinds(){
+		if(!this.movedir_length) this.movedir_length = 0;
+		if(!this.TSmovedir)this.TSmovedir =  new Date().getTime();
+		let TSnow = new Date().getTime();
+		if((TSnow-this.TSmovedir)>(gC.demonAttr.LB.movelen*1000)){
+			if((this.movedir_length+1)<gC.demonAttr.LW.movedir.length) this.movedir_length++;
+			else this.movedir_length = 0;
+			this.TSmovedir = TSnow;
+		}
+		this.windDirection(gC.demonAttr.LW.movedir[this.movedir_length],gC.demonAttr.BO.movespd);
+	}
 	anim(){
 		if(!this.sf_index || this.sf_index==this.sf_points.length && this.animDir == 'o')
 			this.sf_index=0;

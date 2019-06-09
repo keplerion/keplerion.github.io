@@ -15,6 +15,7 @@ class enemy extends entity{
        //x,y,r,v (v=10 +veloce, v=1 lento)
        //this.circle(gC.width/2,100,100,10)
        //x,y,w,h,v (v=10 veloce, v=30 più lento)
+       /*
        switch(gC.demonAttr.HE.movetype){
             case 'rectangle':
                 this.rectangle(1,1,gC.animationWidth,gC.animationHeight,30);
@@ -26,7 +27,8 @@ class enemy extends entity{
                 this.circle(gC.width/2,100,100,1);
                 break;
        }    
-       
+       */
+      this.starOfTheWinds();
         
 		
 		
