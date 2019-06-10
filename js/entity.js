@@ -122,6 +122,17 @@ class entity{
 		})
 		
 	}
+	//todo
+	bounce(x,y){
+		if((this.randomX + x) < gC.width){
+			this.randomX += x;
+		}else{
+			this.randomX -= x;
+		}
+		this.BBoxX=this.randomX;
+		this.randomY += y;
+		this.BBoxY=this.randomY;
+	}
 	windDirection(movedir,movespd){
 		let x;
 		let y;
