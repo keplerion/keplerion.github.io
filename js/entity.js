@@ -8,7 +8,9 @@ class entity{
 		if(!this.__proto__.explosionId)this.__proto__.explosionId = 0;
 		if(!this.__proto__.images)this.__proto__.images = {};
         if(!this.__proto__.images[level])this.__proto__.images[level] = {};
-	    if(!this.__proto__.posY)this.__proto__.posY = 0;
+		if(!this.__proto__.posY)this.__proto__.posY = 0;
+		
+		this.dir = 'r';
     }
 	rightBorder2LeftBorder(){
 		return new Promise((res,rej)=>{
@@ -124,13 +126,34 @@ class entity{
 	}
 	//todo
 	bounce(x,y){
-		if((this.randomX + x) < gC.width){
-			this.randomX += x;
+		if(this.dir == 'r'){
+			if((this.randomX + x) < gC.width){
+				this.randomX += x;
+			}else{
+				this.dir == 'l';
+			}
+
+			if((this.randomY + y) < gC.height){
+				this.randomY += y;
+			}else{
+				this.dir == 'l';
+			}
+				
 		}else{
-			this.randomX -= x;
+			if((this.randomX - x) > 0){
+				this.randomX -= x;
+			}else{
+				this.dir = 'r';
+			}
+
+			if((this.randomY - y) > 0){
+				this.randomY -= y;
+			}else{
+				this.dir = 'r';
+			}
 		}
+		
 		this.BBoxX=this.randomX;
-		this.randomY += y;
 		this.BBoxY=this.randomY;
 	}
 	windDirection(movedir,movespd){
@@ -170,10 +193,13 @@ class entity{
 				y=-movespd;
 				break;
 		}
+		/*
 		this.randomX += x;
 		this.BBoxX=this.randomX;
 		this.randomY += y;
 		this.BBoxY=this.randomY;
+		*/
+		this.bounce(x,y)
 	}
 	starOfTheWinds(){
 		if(!this.movedir_length) this.movedir_length = 0;
