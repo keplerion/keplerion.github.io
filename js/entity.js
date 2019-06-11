@@ -11,6 +11,7 @@ class entity{
 		if(!this.__proto__.posY)this.__proto__.posY = 0;
 		
 		this.dir = 'r';
+		this.dirv = 'r';
     }
 	rightBorder2LeftBorder(){
 		return new Promise((res,rej)=>{
@@ -132,24 +133,29 @@ class entity{
 			}else{
 				this.dir == 'l';
 			}
-
-			if((this.randomY + y) < gC.height){
-				this.randomY += y;
-			}else{
-				this.dir == 'l';
-			}
-				
+		
 		}else{
 			if((this.randomX - x) > 0){
 				this.randomX -= x;
 			}else{
 				this.dir = 'r';
 			}
-
+		}
+		
+		if(this.dirv == 'r'){
+			
+			if((this.randomY + y) < gC.height){
+				this.randomY += y;
+			}else{
+				this.dirv == 'l';
+			}
+				
+		}else{
+			
 			if((this.randomY - y) > 0){
 				this.randomY -= y;
 			}else{
-				this.dir = 'r';
+				this.dirv = 'r';
 			}
 		}
 		
