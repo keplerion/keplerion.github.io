@@ -146,8 +146,8 @@ class entity{
 				this.randomY -= y;
 			
 		}
-		if(this.randomX > gC.width || this.randomX < 0) this.dir = (this.dir == 'r')?'l':'r';
-		if(this.randomY > gC.height || this.randomY < 0) this.dirv = (this.dirv == 'r')?'l':'r';
+		if(this.randomX > gC.width - gC.spriteW || this.randomX < 0) this.dir = (this.dir == 'r')?'l':'r';
+		if(this.randomY > gC.height - gC.spriteH || this.randomY < 0) this.dirv = (this.dirv == 'r')?'l':'r';
 		this.BBoxX=this.randomX;
 		this.BBoxY=this.randomY;
 	}
