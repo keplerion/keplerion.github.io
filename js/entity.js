@@ -128,37 +128,26 @@ class entity{
 	//todo
 	bounce(x,y){
 		if(this.dir == 'r'){
-			if((this.randomX + x) < gC.width){
 				this.randomX += x;
-			}else{
-				this.dir == 'l';
-			}
+			
 		
 		}else{
-			if((this.randomX - x) > 0){
 				this.randomX -= x;
-			}else{
-				this.dir = 'r';
-			}
+			
 		}
 		
 		if(this.dirv == 'r'){
 			
-			if((this.randomY + y) < gC.height){
 				this.randomY += y;
-			}else{
-				this.dirv == 'l';
-			}
+			
 				
 		}else{
 			
-			if((this.randomY - y) > 0){
 				this.randomY -= y;
-			}else{
-				this.dirv = 'r';
-			}
+			
 		}
-		
+		if(this.randomX > gC.width || this.randomX < 0) this.dir = (this.dir == 'r')?'l':'r';
+		if(this.randomY > gC.height || this.randomY < 0) this.dirv = (this.dirv == 'r')?'l':'r';
 		this.BBoxX=this.randomX;
 		this.BBoxY=this.randomY;
 	}
