@@ -2,6 +2,10 @@ __game__:
 
 https://keplerion.github.io
 
+__blog__:
+
+https://keplerion.home.blog/
+
 __todo__:
 
 on trello
