@@ -456,11 +456,11 @@ setCanvas3D(e){
         this.ctxo.fillText(src, x, y);
     }
 	drawBBox(x,y,w,h,c){
-		this.ctx.globalAlpha = 0.2;
-		this.ctx.fillStyle = c; 
-		this.ctx.fillRect(x, y, w, h);
+		this.ctxo.globalAlpha = 0.6;
+		this.ctxo.fillStyle = c; 
+		this.ctxo.fillRect(x, y, w, h);
 		//comment the line under for echo effect
-		this.ctx.globalAlpha = 1.0;
+		this.ctxo.globalAlpha = 1.0;
 		//ctx.fill();
 	}
     loadImage(images,str,type,o){

@@ -27,6 +27,8 @@ class bulletD extends entity{
 				me.frame=0;
 			}
 			Utils.drawAnimation(me.__proto__.images[me.level]['BU'], gC.spriteW*me.frame, 0,gC.spriteW,gC.spriteH, me.randomX, me.randomY,gC.spriteW,gC.spriteH);
+			Utils.drawBBox(me.BBoxX,me.BBoxY,10,10,'#0000FF')
+
 			//add the echo feature
 			//Utils.drawBBox(me.BBoxX, me.BBoxY,gC.bulletW,gC.bulletH,me.BBoxColor);
 			//gC.fireAudio.play();
@@ -134,6 +136,16 @@ class bulletD extends entity{
             }
 	})
 }
+
+
+hit(x,y,w,h){
+	//https://stackoverflow.com/questions/2752349/fast-rectangle-to-rectangle-intersection   
+	 if ((x < (this.BBoxX + w)) && (this.BBoxX < (x)) && (y < (this.BBoxY + h)) && (this.BBoxY < y))
+	   return true;
+	 else
+	   return false;
+
+   }
 
 }
 
