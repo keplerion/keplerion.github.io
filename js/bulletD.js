@@ -27,7 +27,7 @@ class bulletD extends entity{
 				me.frame=0;
 			}
 			Utils.drawAnimation(me.__proto__.images[me.level]['BU'], gC.spriteW*me.frame, 0,gC.spriteW,gC.spriteH, me.randomX, me.randomY,gC.spriteW,gC.spriteH);
-			Utils.drawBBox(me.BBoxX,me.BBoxY,10,10,'#0000FF')
+			//Utils.drawBBox(me.BBoxX,me.BBoxY,10,10,'#0000FF')
 
 			//add the echo feature
 			//Utils.drawBBox(me.BBoxX, me.BBoxY,gC.bulletW,gC.bulletH,me.BBoxColor);
