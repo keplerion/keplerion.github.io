@@ -45,6 +45,12 @@
             "img": "badge_A_LB_1_03.png",
             "partname": "ash",
             "effect": "weapon:Q"
+        },
+        "04": {
+            "type": "lowerbody",
+            "img": "badge_A_LB_1_04.png",
+            "partname": "tl",
+            "effect": "weapon:Q"
         }
     },
     "LW": {
