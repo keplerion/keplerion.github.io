@@ -1,72 +1,80 @@
 {
     "BO": {
         "01": {
-            "type": "body",
-            "img": "badge_A_BO_1_01.png",
-            "partname": "bal",
-            "effect": "energy:K"
+            "type": "",
+            "img": "badge_A_BO_1_01.png"
+        },
+        "02": {
+            "type": "",
+            "img": "badge_A_BO_1_02.png"
+        },
+        "03": {
+            "type": "",
+            "img": "badge_A_BO_1_03.png"
+        },
+        "04": {
+            "type": "",
+            "img": "badge_A_BO_1_04.png"
+        },
+        "05": {
+            "type": "",
+            "img": "badge_A_BO_1_05.png"
+        },
+        "06": {
+            "type": "",
+            "img": "badge_A_BO_1_06.png"
+        },
+        "07": {
+            "type": "",
+            "img": "badge_A_BO_1_07.png"
         }
     },
     "HE": {
         "01": {
-            "type": "head",
-            "img": "badge_A_HE_1_01.png",
-            "partname": "ahl",
-            "effect": "pattern:M"
+            "type": "",
+            "img": "badge_A_HE_1_01.png"
         },
         "02": {
-            "type": "head",
-            "img": "badge_A_HE_1_02.png",
-            "partname": "ahn",
-            "effect": "pattern:M"
+            "type": "",
+            "img": "badge_A_HE_1_02.png"
         },
         "03": {
-            "type": "head",
-            "img": "badge_A_HE_1_03.png",
-            "partname": "ahv",
-            "effect": "pattern:M"
+            "type": "",
+            "img": "badge_A_HE_1_03.png"
         }
     },
     "LB": {
         "01": {
-            "type": "lowerbody",
-            "img": "badge_A_LB_1_01.png",
-            "partname": "an",
-            "effect": "weapon:Q"
+            "type": "",
+            "img": "badge_A_LB_1_01.png"
         },
         "02": {
-            "type": "lowerbody",
-            "img": "badge_A_LB_1_02.png",
-            "partname": "as",
-            "effect": "weapon:Q"
+            "type": "",
+            "img": "badge_A_LB_1_02.png"
         },
         "03": {
-            "type": "lowerbody",
-            "img": "badge_A_LB_1_03.png",
-            "partname": "ash",
-            "effect": "weapon:Q"
+            "type": "",
+            "img": "badge_A_LB_1_03.png"
         },
         "04": {
-            "type": "lowerbody",
-            "img": "badge_A_LB_1_04.png",
-            "partname": "tl",
-            "effect": "weapon:Q"
+            "type": "",
+            "img": "badge_A_LB_1_04.png"
+        },
+        "05": {
+            "type": "",
+            "img": "badge_A_LB_1_05.png"
         }
     },
     "LW": {
         "01": {
-            "type": "leftwing",
-            "img": "badge_A_LW_1_01.png",
-            "partname": "",
-            "effect": "var:A"
+            "type": "",
+            "img": "badge_A_LW_1_01.png"
         }
     },
     "RW": {
         "01": {
-            "type": "rightwing",
-            "img": "badge_A_RW_1_01.png",
-            "partname": "",
-            "effect": ""
+            "type": "",
+            "img": "badge_A_RW_1_01.png"
         }
     }
 }
