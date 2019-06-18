@@ -13,6 +13,7 @@ var gC = {
     offset_bullet:5,
     score:0,
     demonAttr:{},
+    shipAttr:{},
     canvasFilter:'none',
     animationWidth:200,
     animationHeight:100,
