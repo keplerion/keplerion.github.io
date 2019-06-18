@@ -99,7 +99,7 @@ class bullet extends entity{
 		if(!this.indexes)
 			this.indexes = {}
 		
-		me.indexes.BU = (gC.shipAttr.LB.bid)?gC.shipAttr.LB.bid.toString().padStart(2,'0'):'01';//Utils.random(1,4).toString().padStart(2,'0');
+		me.indexes.BU = (gC.shipAttr.HE.bid)?gC.shipAttr.HE.bid.toString().padStart(2,'0'):'01';//Utils.random(1,4).toString().padStart(2,'0');
         
 		var lI = Utils.loadImage;
 		
