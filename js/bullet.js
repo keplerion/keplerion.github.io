@@ -99,6 +99,12 @@ class bullet extends entity{
 		if(!this.indexes)
 			this.indexes = {}
 		
+		me.indexes.BU = (gC.heroAttr.LB.bid)?gC.heroAttr.LB.bid.toString().padStart(2,'0'):'01';//Utils.random(1,4).toString().padStart(2,'0');
+        
+		var lI = Utils.loadImage;
+		
+		lI(me.__proto__.images[me.level],'assets/games/demonbull/animsjs/'+gC.bullets.BO[me.indexes.BU].img, 'BU', gC.bullets.BO[me.indexes.BU]);
+		/*
 	    if(!this.indexes.BU)
             	this.indexes.BU= Utils.random(1,4).toString().padStart(2,'0');
         
@@ -106,6 +112,7 @@ class bullet extends entity{
 		var lI = Utils.loadImage;
 		//lI(me.__proto__.images[me.level],'assets/games/bullets/BULLET-001.png', 'BU');
 		lI(me.__proto__.images[me.level],'assets/games/animations/bullets/bullet1.png', 'BU');
+		*/
 		res();
         })
         
