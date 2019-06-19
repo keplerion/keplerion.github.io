@@ -1016,12 +1016,14 @@
             "effect": ""
         }
     },
+
     "HE": {
         "01": {
             "type": "",
             "img": "dem_A_HE_4_01.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.3,
             "frames": "16",
             "time": "1.6"
         },
@@ -1030,36 +1032,42 @@
             "img": "dem_A_HE_4_02.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.4,
             "frames": "8",
             "time": "1"
         },
         "03": {
             "type": "",
             "img": "dem_A_HE_4_03.png",
+            "movexf": 0.5,
             "partname": "",
             "effect": ""
         },
         "04": {
             "type": "",
             "img": "dem_A_HE_4_04.png",
+            "movexf": 0.6,
             "partname": "",
             "effect": ""
         },
         "05": {
             "type": "",
             "img": "dem_A_HE_4_05.png",
+            "movexf": 0.7,
             "partname": "",
             "effect": ""
         },
         "06": {
             "type": "",
             "img": "dem_A_HE_4_06.png",
+            "movexf": 0.8,
             "partname": "",
             "effect": ""
         },
         "07": {
             "type": "",
             "img": "dem_A_HE_4_07.png",
+            "movexf": 0.9,
             "partname": "",
             "effect": ""
         },
@@ -1068,12 +1076,14 @@
             "img": "dem_A_HE_4_08.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.0,
             "frames": "8",
             "time": "0.8"
         },
         "09": {
             "type": "",
             "img": "dem_A_HE_4_09.png",
+            "movexf": 1.0,
             "partname": "",
             "effect": ""
         },
@@ -1082,6 +1092,7 @@
             "img": "dem_A_HE_4_10.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.1,
             "burst": 1,
             "firesp": 0,
             "firert": 5,
@@ -1093,6 +1104,7 @@
             "img": "dem_A_HE_4_11.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.2,
             "burst": 1,
             "firesp": 3,
             "firert": 7,
@@ -1104,6 +1116,7 @@
             "img": "dem_A_HE_4_12.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.3,
             "frames": "8",
             "time": "1",
             "burst": 1,
@@ -1117,6 +1130,7 @@
             "img": "dem_A_HE_4_13.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.4,
             "burst": 2,
             "firesp": 5,
             "firert": 7,
@@ -1128,6 +1142,7 @@
             "img": "dem_A_HE_4_14.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.5,
             "burst": 1,
             "firesp": 3,
             "firert": 7,
@@ -1139,6 +1154,7 @@
             "img": "dem_A_HE_4_15.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.6,
             "burst": 1,
             "firesp": 5,
             "firert": 10,
@@ -1150,6 +1166,7 @@
             "img": "dem_A_HE_4_16.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.7,
             "burst": 1,
             "firesp": 10,
             "firert": 5,
@@ -1161,6 +1178,7 @@
             "img": "dem_A_HE_4_17.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.6,
             "burst": 1,
             "firesp": 3,
             "firert": 7,
@@ -1172,6 +1190,7 @@
             "img": "dem_A_HE_4_18.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.5,
             "burst": 1,
             "firesp": 0,
             "firert": 5,
@@ -1183,6 +1202,7 @@
             "img": "dem_A_HE_4_19.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.4,
             "burst": 1,
             "firesp": 15,
             "firert": 5,
@@ -1194,6 +1214,7 @@
             "img": "dem_A_HE_4_20.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.3,
             "burst": 1,
             "firesp": 3,
             "firert": 10,
@@ -1205,6 +1226,7 @@
             "img": "dem_A_HE_4_21.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.2,
             "burst": 1,
             "firesp": 15,
             "firert": 5,
@@ -1216,6 +1238,7 @@
             "img": "dem_A_HE_4_22.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.1,
             "burst": 1,
             "firesp": 3,
             "firert": 5,
@@ -1227,6 +1250,7 @@
             "img": "dem_A_HE_4_23.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.0,
             "burst": 1,
             "firesp": 10,
             "firert": 5,
@@ -1238,6 +1262,7 @@
             "img": "dem_A_HE_4_24.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.9,
             "burst": 2,
             "firesp": 15,
             "firert": 5,
@@ -1249,6 +1274,7 @@
             "img": "dem_A_HE_4_25.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.8,
             "burst": 1,
             "firesp": 3,
             "firert": 5,
@@ -1260,6 +1286,7 @@
             "img": "dem_A_HE_4_26.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.7,
             "burst": 1,
             "firesp": 3,
             "firert": 7,
@@ -1271,6 +1298,7 @@
             "img": "dem_A_HE_4_27.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.6,
             "burst": 1,
             "firesp": 0,
             "firert": 7,
@@ -1282,6 +1310,7 @@
             "img": "dem_A_HE_4_28.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.5,
             "burst": 1,
             "firesp": 15,
             "firert": 5,
@@ -1293,6 +1322,7 @@
             "img": "dem_A_HE_4_29.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.4,
             "burst": 1,
             "firesp": 3,
             "firert": 3,
@@ -1304,6 +1334,7 @@
             "img": "dem_A_HE_4_30.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.3,
             "burst": 2,
             "firesp": 10,
             "firert": 7,
@@ -1315,6 +1346,7 @@
             "img": "dem_A_HE_4_31.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.4,
             "burst": 3,
             "firesp": 5,
             "firert": 10,
@@ -1326,6 +1358,7 @@
             "img": "dem_A_HE_4_32.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.5,
             "burst": 1,
             "firesp": 0,
             "firert": 5,
@@ -1337,6 +1370,7 @@
             "img": "dem_A_HE_4_33.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.6,
             "burst": 1,
             "firesp": 10,
             "firert": 10,
@@ -1348,6 +1382,7 @@
             "img": "dem_A_HE_4_34.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.7,
             "burst": 1,
             "firesp": 15,
             "firert": 10,
@@ -1359,6 +1394,7 @@
             "img": "dem_A_HE_4_35.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.8,
             "burst": 1,
             "firesp": 10,
             "firert": 5,
@@ -1370,6 +1406,7 @@
             "img": "dem_A_HE_4_36.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.9,
             "burst": 1,
             "firesp": 0,
             "firert": 3,
@@ -1381,6 +1418,7 @@
             "img": "dem_A_HE_4_37.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.0,
             "burst": 1,
             "firesp": 5,
             "firert": 5,
@@ -1392,6 +1430,7 @@
             "img": "dem_A_HE_4_38.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.1,
             "burst": 1,
             "firesp": 3,
             "firert": 3,
@@ -1403,6 +1442,7 @@
             "img": "dem_A_HE_4_39.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.2,
             "burst": 2,
             "firesp": 3,
             "firert": 5,
@@ -1414,6 +1454,7 @@
             "img": "dem_A_HE_4_40.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.3,
             "burst": 1,
             "firesp": 10,
             "firert": 10,
@@ -1425,6 +1466,7 @@
             "img": "dem_A_HE_4_41.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.4,
             "burst": 1,
             "firesp": 5,
             "firert": 3,
@@ -1436,6 +1478,7 @@
             "img": "dem_A_HE_4_42.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.5,
             "burst": 1,
             "firesp": 3,
             "firert": 7,
@@ -1447,6 +1490,7 @@
             "img": "dem_A_HE_4_43.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.6,
             "burst": 1,
             "firesp": 3,
             "firert": 7,
@@ -1458,6 +1502,7 @@
             "img": "dem_A_HE_4_44.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.7,
             "frames": "16",
             "time": "2",
             "burst": 1,
@@ -1471,6 +1516,7 @@
             "img": "dem_A_HE_4_45.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.8,
             "burst": 1,
             "firesp": 0,
             "firert": 5,
@@ -1482,6 +1528,7 @@
             "img": "dem_A_HE_4_46.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.9,
             "burst": 1,
             "firesp": 3,
             "firert": 7,
@@ -1493,6 +1540,7 @@
             "img": "dem_A_HE_4_47.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.8,
             "burst": 1,
             "firesp": 0,
             "firert": 3,
@@ -1504,6 +1552,7 @@
             "img": "dem_A_HE_4_48.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.7,
             "frames": "8",
             "time": "0.6",
             "burst": 1,
@@ -1517,6 +1566,7 @@
             "img": "dem_A_HE_4_49.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.6,
             "burst": 1,
             "firesp": 10,
             "firert": 5,
@@ -1528,6 +1578,7 @@
             "img": "dem_A_HE_4_50.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.5,
             "burst": 1,
             "firesp": 5,
             "firert": 10,
@@ -1539,6 +1590,7 @@
             "img": "dem_A_HE_4_51.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.4,
             "burst": 1,
             "firesp": 10,
             "firert": 7,
@@ -1550,6 +1602,7 @@
             "img": "dem_A_HE_4_52.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.3,
             "burst": 1,
             "firesp": 3,
             "firert": 10,
@@ -1561,6 +1614,7 @@
             "img": "dem_A_HE_4_53.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.2,
             "frames": "8",
             "time": "3",
             "burst": 1,
@@ -1574,6 +1628,7 @@
             "img": "dem_A_HE_4_54.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.1,
             "burst": 3,
             "firesp": 5,
             "firert": 10,
@@ -1585,6 +1640,7 @@
             "img": "dem_A_HE_4_55.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.0,
             "burst": 1,
             "firesp": 3,
             "firert": 5,
@@ -1596,6 +1652,7 @@
             "img": "dem_A_HE_4_56.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.9,
             "burst": 1,
             "firesp": 10,
             "firert": 5,
@@ -1607,6 +1664,7 @@
             "img": "dem_A_HE_4_57.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.8,
             "frames": "16",
             "time": "2",
             "burst": 1,
@@ -1620,6 +1678,7 @@
             "img": "dem_A_HE_4_58.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.7,
             "frames": "16",
             "time": "2",
             "burst": 1,
@@ -1633,6 +1692,7 @@
             "img": "dem_A_HE_4_59.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.6,
             "burst": 1,
             "firesp": 5,
             "firert": 10,
@@ -1644,6 +1704,7 @@
             "img": "dem_A_HE_4_60.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.5,
             "burst": 1,
             "firesp": 0,
             "firert": 5,
@@ -1655,6 +1716,7 @@
             "img": "dem_A_HE_4_61.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.4,
             "burst": 3,
             "firesp": 5,
             "firert": 10,
@@ -1666,6 +1728,7 @@
             "img": "dem_A_HE_4_62.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.5,
             "frames": "8",
             "time": "0.2",
             "burst": 3,
@@ -1679,6 +1742,7 @@
             "img": "dem_A_HE_4_63.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.6,
             "frames": "8",
             "time": "1",
             "burst": 1,
@@ -1692,6 +1756,7 @@
             "img": "dem_A_HE_4_64.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.7,
             "burst": 1,
             "firesp": 10,
             "firert": 3,
@@ -1703,6 +1768,7 @@
             "img": "dem_A_HE_4_65.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.8,
             "frames": "24",
             "time": "3",
             "burst": 1,
@@ -1716,6 +1782,7 @@
             "img": "dem_A_HE_4_66.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.9,
             "frames": "4",
             "time": ".8",
             "burst": 3,
@@ -1729,6 +1796,7 @@
             "img": "dem_A_HE_4_67.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.0,
             "burst": 1,
             "firesp": 5,
             "firert": 5,
@@ -1740,6 +1808,7 @@
             "img": "dem_A_HE_4_68.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.1,
             "frames": "8",
             "time": ".2",
             "burst": 1,
@@ -1753,6 +1822,7 @@
             "img": "dem_A_HE_4_69.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.2,
             "burst": 1,
             "firesp": 5,
             "firert": 10,
@@ -1764,6 +1834,7 @@
             "img": "dem_A_HE_4_70.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.3,
             "burst": 1,
             "firesp": 3,
             "firert": 5,
@@ -1775,6 +1846,7 @@
             "img": "dem_A_HE_4_71.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.4,
             "burst": 1,
             "firesp": 0,
             "firert": 5,
@@ -1786,6 +1858,7 @@
             "img": "dem_A_HE_4_72.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.5,
             "frames": "16",
             "time": "1.8",
             "burst": 1,
@@ -1799,6 +1872,7 @@
             "img": "dem_A_HE_4_73.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.6,
             "burst": 1,
             "firesp": 3,
             "firert": 5,
@@ -1810,6 +1884,7 @@
             "img": "dem_A_HE_4_74.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.7,
             "burst": 1,
             "firesp": 0,
             "firert": 7,
@@ -1821,6 +1896,7 @@
             "img": "dem_A_HE_4_75.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.8,
             "burst": 1,
             "firesp": 3,
             "firert": 10,
@@ -1832,6 +1908,7 @@
             "img": "dem_A_HE_4_76.png",
             "partname": "",
             "effect": "",
+            "movexf": 1.9,
             "burst": 1,
             "firesp": 15,
             "firert": 5,
@@ -1843,6 +1920,7 @@
             "img": "dem_A_HE_4_77.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.3,
             "burst": 1,
             "firesp": 5,
             "firert": 7,
@@ -1854,6 +1932,7 @@
             "img": "dem_A_HE_4_78.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.4,
             "frames": "8",
             "time": "1",
             "burst": 1,
@@ -1867,6 +1946,7 @@
             "img": "dem_A_HE_4_79.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.5,
             "burst": 1,
             "firesp": 10,
             "firert": 10,
@@ -1878,6 +1958,7 @@
             "img": "dem_A_HE_4_80.png",
             "partname": "",
             "effect": "",
+            "movexf": 0.6,
             "burst": 1,
             "firesp": 15,
             "firert": 3,
@@ -1885,6 +1966,7 @@
             "movetype": "rectangle"
         }
     },
+
     "LB": {
         "01": {
             "type": "",
@@ -2470,6 +2552,7 @@
             "img": "dem_A_BO_3_01.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.5,
             "movespd": 1
         },
         "02": {
@@ -2477,6 +2560,7 @@
             "img": "dem_A_BO_3_02.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.6,
             "movespd": 2
         },
         "03": {
@@ -2484,6 +2568,7 @@
             "img": "dem_A_BO_3_03.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.7,
             "movespd": 3
         },
         "04": {
@@ -2491,6 +2576,7 @@
             "img": "dem_A_BO_3_04.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.8,
             "frames": "16",
             "time": "1",
             "movespd": 5
@@ -2500,6 +2586,7 @@
             "img": "dem_A_BO_3_05.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.9,
             "movespd": 4
         },
         "06": {
@@ -2507,6 +2594,7 @@
             "img": "dem_A_BO_3_06.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.0,
             "movespd": 3
         },
         "07": {
@@ -2514,6 +2602,7 @@
             "img": "dem_A_BO_3_07.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.1,
             "movespd": 1
         },
         "08": {
@@ -2521,6 +2610,7 @@
             "img": "dem_A_BO_3_08.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.2,
             "movespd": 1
         },
         "09": {
@@ -2528,6 +2618,7 @@
             "img": "dem_A_BO_3_09.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.3,
             "frames": "8",
             "time": "1",
             "movespd": 1
@@ -2537,6 +2628,7 @@
             "img": "dem_A_BO_3_10.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.4,
             "firecool": 3,
             "firespeed": 1,
             "movespd": 5
@@ -2546,6 +2638,7 @@
             "img": "dem_A_BO_3_11.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.5,
             "firecool": 3,
             "firespeed": 2,
             "movespd": 3
@@ -2555,6 +2648,7 @@
             "img": "dem_A_BO_3_12.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.4,
             "firecool": 1,
             "firespeed": 2,
             "movespd": 1
@@ -2564,6 +2658,7 @@
             "img": "dem_A_BO_3_13.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.3,
             "firecool": 3,
             "firespeed": 3,
             "movespd": 2
@@ -2573,6 +2668,7 @@
             "img": "dem_A_BO_3_14.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.2,
             "firecool": 2,
             "firespeed": 1,
             "movespd": 3
@@ -2582,6 +2678,7 @@
             "img": "dem_A_BO_3_15.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.1,
             "firecool": 1,
             "firespeed": 1,
             "movespd": 1
@@ -2591,6 +2688,7 @@
             "img": "dem_A_BO_3_16.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.0,
             "firecool": 2,
             "firespeed": 1,
             "movespd": 3
@@ -2600,6 +2698,7 @@
             "img": "dem_A_BO_3_17.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.9,
             "firecool": 2,
             "firespeed": 1,
             "movespd": 2
@@ -2609,6 +2708,7 @@
             "img": "dem_A_BO_3_18.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.8,
             "firecool": 1,
             "firespeed": 1,
             "movespd": 3
@@ -2618,6 +2718,7 @@
             "img": "dem_A_BO_3_19.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.7,
             "firecool": 2,
             "firespeed": 4,
             "movespd": 1
@@ -2627,6 +2728,7 @@
             "img": "dem_A_BO_3_20.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.6,
             "firecool": 1,
             "firespeed": 1,
             "movespd": 1
@@ -2636,6 +2738,7 @@
             "img": "dem_A_BO_3_21.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.5,
             "firecool": 1,
             "firespeed": 4,
             "movespd": 5
@@ -2645,6 +2748,7 @@
             "img": "dem_A_BO_3_22.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.6,
             "firecool": 2,
             "firespeed": 1,
             "movespd": 1
@@ -2654,6 +2758,7 @@
             "img": "dem_A_BO_3_23.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.7,
             "firecool": 1,
             "firespeed": 1,
             "movespd": 1
@@ -2663,6 +2768,7 @@
             "img": "dem_A_BO_3_24.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.8,
             "firecool": 2,
             "firespeed": 3,
             "movespd": 1
@@ -2672,6 +2778,7 @@
             "img": "dem_A_BO_3_25.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.9,
             "firecool": 3,
             "firespeed": 5,
             "movespd": 1
@@ -2681,6 +2788,7 @@
             "img": "dem_A_BO_3_26.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.0,
             "firecool": 1,
             "firespeed": 2,
             "movespd": 2
@@ -2690,6 +2798,7 @@
             "img": "dem_A_BO_3_27.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.1,
             "firecool": 2,
             "firespeed": 2,
             "movespd": 2
@@ -2699,6 +2808,7 @@
             "img": "dem_A_BO_3_28.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.2,
             "firecool": 1,
             "firespeed": 6,
             "movespd": 1
@@ -2708,6 +2818,7 @@
             "img": "dem_A_BO_3_29.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.3,
             "firecool": 1,
             "firespeed": 5,
             "movespd": 3
@@ -2717,6 +2828,7 @@
             "img": "dem_A_BO_3_30.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.4,
             "firecool": 1,
             "firespeed": 1,
             "movespd": 1
@@ -2726,6 +2838,7 @@
             "img": "dem_A_BO_3_31.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.5,
             "frames": "8",
             "time": "1",
             "firecool": 3,
@@ -2737,6 +2850,7 @@
             "img": "dem_A_BO_3_32.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.4,
             "firecool": 1,
             "firespeed": 5,
             "movespd": 1
@@ -2746,6 +2860,7 @@
             "img": "dem_A_BO_3_33.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.3,
             "firecool": 1,
             "firespeed": 4,
             "movespd": 1
@@ -2755,6 +2870,7 @@
             "img": "dem_A_BO_3_34.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.2,
             "firecool": 3,
             "firespeed": 1,
             "movespd": 2
@@ -2764,6 +2880,7 @@
             "img": "dem_A_BO_3_35.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.1,
             "frames": "8",
             "time": "2",
             "firecool": 3,
@@ -2775,6 +2892,7 @@
             "img": "dem_A_BO_3_36.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.0,
             "firecool": 1,
             "firespeed": 5,
             "movespd": 4
@@ -2784,6 +2902,7 @@
             "img": "dem_A_BO_3_37.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.9,
             "frames": "24",
             "time": "1.4",
             "firecool": 1,
@@ -2795,6 +2914,7 @@
             "img": "dem_A_BO_3_38.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.8,
             "firecool": 3,
             "firespeed": 5,
             "movespd": 1
@@ -2804,6 +2924,7 @@
             "img": "dem_A_BO_3_39.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.7,
             "frames": "8",
             "time": "0.8",
             "firecool": 2,
@@ -2815,6 +2936,7 @@
             "img": "dem_A_BO_3_40.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.6,
             "firecool": 1,
             "firespeed": 2,
             "movespd": 5
@@ -2824,6 +2946,7 @@
             "img": "dem_A_BO_3_41.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.5,
             "firecool": 2,
             "firespeed": 4,
             "movespd": 2
@@ -2833,6 +2956,7 @@
             "img": "dem_A_BO_3_42.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.6,
             "firecool": 1,
             "firespeed": 1,
             "movespd": 1
@@ -2842,6 +2966,7 @@
             "img": "dem_A_BO_3_43.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.7,
             "firecool": 1,
             "firespeed": 2,
             "movespd": 1
@@ -2851,6 +2976,7 @@
             "img": "dem_A_BO_3_44.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.8,
             "firecool": 3,
             "firespeed": 6,
             "movespd": 3
@@ -2860,6 +2986,7 @@
             "img": "dem_A_BO_3_45.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.9,
             "firecool": 3,
             "firespeed": 1,
             "movespd": 1
@@ -2869,6 +2996,7 @@
             "img": "dem_A_BO_3_46.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.0,
             "firecool": 3,
             "firespeed": 1,
             "movespd": 1
@@ -2878,6 +3006,7 @@
             "img": "dem_A_BO_3_47.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.1,
             "frames": "4",
             "time": ".7",
             "firecool": 3,
@@ -2889,6 +3018,7 @@
             "img": "dem_A_BO_3_48.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.2,
             "frames": "8",
             "time": "1",
             "firecool": 1,
@@ -2900,6 +3030,7 @@
             "img": "dem_A_BO_3_49.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.3,
             "firecool": 3,
             "firespeed": 5,
             "movespd": 1
@@ -2909,6 +3040,7 @@
             "img": "dem_A_BO_3_50.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.4,
             "firecool": 1,
             "firespeed": 4,
             "movespd": 1
@@ -2918,6 +3050,7 @@
             "img": "dem_A_BO_3_51.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.5,
             "firecool": 3,
             "firespeed": 2,
             "movespd": 1
@@ -2927,6 +3060,7 @@
             "img": "dem_A_BO_3_52.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.6,
             "firecool": 2,
             "firespeed": 4,
             "movespd": 1
@@ -2936,6 +3070,7 @@
             "img": "dem_A_BO_3_53.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.5,
             "firecool": 3,
             "firespeed": 1,
             "movespd": 1
@@ -2945,6 +3080,7 @@
             "img": "dem_A_BO_3_54.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.4,
             "firecool": 2,
             "firespeed": 5,
             "movespd": 1
@@ -2954,6 +3090,7 @@
             "img": "dem_A_BO_3_55.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.3,
             "firecool": 1,
             "firespeed": 5,
             "movespd": 1
@@ -2963,6 +3100,7 @@
             "img": "dem_A_BO_3_56.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.2,
             "firecool": 1,
             "firespeed": 4,
             "movespd": 2
@@ -2972,6 +3110,7 @@
             "img": "dem_A_BO_3_57.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.1,
             "firecool": 3,
             "firespeed": 1,
             "movespd": 5
@@ -2981,6 +3120,7 @@
             "img": "dem_A_BO_3_58.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.0,
             "firecool": 1,
             "firespeed": 4,
             "movespd": 1
@@ -2990,6 +3130,7 @@
             "img": "dem_A_BO_3_59.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.9,
             "firecool": 3,
             "firespeed": 1,
             "movespd": 3
@@ -2999,6 +3140,7 @@
             "img": "dem_A_BO_3_60.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.8,
             "firecool": 2,
             "firespeed": 1,
             "movespd": 2
@@ -3008,6 +3150,7 @@
             "img": "dem_A_BO_3_61.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.7,
             "firecool": 2,
             "firespeed": 3,
             "movespd": 2
@@ -3017,6 +3160,7 @@
             "img": "dem_A_BO_3_62.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.6,
             "firecool": 2,
             "firespeed": 5,
             "movespd": 2
@@ -3026,6 +3170,7 @@
             "img": "dem_A_BO_3_63.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.5,
             "firecool": 1,
             "firespeed": 4,
             "movespd": 2
@@ -3035,6 +3180,7 @@
             "img": "dem_A_BO_3_64.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.4,
             "firecool": 3,
             "firespeed": 2,
             "movespd": 5
@@ -3044,6 +3190,7 @@
             "img": "dem_A_BO_3_65.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.5,
             "firecool": 2,
             "firespeed": 1,
             "movespd": 3
@@ -3053,6 +3200,7 @@
             "img": "dem_A_BO_3_66.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.6,
             "firecool": 1,
             "firespeed": 3,
             "movespd": 1
@@ -3062,6 +3210,7 @@
             "img": "dem_A_BO_3_67.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.7,
             "firecool": 2,
             "firespeed": 4,
             "movespd": 3
@@ -3071,6 +3220,7 @@
             "img": "dem_A_BO_3_68.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.8,
             "firecool": 3,
             "firespeed": 1,
             "movespd": 1
@@ -3080,6 +3230,7 @@
             "img": "dem_A_BO_3_69.png",
             "partname": "",
             "effect": "",
+            "moveyf": 0.9,
             "firecool": 2,
             "firespeed": 3,
             "movespd": 1
@@ -3089,6 +3240,7 @@
             "img": "dem_A_BO_3_70.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.0,
             "firecool": 1,
             "firespeed": 1,
             "movespd": 1
@@ -3098,6 +3250,7 @@
             "img": "dem_A_BO_3_71.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.1,
             "firecool": 3,
             "firespeed": 1,
             "movespd": 1
@@ -3107,6 +3260,7 @@
             "img": "dem_A_BO_3_72.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.2,
             "firecool": 3,
             "firespeed": 1,
             "movespd": 4
@@ -3116,6 +3270,7 @@
             "img": "dem_A_BO_3_73.png",
             "partname": "",
             "effect": "",
+            "moveyf": 1.3,
             "firecool": 1,
             "firespeed": 1,
             "movespd": 1
