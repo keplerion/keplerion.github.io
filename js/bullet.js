@@ -102,8 +102,9 @@ class bullet extends entity{
 		me.indexes.BU = (gC.shipAttr.HE.bid)?gC.shipAttr.HE.bid.toString().padStart(2,'0'):'01';//Utils.random(1,4).toString().padStart(2,'0');
         
 		var lI = Utils.loadImage;
-		
-		lI(me.__proto__.images[me.level],'assets/games/demonbull/animsjs/'+gC.bullets.BO[me.indexes.BU].img, 'BU', gC.bullets.BO[me.indexes.BU]);
+		let img = gC.bullets.BO[me.indexes.BU];
+		if(gC.bullets.BO[me.indexes.BU].yrev) img += '_y';
+		lI(me.__proto__.images[me.level],'assets/games/demonbull/animsjs/'+img, 'BU', gC.bullets.BO[me.indexes.BU]);
 		/*
 	    if(!this.indexes.BU)
             	this.indexes.BU= Utils.random(1,4).toString().padStart(2,'0');
