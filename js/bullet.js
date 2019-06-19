@@ -105,7 +105,7 @@ class bullet extends entity{
 		let img = gC.bullets.BO[me.indexes.BU].img;
 		if(gC.bullets.BO[me.indexes.BU].yrev){
 			let imgToken = img.split('.');
-			img += imgToken[0]+'_y.'+imgToken[1];
+			img = imgToken[0]+'_y.'+imgToken[1];
 		}
 		lI(me.__proto__.images[me.level],'assets/games/demonbull/animsjs/'+img, 'BU', gC.bullets.BO[me.indexes.BU]);
 		/*
