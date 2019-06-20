@@ -328,7 +328,8 @@ setCanvas3D(e){
 	    //if variable < 0 use x,y
         let width = gC.width - gC.spriteW;
         let height = gC.height - gC.spriteH;
-        let keys = Object.keys(images);
+        //let keys = Object.keys(images);
+	let keys = ['BO','LW','LB','HE','RW'];
         let mytimer = new Date().getTime();
 	     let coords =[{x:0,y:0},{x:width,y:0},{x:0,y:height},{x:x,y:y},{x:width,y:height}]
 		for(let p = 0,p_l = keys.length;p<p_l;p++){
