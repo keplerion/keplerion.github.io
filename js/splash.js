@@ -31,11 +31,11 @@ class splash{
 		gC.debugStr += 'SPLASH LW: '+this.indexes.LW+', RW:'+this.indexes.RW+', LB:'+this.indexes.LB+', HE:'+this.indexes.HE+', BO:'+this.indexes.BO+'; BU:'+bid+' <br>';
 
 			//replace with preloaded[preloaded.length] = ...
-			preloaded.push(lI(me.images[me.level],'assets/games/demontitle/'+gC.demonTitle['BO'][this.indexes.BO].img, 'BO',gC.demonTitle['BO'][this.indexes.BO]));
-			preloaded.push(lI(me.images[me.level],'assets/games/demontitle/'+gC.demonTitle['LW'][this.indexes.LW].img, 'LW',gC.demonTitle['LW'][this.indexes.LW]));
-			preloaded.push(lI(me.images[me.level],'assets/games/demontitle/'+gC.demonTitle['LB'][this.indexes.LB].img, 'LB',gC.demonTitle['LB'][this.indexes.LB]));
-			preloaded.push(lI(me.images[me.level],'assets/games/demontitle/'+gC.demonTitle['HE'][this.indexes.HE].img, 'HE',gC.demonTitle['HE'][this.indexes.HE]));
-			preloaded.push(lI(me.images[me.level],'assets/games/demontitle/'+gC.demonTitle['RW'][this.indexes.RW].img, 'RW',gC.demonTitle['RW'][this.indexes.RW]));
+			preloaded[preloaded.length] = lI(me.images[me.level],'assets/games/demontitle/'+gC.demonTitle['BO'][this.indexes.BO].img, 'BO',gC.demonTitle['BO'][this.indexes.BO]);
+			preloaded[preloaded.length] =lI(me.images[me.level],'assets/games/demontitle/'+gC.demonTitle['LW'][this.indexes.LW].img, 'LW',gC.demonTitle['LW'][this.indexes.LW]);
+			preloaded[preloaded.length] =lI(me.images[me.level],'assets/games/demontitle/'+gC.demonTitle['LB'][this.indexes.LB].img, 'LB',gC.demonTitle['LB'][this.indexes.LB]);
+			preloaded[preloaded.length] =lI(me.images[me.level],'assets/games/demontitle/'+gC.demonTitle['HE'][this.indexes.HE].img, 'HE',gC.demonTitle['HE'][this.indexes.HE]);
+			preloaded[preloaded.length] =lI(me.images[me.level],'assets/games/demontitle/'+gC.demonTitle['RW'][this.indexes.RW].img, 'RW',gC.demonTitle['RW'][this.indexes.RW]);
 			
 			Promise.all(preloaded)
 		    .then(
