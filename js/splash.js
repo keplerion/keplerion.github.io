@@ -30,7 +30,7 @@ class splash{
 		let bid = '';
 		gC.debugStr += 'SPLASH LW: '+this.indexes.LW+', RW:'+this.indexes.RW+', LB:'+this.indexes.LB+', HE:'+this.indexes.HE+', BO:'+this.indexes.BO+'; BU:'+bid+' <br>';
 
-
+			//replace with preloaded[preloaded.length] = ...
 			preloaded.push(lI(me.images[me.level],'assets/games/demontitle/'+gC.demonTitle['BO'][this.indexes.BO].img, 'BO',gC.demonTitle['BO'][this.indexes.BO]));
 			preloaded.push(lI(me.images[me.level],'assets/games/demontitle/'+gC.demonTitle['LW'][this.indexes.LW].img, 'LW',gC.demonTitle['LW'][this.indexes.LW]));
 			preloaded.push(lI(me.images[me.level],'assets/games/demontitle/'+gC.demonTitle['LB'][this.indexes.LB].img, 'LB',gC.demonTitle['LB'][this.indexes.LB]));
