@@ -140,7 +140,7 @@ class bulletD extends entity{
 
 hit(x,y,w,h){
 	//https://stackoverflow.com/questions/2752349/fast-rectangle-to-rectangle-intersection   
-	 if ((x < (this.BBoxX + w)) && (this.BBoxX < (x)) && (y < (this.BBoxY + h)) && (this.BBoxY < y))
+	 if ( ((x < (this.BBoxX + w)) && (this.BBoxX < (x)) || ((x+w) > this.BBoxX) && ((this.BBoxX+w) > (x+w))) && (y < (this.BBoxY + h)) && (this.BBoxY < y))
 	   return true;
 	 else
 	   return false;
