@@ -49,6 +49,14 @@
         "03": {
             "type": "",
             "img": "badge_A_HE_1_03.png"
+        },
+        "04": {
+            "type": "",
+            "img": "badge_A_HE_1_04.png"
+        },
+        "05": {
+            "type": "",
+            "img": "badge_A_HE_1_05.png"
         }
     },
     "LB": {
@@ -71,6 +79,10 @@
         "05": {
             "type": "",
             "img": "badge_A_LB_1_05.png"
+        },
+        "06": {
+            "type": "",
+            "img": "badge_A_LB_1_06.png"
         }
     },
     "LW": {
