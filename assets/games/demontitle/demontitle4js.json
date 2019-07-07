@@ -51,6 +51,18 @@
         "13": {
             "type": "",
             "img": "badge_A_BO_1_13.png"
+        },
+        "14": {
+            "type": "",
+            "img": "badge_A_BO_1_14.png"
+        },
+        "15": {
+            "type": "",
+            "img": "badge_A_BO_1_15.png"
+        },
+        "16": {
+            "type": "",
+            "img": "badge_A_BO_1_16.png"
         }
     },
     "HE": {
@@ -127,6 +139,10 @@
         "11": {
             "type": "",
             "img": "badge_A_LB_1_11.png"
+        },
+        "12": {
+            "type": "",
+            "img": "badge_A_LB_1_12.png"
         }
     },
     "LW": {
