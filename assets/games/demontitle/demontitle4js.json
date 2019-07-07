@@ -35,6 +35,22 @@
         "09": {
             "type": "",
             "img": "badge_A_BO_1_09.png"
+        },
+        "10": {
+            "type": "",
+            "img": "badge_A_BO_1_10.png"
+        },
+        "11": {
+            "type": "",
+            "img": "badge_A_BO_1_11.png"
+        },
+        "12": {
+            "type": "",
+            "img": "badge_A_BO_1_12.png"
+        },
+        "13": {
+            "type": "",
+            "img": "badge_A_BO_1_13.png"
         }
     },
     "HE": {
@@ -57,6 +73,14 @@
         "05": {
             "type": "",
             "img": "badge_A_HE_1_05.png"
+        },
+        "06": {
+            "type": "",
+            "img": "badge_A_HE_1_06.png"
+        },
+        "07": {
+            "type": "",
+            "img": "badge_A_HE_1_07.png"
         }
     },
     "LB": {
@@ -83,6 +107,26 @@
         "06": {
             "type": "",
             "img": "badge_A_LB_1_06.png"
+        },
+        "07": {
+            "type": "",
+            "img": "badge_A_LB_1_07.png"
+        },
+        "08": {
+            "type": "",
+            "img": "badge_A_LB_1_08.png"
+        },
+        "09": {
+            "type": "",
+            "img": "badge_A_LB_1_09.png"
+        },
+        "10": {
+            "type": "",
+            "img": "badge_A_LB_1_10.png"
+        },
+        "11": {
+            "type": "",
+            "img": "badge_A_LB_1_11.png"
         }
     },
     "LW": {
