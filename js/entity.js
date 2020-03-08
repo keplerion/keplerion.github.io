@@ -350,7 +350,7 @@ class entity{
         var me = this;
         return new Promise((res,rej)=>{
             
-	    Utils.drawImages(me.__proto__.images[me.level], me.randomX, me.randomY);
+	    Utils.drawImages(me.__proto__.images[me.level], me.randomX, me.randomY,true);
 			//Utils.drawBBox(me.BBoxX,me.BBoxY,10,10,'#0000FF')
             
             res();

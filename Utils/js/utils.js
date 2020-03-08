@@ -291,7 +291,7 @@ setCanvas3D(e){
         this.ctxo.fillText(str, x, y);
         return;
     }
-    drawImages(images,x,y){
+    drawImages(images,x,y,alphaBool){
 	    
 	
         //let keys = Object.keys(images);
@@ -300,6 +300,10 @@ setCanvas3D(e){
         let mytimer = new Date().getTime();
 		for(let p = 0,p_l = keys.length;p<p_l;p++){
             let i = images[keys[p]];
+            if(i.alpha == undefined){i.alpha=0;}
+            else{ 
+                if(i.alpha < 1) i.alpha += gC.transparencyStep;
+            }
             if(i.frames && typeof i.frames == 'number'){
                 if(!i.timer) 
                     i.timer = mytimer;
@@ -314,7 +318,10 @@ setCanvas3D(e){
                 this.drawAnimation(i, gC.spriteW*i.frame, 0,gC.spriteW,gC.spriteH, x,y,gC.spriteW,gC.spriteH);
                     
             }else{
-                this.ctxo.drawImage(i, x, y)
+                let tmpAlpha = this.ctxo.globalAlpha;
+                if(alphaBool)this.ctxo.globalAlpha = i.alpha;
+                this.ctxo.drawImage(i, x, y);
+                if(alphaBool)this.ctxo.globalAlpha = tmpAlpha;
             }
 			
 		}
@@ -382,12 +389,10 @@ setCanvas3D(e){
         return base_path += j.img;
     }
     drawAnimation(image,srcX,srcY,width,height,realx,realy,realwidth,realheight){
-	    
-	
-			this.ctxo.drawImage(image, srcX,srcY,width,height,realx,realy,realwidth,realheight)
-		
-	
-        
+	    let tmpAlpha = this.ctxo.globalAlpha;
+        this.ctxo.globalAlpha = image.alpha;
+        this.ctxo.drawImage(image, srcX,srcY,width,height,realx,realy,realwidth,realheight)
+        this.ctxo.globalAlpha = tmpAlpha;
     }
 	
 	drawImagesNoDoubleBuffer(images,x,y){
