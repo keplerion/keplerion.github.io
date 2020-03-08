@@ -133,7 +133,11 @@ createLevel(){
     if(!this.stringToWrite) this.stringToWrite = 'Press  s  to  start';
     Utils.drawText(this.stringToWrite,380,400,'#FFF') 
     Utils.c2c();
-    res();
+    let timeout = setTimeout(returnTimeOut, gC.timeBetweenLevels);
+    function returnTimeOut(){
+        return res();
+    }
+    
         
 })
 }
