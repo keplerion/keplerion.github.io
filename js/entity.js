@@ -397,6 +397,8 @@ paint(x,y){
 			me.BBoxY = me.randomY;
 			me.BBoxH = gC.spriteH;
 			me.BBoxW = gC.spriteW;
+			if(gC.debug) Utils.drawBBox(me.BBoxX, me.BBoxY,me.BBoxW,me.BBoxH,'blue');
+
 			res();
 			
                 
