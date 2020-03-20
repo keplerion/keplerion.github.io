@@ -32,7 +32,7 @@ class bulletD extends entity{
 			//add the echo feature
 			//Utils.drawBBox(me.BBoxX, me.BBoxY,gC.bulletW,gC.bulletH,me.BBoxColor);
 			//gC.fireAudio.play();
-			
+			if(gC.debug) Utils.drawBBox(me.BBoxX, me.BBoxY,gC.bulletW,gC.bulletH,'blue');
 			me.frame++;
 			res();
 		})
