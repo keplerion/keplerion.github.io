@@ -254,7 +254,7 @@ setCanvas3D(e){
 	}
 	fadeIn(){
 		return new Promise((res,rej)=>{
-			recursive_fn(step){
+			function recursive_fn(step){
 				if(step<=1){
 					gC.ambientLight.intensity = step;
 					gC.renderer.render( gC.scene, gC.camera );
@@ -270,7 +270,7 @@ setCanvas3D(e){
 	}
 	fadeOut(){
 		return new Promise((res,rej)=>{
-			recursive_fn(step){
+			function recursive_fn(step){
 				if(step>=0){
 					gC.ambientLight.intensity = step;
 					gC.renderer.render( gC.scene, gC.camera );
