@@ -132,8 +132,8 @@ setCanvas3D(e){
 			
                     gC.scene.add( gC.plane );
                     // Lights
-                    var ambientLight = new THREE.AmbientLight( 0x606060 );
-                    gC.scene.add( ambientLight );
+                    gC.ambientLight = new THREE.AmbientLight( 0x606060 );
+                    gC.scene.add( gC.ambientLight );
                     var directionalLight = new THREE.DirectionalLight( 0xffffff );
                     directionalLight.position.set( 1, 0.75, 0.5 ).normalize();
                     gC.scene.add( directionalLight );
@@ -252,7 +252,37 @@ setCanvas3D(e){
 		
         
 	}
-	
+	fadeIn(){
+		return new Promise((res,rej)=>{
+			recursive_fn(step){
+				if(step<=1){
+					gC.ambientLight.intensity = step;
+					gC.renderer.render( gC.scene, gC.camera );
+					recursive_fn(fade += 0.1)
+				}else{
+					res();
+				}
+
+			}
+			recursive_fn(0)
+		})
+		
+	}
+	fadeOut(){
+		return new Promise((res,rej)=>{
+			recursive_fn(step){
+				if(step>=0){
+					gC.ambientLight.intensity = step;
+					gC.renderer.render( gC.scene, gC.camera );
+					recursive_fn(fade -= 0.1)
+				}else{
+					res();
+				}
+			}
+		recursive_fn(1)
+		})
+		
+	}
 	c2osc(){
 		var bitmapOne = this.co.transferToImageBitmap();
 		this.c.transferFromImageBitmap(bitmapOne);
