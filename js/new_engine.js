@@ -88,23 +88,41 @@ function startGame(){
 		if(gC.gameLevel)
                 	showSplashLevel().then(
                     		(succ)=>{
-                                Utils.resetCamera();
-                        		l()
+					Utils.fadeOut().then(
+						(succ)=>{
+							Utils.fadeIn().then(
+								(succ)=>{
+									Utils.resetCamera();
+                        						l()
+								}
+							)
+						}
+					)
+                                
                     		}
                 	)
 		else
 			this.showSplashEnd().then(
 			    (succ)=>{
-				reset()
-				l()
+				    Utils.fadeOut().then(
+				    	(succ)=>{
+						reset()
+						l()	
+					}
+				    )
+				
 			    }
 			); 
 		 
             }else{
                 this.showSplashEnd().then(
                     (succ)=>{
-                        reset()
-                        l()
+                        Utils.fadeOut().then(
+				(succ)=>{
+					reset()
+					l()	
+				}
+			    )
                     }
                 ); 
             }
