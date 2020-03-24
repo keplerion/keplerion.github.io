@@ -547,38 +547,47 @@ setCanvas3D(e){
 isNumber(n) {
     return !isNaN(parseFloat(n)) && isFinite(n);
 }
-async setFilter(k){
+async setFilter(k,v){
     let filter = '';
     switch(k){
         case '0':
             filter = 'none';
             break;
         case '1':
-            filter = 'sepia(100%)';
+	     if(v) filter = 'sepia('+v+'%)';
+            else filter = 'sepia(100%)';
             break;
         case '2':
-            filter = 'opacity(50%)';
+            if(v) filter = 'opacity('+v+'%)';
+            else filter = 'opacity(50%)';
             break;
         case '3':
-            filter = 'invert(100%)';
+            if(v) filter = 'invert('+v+'%)';
+            else filter = 'invert(100%)';
             break;
         case '4':
-            filter = 'grayscale(100%)';
+            if(v) filter = 'grayscale('+v+'%)';
+            else filter = 'grayscale(100%)';
             break;
         case '5':
-            filter = 'contrast(0%)';
+            if(v) filter = 'contrast('+v+'%)';
+            else filter = 'contrast(0%)';
             break;
         case '6':
-            filter = 'brightness(150%)';
+            if(v) filter = 'brightness('+v+'%)';
+            else filter = 'brightness(150%)';
             break;
         case '7':
-            filter = 'blur(8px)';
+            if(v) filter = 'blur('+v+'px)';
+            else filter = 'blur(8px)';
             break;
         case '8':
-            filter = 'saturate(0%)';
+            if(v) filter = 'saturate('+v+'%)';
+            else filter = 'saturate(0%)';
             break;
         case '9':
-            filter = 'hue-rotate(90deg)';
+            if(v) filter = 'hue-rotate('+v+'deg)';
+            else filter = 'hue-rotate(90deg)';
             break;
     }
     gC.canvasFilter = filter;
