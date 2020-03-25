@@ -126,7 +126,7 @@ setCanvas3D(e){
 			gC.texture.offset.set(0,0)
 
              //objects.push( plane );
-             gC.material = new THREE.MeshBasicMaterial({ map : gC.texture })
+             gC.material = new THREE.MeshBasicMaterial({ map : gC.texture, transparent: true })
 			gC.plane = new THREE.Mesh( geometry, gC.material );
                     //gC.plane.material.side = THREE.DoubleSide;
 			
@@ -256,7 +256,7 @@ setCanvas3D(e){
 		return new Promise((res,rej)=>{
 			function recursive_fn(step){
 				if(step<=1){
-					gC.plane.opacity = step;
+					gC.material.opacity = step;
 					recursive_fn(step += 0.05)
 				}else{
 					res();
@@ -271,7 +271,7 @@ setCanvas3D(e){
 		return new Promise((res,rej)=>{
 			function recursive_fn(step){
 				if(step>=0){
-					gC.plane.opacity = step;
+					gC.material.opacity = step;
 					recursive_fn(step -= 0.05)
 				}else{
 					res();
