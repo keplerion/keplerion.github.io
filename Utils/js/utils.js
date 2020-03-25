@@ -136,7 +136,7 @@ setCanvas3D(e){
                     //gC.scene.add( gC.ambientLight );
                     gC.directionalLight = new THREE.DirectionalLight( 0xffffff );
                     gC.directionalLight.position.set( 1, 0.75, 0.5 ).normalize();
-                    gC.scene.add( gC.directionalLight );
+                    //gC.scene.add( gC.directionalLight );
                     gC.renderer = new THREE.WebGLRenderer( { antialias: true } );
                     gC.renderer.setClearColor( 0xf0f0f0 );
                     gC.renderer.setPixelRatio( window.devicePixelRatio );
