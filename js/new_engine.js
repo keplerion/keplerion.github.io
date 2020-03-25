@@ -86,45 +86,51 @@ function startGame(){
                 gC.gameLevel++;
                 //gC.numbOfDemons--;
 		if(gC.gameLevel)
-                	showSplashLevel().then(
-                    		(succ)=>{
-					Utils.fadeOut().then(
+			Utils.fadeOut().then(
+				(succ)=>{
+					showSplashLevel().then(
 						(succ)=>{
+
 							Utils.fadeIn().then(
 								(succ)=>{
 									Utils.resetCamera();
-                        						l()
+									l()
 								}
 							)
 						}
 					)
-                                
-                    		}
-                	)
+
+				}
+			)
+                	
 		else
-			this.showSplashEnd().then(
-			    (succ)=>{
-				    Utils.fadeOut().then(
+			Utils.fadeOut().then(
 				    	(succ)=>{
-						reset()
-						l()	
+						this.showSplashEnd().then(
+						    (succ)=>{
+										reset()
+									l()	    
+
+						    }
+						);
+				
 					}
 				    )
-				
-			    }
-			); 
+			 
 		 
             }else{
-                this.showSplashEnd().then(
-                    (succ)=>{
-                        Utils.fadeOut().then(
+		    Utils.fadeOut().then(
 				(succ)=>{
-					reset()
-					l()	
+					this.showSplashEnd().then(
+					    (succ)=>{
+						reset()
+						l()
+					    }
+					);
+						
 				}
 			    )
-                    }
-                ); 
+                 
             }
             
         }
