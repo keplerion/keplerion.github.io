@@ -256,8 +256,8 @@ setCanvas3D(e){
 		return new Promise((res,rej)=>{
 			function recursive_fn(step){
 				if(step<=1){
-					gC.ambientLight.intensity = step;
-					gC.renderer.render( gC.scene, gC.camera );
+					gC.ambientLight.update({intensity:step});
+					//gC.renderer.render( gC.scene, gC.camera );
 					recursive_fn(step += 0.05)
 				}else{
 					res();
@@ -272,8 +272,8 @@ setCanvas3D(e){
 		return new Promise((res,rej)=>{
 			function recursive_fn(step){
 				if(step>=0){
-					gC.ambientLight.intensity = step;
-					gC.renderer.render( gC.scene, gC.camera );
+					gC.ambientLight.update({intensity:step});
+					//gC.renderer.render( gC.scene, gC.camera );
 					recursive_fn(step -= 0.05)
 				}else{
 					res();
