@@ -56,6 +56,7 @@ class splash{
 
 	create(){
         var me = this;
+	gC.material.opacity = step;
         return new Promise((res,rej)=>{
             
 	    Utils.drawImages(me.images[me.level], 0, 0,false);
@@ -128,6 +129,7 @@ class splash{
 //}
 createLevel(){
     var me = this;
+	gC.material.opacity = step;
     return new Promise((res,rej)=>{
     Utils.clearCanvas('#000');
     if(!this.stringToWrite) this.stringToWrite = 'Press  s  to  start';
