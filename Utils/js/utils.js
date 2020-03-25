@@ -134,9 +134,9 @@ setCanvas3D(e){
                     // Lights
                     gC.ambientLight = new THREE.AmbientLight( 0x606060 );
                     gC.scene.add( gC.ambientLight );
-                    var directionalLight = new THREE.DirectionalLight( 0xffffff );
-                    directionalLight.position.set( 1, 0.75, 0.5 ).normalize();
-                    gC.scene.add( directionalLight );
+                    gC.directionalLight = new THREE.DirectionalLight( 0xffffff );
+                    gC.directionalLight.position.set( 1, 0.75, 0.5 ).normalize();
+                    gC.scene.add( gC.directionalLight );
                     gC.renderer = new THREE.WebGLRenderer( { antialias: true } );
                     gC.renderer.setClearColor( 0xf0f0f0 );
                     gC.renderer.setPixelRatio( window.devicePixelRatio );
@@ -256,7 +256,8 @@ setCanvas3D(e){
 		return new Promise((res,rej)=>{
 			function recursive_fn(step){
 				if(step<=1){
-					gC.ambientLight.update({intensity:step});
+					gC.ambientLight.intensity = step;
+					gC.directionalLight.intensity = step;
 					//gC.renderer.render( gC.scene, gC.camera );
 					recursive_fn(step += 0.05)
 				}else{
@@ -272,7 +273,8 @@ setCanvas3D(e){
 		return new Promise((res,rej)=>{
 			function recursive_fn(step){
 				if(step>=0){
-					gC.ambientLight.update({intensity:step});
+					gC.ambientLight.intensity = step;
+					gC.directionalLight.intensity = step;
 					//gC.renderer.render( gC.scene, gC.camera );
 					recursive_fn(step -= 0.05)
 				}else{
