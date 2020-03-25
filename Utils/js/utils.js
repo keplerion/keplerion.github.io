@@ -256,7 +256,7 @@ setCanvas3D(e){
 		return new Promise((res,rej)=>{
 			function recursive_fn(step){
 				if(step<=1){
-					gC.material.opacity = step;
+					gC.plane.opacity = step;
 					recursive_fn(step += 0.05)
 				}else{
 					res();
@@ -271,7 +271,7 @@ setCanvas3D(e){
 		return new Promise((res,rej)=>{
 			function recursive_fn(step){
 				if(step>=0){
-					gC.material.opacity = step;
+					gC.plane.opacity = step;
 					recursive_fn(step -= 0.05)
 				}else{
 					res();
