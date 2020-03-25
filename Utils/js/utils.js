@@ -133,7 +133,7 @@ setCanvas3D(e){
                     gC.scene.add( gC.plane );
                     // Lights
                     gC.ambientLight = new THREE.AmbientLight( 0x606060 );
-                    gC.scene.add( gC.ambientLight );
+                    //gC.scene.add( gC.ambientLight );
                     gC.directionalLight = new THREE.DirectionalLight( 0xffffff );
                     gC.directionalLight.position.set( 1, 0.75, 0.5 ).normalize();
                     gC.scene.add( gC.directionalLight );
