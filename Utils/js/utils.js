@@ -258,7 +258,7 @@ setCanvas3D(e){
 				if(step<=1){
 					gC.ambientLight.intensity = step;
 					//gC.renderer.render( gC.scene, gC.camera );
-					recursive_fn(step += 0.1)
+					recursive_fn(step += 0.05)
 				}else{
 					res();
 				}
@@ -274,7 +274,7 @@ setCanvas3D(e){
 				if(step>=0){
 					gC.ambientLight.intensity = step;
 					//gC.renderer.render( gC.scene, gC.camera );
-					recursive_fn(step -= 0.1)
+					recursive_fn(step -= 0.05)
 				}else{
 					res();
 				}
