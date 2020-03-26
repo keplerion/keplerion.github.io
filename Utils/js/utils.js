@@ -257,7 +257,6 @@ setCanvas3D(e){
 			function recursive_fn(step){
 				if(step<=1){
 					gC.material.opacity = step;
-					this.ctx.flush();
 					recursive_fn(step += 0.05)
 				}else{
 					res();
@@ -273,7 +272,6 @@ setCanvas3D(e){
 			function recursive_fn(step){
 				if(step>=0){
 					gC.material.opacity = step;
-					this.ctx.flush();
 					recursive_fn(step -= 0.05)
 				}else{
 					res();
