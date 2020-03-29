@@ -255,9 +255,11 @@ setCanvas3D(e){
 	fadeIn(){
 		return new Promise((res,rej)=>{
 			function recursive_fn(step){
+                console.log('step '+step)
 				if(step<=1){
-					gC.material.opacity = step;
-					recursive_fn(step += 0.05)
+                    gC.material.opacity = step;
+                    gC.renderer.render( gC.scene, gC.camera );
+					recursive_fn(step += gC.fadeStep)
 				}else{
 					res();
 				}
@@ -270,9 +272,11 @@ setCanvas3D(e){
 	fadeOut(){
 		return new Promise((res,rej)=>{
 			function recursive_fn(step){
+                console.log('step '+step)
 				if(step>=0){
-					gC.material.opacity = step;
-					recursive_fn(step -= 0.05)
+                    gC.material.opacity = step;
+                    gC.renderer.render( gC.scene, gC.camera );
+					recursive_fn(step -= gC.fadeStep)
 				}else{
 					res();
 				}

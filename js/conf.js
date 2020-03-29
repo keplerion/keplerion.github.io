@@ -19,6 +19,7 @@ var gC = {
     animationHeight:100,
     transparencyStep:0.05,
     timeBetweenLevels:2000,
+    fadeStep:0.2,
     readJsonData: function(gCDataName,jsonUrl){
         return new Promise(function(res,rej){
             if(!gC[gCDataName]){
