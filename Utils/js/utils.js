@@ -254,7 +254,8 @@ setCanvas3D(e){
 	}
 	fadeIn(){
 		return new Promise((res,rej)=>{
-			function recursive_fn(step){
+            /*not works...
+            function recursive_fn(step){
                 console.log('step '+step)
 				if(step<=1){
                     gC.material.opacity = step;
@@ -265,12 +266,15 @@ setCanvas3D(e){
 				}
 
 			}
-			recursive_fn(0)
+            recursive_fn(0)
+            */
+           res();
 		})
 		
 	}
 	fadeOut(){
 		return new Promise((res,rej)=>{
+            /* not works...
 			function recursive_fn(step){
                 console.log('step '+step)
 				if(step>=0){
@@ -281,7 +285,9 @@ setCanvas3D(e){
 					res();
 				}
 			}
-		recursive_fn(1)
+        recursive_fn(1)
+        */
+       res();
 		})
 		
 	}
