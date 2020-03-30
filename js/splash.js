@@ -60,7 +60,7 @@ class splash{
         return new Promise((res,rej)=>{
             
 	    Utils.drawImages(me.images[me.level], 0, 0,false);
-		
+	    gC.checkScore();
             if(!this.stringToWrite) this.stringToWrite = 'Press  s  to  start';
         	Utils.drawText(this.stringToWrite,380,400,'#FFF')
 		if(localStorage['score']) Utils.drawText('Record: '+localStorage['score'],380,300,'#FFF')
