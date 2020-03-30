@@ -63,7 +63,7 @@ class splash{
 	    gC.checkScore();
             if(!this.stringToWrite) this.stringToWrite = 'Press  s  to  start';
         	Utils.drawText(this.stringToWrite,380,400,'#FFF')
-		if(localStorage['score']) Utils.drawText('Record: '+localStorage['score'],380,300,'#FFF')
+		if(localStorage['score']) Utils.drawText('Record: '+localStorage['score']+' pts',380,300,'#FFF')
             function k(e){
             switch(e.keyCode){
                 case 83:
