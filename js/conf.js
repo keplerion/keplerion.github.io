@@ -78,6 +78,7 @@ var gC = {
         if(localStorage['score']){
             if(parseInt(localStorage['score'])<gC.score){
                 Utils.getEBCN('svgRecordLabel')[0].style.display='block';
+                localStorage['score']=gC.score;
             }
         }else{
             localStorage['score'] = 0;
