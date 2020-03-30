@@ -82,7 +82,7 @@ var gC = {
         }else{
             localStorage['score'] = 0;
         }
-    };
+    }
 };
 
 gC.spritePosXA = gC.width-gC.animationWidth;
