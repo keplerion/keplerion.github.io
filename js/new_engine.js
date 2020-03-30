@@ -521,6 +521,7 @@ function reset(){
     gC.lifes = 3;
     gC.debugStr = '';
     gC.score = 0;
+    Utils.getEBCN('svgRecordLabel')[0].style.display='none';
     Utils.resetCamera();
 }
 
