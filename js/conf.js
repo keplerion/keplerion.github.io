@@ -77,7 +77,7 @@ var gC = {
     checkScore: function(){
         if(localStorage['score']){
             if(parseInt(localStorage['score'])<gC.score){
-                alert('new record!')
+                Utils.getEBCN('svgRecordLabel')[0].style.display='block';
             }
         }else{
             localStorage['score'] = 0;
