@@ -577,7 +577,7 @@ function l(){
     gC.levelChar = gC.gameLevel;
     gC.heroChar = gC.heroLevel;
     var planet = gC.planetLevel;
-    gC.checkScore();
+    //gC.checkScore();
     assets.length = 0;
                 gC.loadAmbientAudio().then(
                     (succ)=>{
