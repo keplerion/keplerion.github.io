@@ -984,6 +984,7 @@ lineSegmentsIntersect(line1StartX, line1StartY, line1EndX, line1EndY, line2Start
 		return num;
 	}
 showScore(input) {
+	localStorage['score']=input;
     var output = this.getEBCN('score')[0];
     output.innerHTML = '';
     input = input.toString();
