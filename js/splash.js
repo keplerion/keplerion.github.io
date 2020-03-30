@@ -63,6 +63,7 @@ class splash{
 		
             if(!this.stringToWrite) this.stringToWrite = 'Press  s  to  start';
         	Utils.drawText(this.stringToWrite,380,400,'#FFF')
+		if(localStorage['score']) Utils.drawText('Record: '+localStorage['score'],380,300,'#FFF')
             function k(e){
             switch(e.keyCode){
                 case 83:
@@ -134,6 +135,7 @@ createLevel(){
     Utils.clearCanvas('#000');
     if(!this.stringToWrite) this.stringToWrite = 'Press  s  to  start';
     Utils.drawText(this.stringToWrite,380,400,'#FFF') 
+    if(localStorage['score']) Utils.drawText('Record: '+localStorage['score'],380,300,'#FFF')
     Utils.c2c();
     let timeout = setTimeout(returnTimeOut, gC.timeBetweenLevels);
     function returnTimeOut(){
