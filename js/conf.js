@@ -73,7 +73,16 @@ var gC = {
               }, true);
         })
         
-    }
+    },
+    checkScore: function(){
+        if(localStorage['score']){
+            if(parseInt(localStorage['score'])<gC.score){
+                alert('new record!')
+            }
+        }else{
+            localStorage['score'] = 0;
+        }
+    };
 };
 
 gC.spritePosXA = gC.width-gC.animationWidth;
