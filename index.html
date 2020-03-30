@@ -71,7 +71,14 @@
       width: 50%;
       height: 50%;
     }
-    
+    .svgRecordLabel{
+      height: 20%;
+    }
+    #imageSvgRecordLabel{
+      width:20%;
+      position: absolute;
+      z-index: 1;
+    }
     </style>
   <link rel="icon" type="image/png" href="/favicon.png"/>
   <meta name="description" content="Keplerion" />
@@ -144,7 +151,7 @@ function showScore(input) {
   
   </div>
   <div id="svgRecordLabel" class="svgRecordLabel">
-    <img src="assets/games/svg/recordLabel.svg">
+    <img id="imageSvgRecordLabel" src="assets/games/svg/recordLabel.svg">
   </div>
 </body>
 </html>
