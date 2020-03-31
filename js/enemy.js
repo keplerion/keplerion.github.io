@@ -79,13 +79,12 @@ class enemy extends entity{
         if(gC && gC.demonAttr && gC.demonAttr.LB && gC.demonAttr.LB.bid) bid = gC.demonAttr.LB.bid.toString().padStart(2,'0');
         gC.debugStr += 'Demon LW: '+this.indexes.LW+', RW:'+this.indexes.RW+', LB:'+this.indexes.LB+', HE:'+this.indexes.HE+', BO:'+this.indexes.BO+'; BU:'+bid+' <br>';
         
-
-		preloaded.push(lI(me.__proto__.images[me.level],Utils.demonImagePath(gC.demonData['LW'][this.indexes.LW]), 'LW',gC.demonData['LW'][this.indexes.LW]));
-		preloaded.push(lI(me.__proto__.images[me.level],Utils.demonImagePath(gC.demonData['RW'][this.indexes.RW]), 'RW',gC.demonData['RW'][this.indexes.RW]));
-		preloaded.push(lI(me.__proto__.images[me.level],Utils.demonImagePath(gC.demonData['LB'][this.indexes.LB]), 'LB',gC.demonData['LB'][this.indexes.LB]));
-		preloaded.push(lI(me.__proto__.images[me.level],Utils.demonImagePath(gC.demonData['BO'][this.indexes.BO]), 'BO',gC.demonData['BO'][this.indexes.BO]));
 		preloaded.push(lI(me.__proto__.images[me.level],Utils.demonImagePath(gC.demonData['HE'][this.indexes.HE]), 'HE',gC.demonData['HE'][this.indexes.HE]));
-
+		preloaded.push(lI(me.__proto__.images[me.level],Utils.demonImagePath(gC.demonData['BO'][this.indexes.BO]), 'BO',gC.demonData['BO'][this.indexes.BO]));
+		preloaded.push(lI(me.__proto__.images[me.level],Utils.demonImagePath(gC.demonData['LB'][this.indexes.LB]), 'LB',gC.demonData['LB'][this.indexes.LB]));
+		preloaded.push(lI(me.__proto__.images[me.level],Utils.demonImagePath(gC.demonData['RW'][this.indexes.RW]), 'RW',gC.demonData['RW'][this.indexes.RW]));
+		preloaded.push(lI(me.__proto__.images[me.level],Utils.demonImagePath(gC.demonData['LW'][this.indexes.LW]), 'LW',gC.demonData['LW'][this.indexes.LW]));
+		
 		Promise.all(preloaded)
             .then(
                 (succ)=>{
