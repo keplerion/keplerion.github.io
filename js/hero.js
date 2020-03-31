@@ -72,12 +72,12 @@ class hero extends entity{
 		gC.shipAttr['HE'] = gC.shipData['HE'][this.indexes.HE];
 		
 		var lI = Utils.loadImage;
-		preloaded.push(lI(me.__proto__.images[me.level],'assets/games/demonship/demonship/'+gC.shipData['LW'][this.indexes.LW].img, 'LW'));
-		preloaded.push(lI(me.__proto__.images[me.level],'assets/games/demonship/demonship/'+gC.shipData['RW'][this.indexes.RW].img, 'RW'));
-		preloaded.push(lI(me.__proto__.images[me.level],'assets/games/demonship/demonship/'+gC.shipData['LB'][this.indexes.LB].img, 'LB'));
-		preloaded.push(lI(me.__proto__.images[me.level],'assets/games/demonship/demonship/'+gC.shipData['BO'][this.indexes.BO].img, 'BO'));
 		preloaded.push(lI(me.__proto__.images[me.level],'assets/games/demonship/demonship/'+gC.shipData['HE'][this.indexes.HE].img, 'HE'));
-
+		preloaded.push(lI(me.__proto__.images[me.level],'assets/games/demonship/demonship/'+gC.shipData['BO'][this.indexes.BO].img, 'BO'));
+		preloaded.push(lI(me.__proto__.images[me.level],'assets/games/demonship/demonship/'+gC.shipData['LB'][this.indexes.LB].img, 'LB'));
+		preloaded.push(lI(me.__proto__.images[me.level],'assets/games/demonship/demonship/'+gC.shipData['RW'][this.indexes.RW].img, 'RW'));
+		preloaded.push(lI(me.__proto__.images[me.level],'assets/games/demonship/demonship/'+gC.shipData['LW'][this.indexes.LW].img, 'LW'));
+		
 		Promise.all(preloaded)
             .then(
                 (succ)=>{
