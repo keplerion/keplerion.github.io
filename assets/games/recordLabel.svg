@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="124.94869mm"
+   height="129.5045mm"
+   viewBox="0 0 124.94869 129.5045"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="recordLabel.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="164.23208"
+     inkscape:cy="246.37976"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="950"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Livello 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(26.944589,8.1451108)">
+    <path
+       sodipodi:type="star"
+       style="fill:#b90404;fill-opacity:1;stroke:#1d1d00;stroke-width:5.06500006;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4518"
+       sodipodi:sides="10"
+       sodipodi:cx="35.529758"
+       sodipodi:cy="56.607143"
+       sodipodi:r1="54.439896"
+       sodipodi:r2="61.863518"
+       sodipodi:arg1="0.67283255"
+       sodipodi:arg2="0.98699181"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 78.104999,90.534288 -8.475927,17.690022 -19.597096,0.85557 -17.255102,9.3295 L 16.419599,107.58267 -3.0238149,104.9881 -9.8933464,86.614539 -24.098349,73.086936 -18.85621,54.184605 -22.396973,34.891054 -7.0454818,22.679999 1.4304452,4.9899789 21.027541,4.1344084 38.282643,-5.1950933 54.639918,5.6316194 74.083332,8.2261883 80.952863,26.599748 95.157866,40.12735 89.915727,59.029682 93.45649,78.323233 Z" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="20.273302"
+       y="40.010506"
+       id="text4522"
+       transform="rotate(-15.43014)"><tspan
+         sodipodi:role="line"
+         id="tspan4520"
+         x="20.273304"
+         y="40.010506"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.57777786px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;text-anchor:middle;stroke-width:0.26458332;stroke:#9d9d00;stroke-opacity:1;fill:#ffffff;fill-opacity:1">New</tspan><tspan
+         sodipodi:role="line"
+         x="20.273304"
+         y="68.232727"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.57777786px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;text-anchor:middle;stroke-width:0.26458332;stroke:#9d9d00;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
+         id="tspan4530">Score</tspan><tspan
+         sodipodi:role="line"
+         x="20.273304"
+         y="96.454948"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.57777786px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;text-anchor:middle;stroke-width:0.26458332;stroke:#9d9d00;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
+         id="tspan4534">Record</tspan></text>
+  </g>
+</svg>
